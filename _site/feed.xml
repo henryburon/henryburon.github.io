@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Henry&apos;s Portfolio</title>
+    <description>M.S. in Robotics @ Northwestern University</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 25 Nov 2023 13:09:13 -0600</pubDate>
+    <lastBuildDate>Sat, 25 Nov 2023 13:09:13 -0600</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Rapidly-Exploring Random Tree</title>
+        <description>&lt;p&gt;Python, Path Planning, RRT&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Oct 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/RRT/</link>
+        <guid isPermaLink="true">http://localhost:4000/RRT/</guid>
+        
+        
+        <category>Python</category>
+        
+        <category>Path Planning</category>
+        
+        <category>RRT</category>
+        
+      </item>
+    
+      <item>
+        <title>PincherX 100 Pen Thief</title>
+        <description>&lt;p&gt;OpenCV, Python, PincherX 100&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/pturk2xscaA?si=CLWhMrOFVhrZ33sk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;This is where I explain how I completed the project. How far can this line go before going on to the second row?&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        
+        
+        <category>OpenCV</category>
+        
+        <category>Python</category>
+        
+        <category>PincherX 100</category>
+        
+      </item>
+    
+  </channel>
+</rss>
