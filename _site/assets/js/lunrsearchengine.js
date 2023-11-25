@@ -1,37 +1,37 @@
 
 var documents = [{
     "id": 0,
-    "url": "http://localhost:4000/404.html",
+    "url": "henryburon.github.io/404.html",
     "title": "404",
     "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
     }, {
     "id": 1,
-    "url": "http://localhost:4000/HenryBuron_About",
+    "url": "henryburon.github.io/HenryBuron_About",
     "title": "Resume, GitHub, and Contact Info",
     "body": "henryburon2024@u. northwestern. edu: GitHub: LinkedIn: "
     }, {
     "id": 2,
-    "url": "http://localhost:4000/categories",
+    "url": "henryburon.github.io/categories",
     "title": "Categories",
     "body": ""
     }, {
     "id": 3,
-    "url": "http://localhost:4000/",
+    "url": "henryburon.github.io/",
     "title": "Home",
     "body": "      Featured Projects:                                                                                                                                                                                                           Rapidly-Exploring Random Tree                              :               Python, Path Planning, RRT:                                                                       04 Oct 2023                &lt;/span&gt;                                                                                                                                                                                                                                                                                                  PincherX 100 Pen Thief                              :               OpenCV, Python, PincherX 100:                                                                       15 Sep 2023                &lt;/span&gt;                                                                                                      All Projects:                                                                                                     Rapidly-Exploring Random Tree              :       Python, Path Planning, RRT:                               04 Oct 2023        &lt;/span&gt;                                                                                                                             PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Sep 2023        &lt;/span&gt;                                    "
     }, {
     "id": 4,
-    "url": "http://localhost:4000/robots.txt",
+    "url": "henryburon.github.io/robots.txt",
     "title": "",
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 5,
-    "url": "http://localhost:4000/RRT/",
+    "url": "henryburon.github.io/RRT/",
     "title": "Rapidly-Exploring Random Tree",
     "body": "2023/10/04 - Python, Path Planning, RRT "
     }, {
     "id": 6,
-    "url": "http://localhost:4000/pen_thief/",
+    "url": "henryburon.github.io/pen_thief/",
     "title": "PincherX 100 Pen Thief",
     "body": "2023/09/15 - OpenCV, Python, PincherX 100 Overview: This is where I explain how I completed the project. How far can this line go before going on to the second row? "
     }];
