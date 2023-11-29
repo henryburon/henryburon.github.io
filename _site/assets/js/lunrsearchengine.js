@@ -7,8 +7,8 @@ var documents = [{
     }, {
     "id": 1,
     "url": "henryburon.github.io/HenryBuron_About",
-    "title": "Resume, GitHub, and Contact Info",
-    "body": "henryburon2024@u. northwestern. edu: GitHub: LinkedIn: "
+    "title": "",
+    "body": "About:   Current Master's in Robotics student at Northwestern University.   Experienced in ROS/ROS2, machine learning, Python, mechatronics, and more.   Interested in computer vision, autonomous systems, and mobile robotics. Education:         Sep. 2023 - Dec. 2024     M. S. in Robotics             Sep. 2019 - May 2023     B. S. in Engineering Physics   Contact: henryburon2024@u. northwestern. edu: GitHub: LinkedIn:   "
     }, {
     "id": 2,
     "url": "henryburon.github.io/categories",

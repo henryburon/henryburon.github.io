@@ -13,6 +13,7 @@ License: https://www.wowthemes.net/freebies-license/
 .mainheading {
     padding: 1rem 0rem;
     color: rgb(255, 255, 255);
+    
 }
 
 .mainheading h1.sitetitle {
@@ -21,8 +22,9 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 .mainheading h1.posttitle {
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 1rem;
+    
 }
 
 
