@@ -7,12 +7,44 @@ License: https://www.wowthemes.net/freebies-license/
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
+
+/* The main heading is the top text on the home page */
+
 .mainheading {
     padding: 1rem 0rem;
+    color: rgb(255, 255, 255);
 }
 
+.mainheading h1.sitetitle {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.mainheading h1.posttitle {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/* Refers to main page background */
+
 body {
-    background-color: rgb(230, 240, 250); /* Change this to the shade of blue you want */
+    background-color: rgb(0,30,80); /* 230,240,250,    25,25,112,      */
+}
+
+
+
+
+
+
+/* Refers to section titles on main page (like featured projects and all projects) */
+
+.section-title h2 span {
+    color: rgb(255, 255, 255);
+    
 }
 
 
@@ -69,7 +101,7 @@ section.recent-posts {
 }
 
 .section-title h2 {
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 1.4rem;
@@ -309,14 +341,7 @@ span.post-read-more a:hover {
     margin-right: 5px;
 }
 
-.mainheading h1.sitetitle {
-    font-family: 'Times New Roman', Times, serif;
-}
 
-.mainheading h1.posttitle {
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
 
 .footer {
     border-top: 1px solid rgba(0, 0, 0, .05) !important;
@@ -792,14 +817,14 @@ iframe {
         margin: 0;
     }
 }
-
+/* 
 .jumbotron.fortags {
     margin-top: 3rem;
     padding: 0;
     border-radius: 0;
     background-image: url(../images/jumbotron.jpg);
     background-size: cover;
-}
+} */
 
 .jumbotron.fortags a {
     padding: 5px 10px 7px;
