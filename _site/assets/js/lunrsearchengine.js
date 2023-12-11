@@ -18,7 +18,7 @@ var documents = [{
     "id": 3,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "      Featured Projects:                                                                                                                                                                                                           Rapidly-Exploring Random Tree                              :               Python, Path Planning, RRT:                                                                       04 Oct 2023                &lt;/span&gt;                                                                                                                                                                                                                                                                                                  PincherX 100 Pen Thief                              :               OpenCV, Python, PincherX 100:                                                                       15 Sep 2023                &lt;/span&gt;                                                                                                      All Projects:                                                                                                     Rapidly-Exploring Random Tree              :       Python, Path Planning, RRT:                               04 Oct 2023        &lt;/span&gt;                                                                                                                             PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Sep 2023        &lt;/span&gt;                                    "
+    "body": "      Projects:                                                                                                         PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Oct 2023        &lt;/span&gt;                                                                                                                                   Rapidly-Exploring Random Tree              :       Python, Path Planning, RRT:                               04 Oct 2023        &lt;/span&gt;                                      "
     }, {
     "id": 4,
     "url": "http://localhost:4000/robots.txt",
@@ -26,14 +26,14 @@ var documents = [{
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 5,
+    "url": "http://localhost:4000/pen_thief/",
+    "title": "PincherX 100 Pen Thief",
+    "body": "2023/10/15 - OpenCV, Python, PincherX 100 Overview: This is where I explain how I completed the project. How far can this line go before going on to the second row? "
+    }, {
+    "id": 6,
     "url": "http://localhost:4000/RRT/",
     "title": "Rapidly-Exploring Random Tree",
     "body": "2023/10/04 - Python, Path Planning, RRT "
-    }, {
-    "id": 6,
-    "url": "http://localhost:4000/pen_thief/",
-    "title": "PincherX 100 Pen Thief",
-    "body": "2023/09/15 - OpenCV, Python, PincherX 100 Overview: This is where I explain how I completed the project. How far can this line go before going on to the second row? "
     }];
 
 var idx = lunr(function () {

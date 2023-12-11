@@ -9,15 +9,16 @@ title: Home
 ================================================== -->
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Featured Projects</span></h2>
+        <h2><span>Projects</span></h2>
     </div>
-    <div class="row">
+    <div class="row listrecent">
+    <!-- <div class="row"> -->
 
     {% for post in site.posts %}
 
-        {% if post.featured == true %}
+        <!-- {% if post.featured == true %} -->
 
-            {% include featuredbox.html %}
+        {% include postbox.html %}
 
         {% endif %}
 
@@ -30,7 +31,7 @@ title: Home
 
 <!-- Posts Index
 ================================================== -->
-<section class="recent-posts">
+<!-- <section class="recent-posts">
 
     <div class="section-title">
 
@@ -48,7 +49,7 @@ title: Home
 
     </div>
 
-</section>
+</section> -->
 
 <!-- Pagination
 ================================================== -->
