@@ -1,37 +1,37 @@
 
 var documents = [{
     "id": 0,
-    "url": "henryburon.github.io/404.html",
+    "url": "http://localhost:4000/404.html",
     "title": "404",
     "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
     }, {
     "id": 1,
-    "url": "henryburon.github.io/HenryBuron_About",
+    "url": "http://localhost:4000/HenryBuron_About",
     "title": "",
-    "body": "About:   Current Master's in Robotics student at Northwestern University.   Experienced in ROS/ROS2, machine learning, Python, mechatronics, and more.   Interested in computer vision, autonomous systems, and mobile robotics. Education:         Sep. 2023 - Dec. 2024     M. S. in Robotics             Sep. 2019 - May 2023     B. S. in Engineering Physics   Contact: henryburon2024@u. northwestern. edu: GitHub: LinkedIn:   "
+    "body": "   Current M. S. in Robotics student at Northwestern University.   Skilled in ROS/ROS2, embedded systems, machine learning, and mechatronics.   Interested in computer vision, autonomous systems, and mobile/field robotics. Education:         Sep. 2023 - Dec. 2024     M. S. in Robotics             Sep. 2019 - May 2023     B. S. in Engineering Physics   Contact:   henryburon2024@u. northwestern. edu  GitHub  LinkedIn   "
     }, {
     "id": 2,
-    "url": "henryburon.github.io/categories",
+    "url": "http://localhost:4000/categories",
     "title": "Categories",
     "body": ""
     }, {
     "id": 3,
-    "url": "henryburon.github.io/",
+    "url": "http://localhost:4000/",
     "title": "Home",
     "body": "      Featured Projects:                                                                                                                                                                                                           Rapidly-Exploring Random Tree                              :               Python, Path Planning, RRT:                                                                       04 Oct 2023                &lt;/span&gt;                                                                                                                                                                                                                                                                                                  PincherX 100 Pen Thief                              :               OpenCV, Python, PincherX 100:                                                                       15 Sep 2023                &lt;/span&gt;                                                                                                      All Projects:                                                                                                     Rapidly-Exploring Random Tree              :       Python, Path Planning, RRT:                               04 Oct 2023        &lt;/span&gt;                                                                                                                             PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Sep 2023        &lt;/span&gt;                                    "
     }, {
     "id": 4,
-    "url": "henryburon.github.io/robots.txt",
+    "url": "http://localhost:4000/robots.txt",
     "title": "",
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 5,
-    "url": "henryburon.github.io/RRT/",
+    "url": "http://localhost:4000/RRT/",
     "title": "Rapidly-Exploring Random Tree",
     "body": "2023/10/04 - Python, Path Planning, RRT "
     }, {
     "id": 6,
-    "url": "henryburon.github.io/pen_thief/",
+    "url": "http://localhost:4000/pen_thief/",
     "title": "PincherX 100 Pen Thief",
     "body": "2023/09/15 - OpenCV, Python, PincherX 100 Overview: This is where I explain how I completed the project. How far can this line go before going on to the second row? "
     }];
