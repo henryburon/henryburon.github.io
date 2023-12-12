@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Dec 2023 02:01:25 -0500</pubDate>
-    <lastBuildDate>Tue, 12 Dec 2023 02:01:25 -0500</lastBuildDate>
+    <pubDate>Tue, 12 Dec 2023 15:01:56 -0500</pubDate>
+    <lastBuildDate>Tue, 12 Dec 2023 15:01:56 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -46,6 +46,8 @@
 &lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Use the PincherX 100 robot arm to autonomously grab a purple pen.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Github:&lt;/strong&gt; &lt;a href=&quot;https://github.com/henryburon/pen-thief&quot;&gt;https://github.com/henryburon/pen-thief&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Process:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;Detect Location of the Purple Pen&lt;/strong&gt;
