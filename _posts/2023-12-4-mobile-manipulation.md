@@ -2,7 +2,7 @@
 layout: post
 title:  "Mobile Manipulation"
 categories: [Robotic Manipulation, Python, CoppeliaSim]
-image: assets/gifs/mobile_manipulation_small.GIF
+image: assets/images/mm.GIF
 featured: true
 hidden: true
 ---
@@ -13,4 +13,7 @@ Robotic Manipulation, Python, CoppeliaSim
 
 ## Overview
 
-**Goal:** Plan a trajectory that simulates the youBot mobile manipulator picking up, carrying, and placing a block.
+**Goal:** Plan a trajectory that simulates a youBot mobile manipulator picking up, carrying, and placing a block.
+
+**GitHub:** [https://github.com/henryburon/mobile-manipulation](https://github.com/henryburon/mobile-manipulation)
+

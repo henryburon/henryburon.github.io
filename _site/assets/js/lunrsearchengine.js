@@ -28,7 +28,7 @@ var documents = [{
     "id": 5,
     "url": "henryburon.github.io/mobile-manipulation/",
     "title": "Mobile Manipulation",
-    "body": "2023/12/04 - Robotic Manipulation, Python, CoppeliaSim Overview: Goal: Plan a trajectory that simulates the youBot mobile manipulator picking up, carrying, and placing a block. "
+    "body": "2023/12/04 - Robotic Manipulation, Python, CoppeliaSim Overview: Goal: Plan a trajectory that simulates a youBot mobile manipulator picking up, carrying, and placing a block. GitHub: https://github. com/henryburon/mobile-manipulation "
     }, {
     "id": 6,
     "url": "henryburon.github.io/pen_thief/",
