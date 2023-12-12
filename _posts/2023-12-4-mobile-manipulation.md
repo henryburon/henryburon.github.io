@@ -2,7 +2,7 @@
 layout: post
 title:  "Mobile Manipulation"
 categories: [Robotic Manipulation, Python, CoppeliaSim]
-image: assets/images/mm.GIF
+image: assets/gifs/mobile_manipulation_small.GIF
 featured: true
 hidden: true
 ---
