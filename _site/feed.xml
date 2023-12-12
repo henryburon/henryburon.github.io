@@ -5,9 +5,32 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Dec 2023 22:57:59 -0500</pubDate>
-    <lastBuildDate>Mon, 11 Dec 2023 22:57:59 -0500</lastBuildDate>
+    <pubDate>Mon, 11 Dec 2023 23:39:48 -0500</pubDate>
+    <lastBuildDate>Mon, 11 Dec 2023 23:39:48 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Mobile Manipulation</title>
+        <description>&lt;p&gt;Robotic Manipulation, Python, CoppeliaSim&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Plan a trajectory that simulates the youBot mobile manipulator picking up, carrying, and placing a block.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Dec 2023 00:00:00 -0500</pubDate>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        
+        
+        <category>Robotic Manipulation</category>
+        
+        <category>Python</category>
+        
+        <category>CoppeliaSim</category>
+        
+      </item>
     
       <item>
         <title>PincherX 100 Pen Thief</title>
