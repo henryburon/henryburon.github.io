@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Dec 2023 23:54:56 -0500</pubDate>
-    <lastBuildDate>Tue, 12 Dec 2023 23:54:56 -0500</lastBuildDate>
+    <link>henryburon.github.io/</link>
+    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Dec 2023 00:38:39 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Dec 2023 00:38:39 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -83,8 +83,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 04 Dec 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Robotic Manipulation</category>
@@ -92,6 +92,24 @@
         <category>Python</category>
         
         <category>CoppeliaSim</category>
+        
+      </item>
+    
+      <item>
+        <title>Machine Learning Emotion Classification</title>
+        <description>&lt;p&gt;Machine Learning, Python, Image Processing&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 25 Nov 2023 00:00:00 -0500</pubDate>
+        <link>henryburon.github.io/ml_emotion_classification/</link>
+        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
+        
+        
+        <category>Machine Learning</category>
+        
+        <category>Python</category>
+        
+        <category>Image Processing</category>
         
       </item>
     
@@ -138,8 +156,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <link>henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
