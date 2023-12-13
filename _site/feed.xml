@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>henryburon.github.io/</link>
-    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Dec 2023 23:51:54 -0500</pubDate>
-    <lastBuildDate>Tue, 12 Dec 2023 23:51:54 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 12 Dec 2023 23:54:56 -0500</pubDate>
+    <lastBuildDate>Tue, 12 Dec 2023 23:54:56 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -83,8 +83,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 04 Dec 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Robotic Manipulation</category>
@@ -138,8 +138,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -147,23 +147,6 @@
         <category>Python</category>
         
         <category>PincherX 100</category>
-        
-      </item>
-    
-      <item>
-        <title>Rapidly-Exploring Random Tree</title>
-        <description>&lt;p&gt;Python, Path Planning, RRT&lt;/p&gt;
-</description>
-        <pubDate>Wed, 04 Oct 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/RRT/</link>
-        <guid isPermaLink="true">henryburon.github.io/RRT/</guid>
-        
-        
-        <category>Python</category>
-        
-        <category>Path Planning</category>
-        
-        <category>RRT</category>
         
       </item>
     
