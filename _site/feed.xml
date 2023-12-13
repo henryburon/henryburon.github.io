@@ -5,22 +5,82 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Dec 2023 15:01:56 -0500</pubDate>
-    <lastBuildDate>Tue, 12 Dec 2023 15:01:56 -0500</lastBuildDate>
+    <pubDate>Tue, 12 Dec 2023 23:51:54 -0500</pubDate>
+    <lastBuildDate>Tue, 12 Dec 2023 23:51:54 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
-        <title>Mobile Manipulation</title>
+        <title>KUKA youBot Mobile Manipulation</title>
         <description>&lt;p&gt;Robotic Manipulation, Python, CoppeliaSim&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Plan a trajectory that simulates a youBot mobile manipulator picking up, carrying, and placing a block.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Write a program that automatically plans a trajectory for a KUKA youBot mobile manipulator as it moves to, grasps, and places a block in a desired location.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&quot;https://github.com/henryburon/mobile-manipulation&quot;&gt;https://github.com/henryburon/mobile-manipulation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/mobile-manipulation&quot;&gt;https://github.com/henryburon/mobile-manipulation&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I wrote three functions to complete this project, which, when combined, generate the final trajectory:
+    &lt;ul&gt;
+      &lt;li&gt;TrajectoryGenerator&lt;/li&gt;
+      &lt;li&gt;FeedbackControl&lt;/li&gt;
+      &lt;li&gt;NextState&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;TrajectoryGenerator&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Generates the reference trajectory for the end-effector frame {e}.&lt;/li&gt;
+      &lt;li&gt;Consists of eight concatenated trajectory segments:
+        &lt;ul&gt;
+          &lt;li&gt;A trajectory to move the gripper from its initial configuration to a “standoff” configuration a few cm above the block.&lt;/li&gt;
+          &lt;li&gt;A trajectory to move the gripper down to the grasp position&lt;/li&gt;
+          &lt;li&gt;Closing of the gripper.&lt;/li&gt;
+          &lt;li&gt;A trajectory to move the gripper back up to the “standoff” configuration.&lt;/li&gt;
+          &lt;li&gt;A trajectory to move the gripper to a “standoff” configuration above the final configuration.&lt;/li&gt;
+          &lt;li&gt;A trajectory to move the gripper to the final configuration of the object.&lt;/li&gt;
+          &lt;li&gt;Opening of the gripper.&lt;/li&gt;
+          &lt;li&gt;A trajectory to move the gripper back to the “standoff” configuration.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Output&lt;/strong&gt;: A representation of the N configurations of the end-effector along the entire eight-segment reference trajectory.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;FeedbackControl&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Calculates the kinematic task-space feedforward plus feedback control law.
+ &lt;img src=&quot;/assets/images/feedback_control.png&quot; alt=&quot;Feedback Control&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Output&lt;/strong&gt;: The commanded end-effector twist V expressed in the end-effector frame {e}.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;NextState&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Calculates the robot’s configuration at the next time-step using first-order Euler-step.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Output&lt;/strong&gt;: A 12-vector representing the configuration of the robot time Δt later.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Combine Functions&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Finally, I integrated these three functions, provided the necessary initial and desired final configurations, and generated a .csv file to simulate the KUKA youBot’s movement in CoppeliaSim.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Results&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;I finished by generating three trajectories:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Best&lt;/strong&gt;: A well-tuned feedforward-plus-PI controller. Error quickly converged to zero. First clip in the YouTube video.
+  &lt;img src=&quot;/assets/images/best_run.png&quot; alt=&quot;Best Run&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Overshoot&lt;/strong&gt;: A less-well-tuned feedforward-plus-PI controller. Error takes longer to converge to zero.
+  &lt;img src=&quot;/assets/images/overshoot_run.png&quot; alt=&quot;Overshoot Run&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;newTask&lt;/strong&gt;: Different initial and final configurations of the block. Second clip in the YouTube video.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Mon, 04 Dec 2023 00:00:00 -0500</pubDate>
         <link>henryburon.github.io/mobile-manipulation/</link>

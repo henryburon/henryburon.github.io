@@ -6,12 +6,12 @@
 
 <link rel="icon" href="/assets/images/logo.png">
 
-<title>Mobile Manipulation | Henry Buron</title>
+<title>KUKA youBot Mobile Manipulation | Henry Buron</title>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Mobile Manipulation | Henry’s Portfolio</title>
+<title>KUKA youBot Mobile Manipulation | Henry’s Portfolio</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Mobile Manipulation" />
+<meta property="og:title" content="KUKA youBot Mobile Manipulation" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Robotic Manipulation, Python, CoppeliaSim" />
 <meta property="og:description" content="Robotic Manipulation, Python, CoppeliaSim" />
@@ -23,9 +23,9 @@
 <meta property="article:published_time" content="2023-12-04T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="henryburon.github.io/assets/gifs/mobile_manipulation_small.GIF" />
-<meta property="twitter:title" content="Mobile Manipulation" />
+<meta property="twitter:title" content="KUKA youBot Mobile Manipulation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-04T00:00:00-05:00","datePublished":"2023-12-04T00:00:00-05:00","description":"Robotic Manipulation, Python, CoppeliaSim","headline":"Mobile Manipulation","image":"henryburon.github.io/assets/gifs/mobile_manipulation_small.GIF","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/mobile-manipulation/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/mobile-manipulation/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-04T00:00:00-05:00","datePublished":"2023-12-04T00:00:00-05:00","description":"Robotic Manipulation, Python, CoppeliaSim","headline":"KUKA youBot Mobile Manipulation","image":"henryburon.github.io/assets/gifs/mobile_manipulation_small.GIF","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/mobile-manipulation/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/mobile-manipulation/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -140,7 +140,7 @@
                 
 
                 <!-- Post Title -->
-                <h1 class="posttitle">Mobile Manipulation</h1>
+                <h1 class="posttitle">KUKA youBot Mobile Manipulation</h1>
 
             </div>
 
@@ -159,10 +159,70 @@
 
 <h2 id="overview">Overview</h2>
 
-<p><strong>Goal:</strong> Plan a trajectory that simulates a youBot mobile manipulator picking up, carrying, and placing a block.</p>
+<p><strong>Goal</strong>: Write a program that automatically plans a trajectory for a KUKA youBot mobile manipulator as it moves to, grasps, and places a block in a desired location.</p>
 
-<p><strong>GitHub:</strong> <a href="https://github.com/henryburon/mobile-manipulation">https://github.com/henryburon/mobile-manipulation</a></p>
+<p><strong>GitHub</strong>: <a href="https://github.com/henryburon/mobile-manipulation">https://github.com/henryburon/mobile-manipulation</a></p>
 
+<p><strong>Process</strong>:</p>
+
+<ol>
+  <li>I wrote three functions to complete this project, which, when combined, generate the final trajectory:
+    <ul>
+      <li>TrajectoryGenerator</li>
+      <li>FeedbackControl</li>
+      <li>NextState</li>
+    </ul>
+  </li>
+  <li><strong>TrajectoryGenerator</strong>
+    <ul>
+      <li>Generates the reference trajectory for the end-effector frame {e}.</li>
+      <li>Consists of eight concatenated trajectory segments:
+        <ul>
+          <li>A trajectory to move the gripper from its initial configuration to a “standoff” configuration a few cm above the block.</li>
+          <li>A trajectory to move the gripper down to the grasp position</li>
+          <li>Closing of the gripper.</li>
+          <li>A trajectory to move the gripper back up to the “standoff” configuration.</li>
+          <li>A trajectory to move the gripper to a “standoff” configuration above the final configuration.</li>
+          <li>A trajectory to move the gripper to the final configuration of the object.</li>
+          <li>Opening of the gripper.</li>
+          <li>A trajectory to move the gripper back to the “standoff” configuration.</li>
+        </ul>
+      </li>
+      <li><strong>Output</strong>: A representation of the N configurations of the end-effector along the entire eight-segment reference trajectory.</li>
+    </ul>
+  </li>
+  <li><strong>FeedbackControl</strong>
+    <ul>
+      <li>Calculates the kinematic task-space feedforward plus feedback control law.
+ <img src="/assets/images/feedback_control.png" alt="Feedback Control" /></li>
+      <li><strong>Output</strong>: The commanded end-effector twist V expressed in the end-effector frame {e}.</li>
+    </ul>
+  </li>
+  <li><strong>NextState</strong>
+    <ul>
+      <li>Calculates the robot’s configuration at the next time-step using first-order Euler-step.</li>
+      <li><strong>Output</strong>: A 12-vector representing the configuration of the robot time Δt later.</li>
+    </ul>
+  </li>
+  <li><strong>Combine Functions</strong>
+    <ul>
+      <li>Finally, I integrated these three functions, provided the necessary initial and desired final configurations, and generated a .csv file to simulate the KUKA youBot’s movement in CoppeliaSim.</li>
+    </ul>
+  </li>
+  <li><strong>Results</strong>
+    <ul>
+      <li>I finished by generating three trajectories:
+        <ul>
+          <li><strong>Best</strong>: A well-tuned feedforward-plus-PI controller. Error quickly converged to zero. First clip in the YouTube video.
+  <img src="/assets/images/best_run.png" alt="Best Run" /></li>
+          <li><strong>Overshoot</strong>: A less-well-tuned feedforward-plus-PI controller. Error takes longer to converge to zero.
+  <img src="/assets/images/overshoot_run.png" alt="Overshoot Run" /></li>
+          <li><strong>newTask</strong>: Different initial and final configurations of the block. Second clip in the YouTube video.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
 
             </div>
 
