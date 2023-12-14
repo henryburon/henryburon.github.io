@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>henryburon.github.io/</link>
-    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Dec 2023 22:54:31 -0500</pubDate>
-    <lastBuildDate>Wed, 13 Dec 2023 22:54:31 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Dec 2023 23:17:19 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Dec 2023 23:17:19 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -83,8 +83,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 04 Dec 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Robotic Manipulation</category>
@@ -118,7 +118,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Apply Histogram of Oriented Gradients (HOG) Feature Extraction&lt;/strong&gt;:
     &lt;ul&gt;
-      &lt;li&gt;Facial images are heavily influenced by subtle changes in facial shape and the presence of edges (e.g. raised eyebrows, open mouth). HOG excels at capturing these features by computing the oriented gradients within localized regions of the image. In addition, HOG is knows for its robustness in variations in lighting and contrast, which are common challenges in image processing. Finally, implementing HOG is relatively efficient compared to other sophisticated feature extraction methods, which was important in my project, considering the number of images I needed to process. My implementation resulted in 1,200 features per image.
+      &lt;li&gt;Facial images are heavily influenced by subtle changes in facial shape and the presence of edges (e.g. raised eyebrows, open mouth). HOG excels at capturing these features by computing the oriented gradients within localized regions of the image. In addition, HOG is known for its robustness in variations in lighting and contrast, which are common challenges in image processing. Finally, implementing HOG is relatively efficient compared to other sophisticated feature extraction methods, which was important in my project, considering the number of images I needed to process.
  &lt;img src=&quot;/assets/images/hog_image_example.png&quot; alt=&quot;HOG Image Example&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -142,8 +142,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/ml_emotion_classification/</link>
-        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
+        <link>http://localhost:4000/ml_emotion_classification/</link>
+        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -197,8 +197,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -218,13 +218,13 @@
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I was part of a team that built a boat that competed in Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition.&lt;/p&gt;
+&lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I lead a team that built a boat to compete in Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition.&lt;/p&gt;
 
 &lt;p&gt;Our fully electric boat placed 3rd in the competition against universities from across the country.&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
