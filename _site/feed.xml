@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Dec 2023 21:17:34 -0500</pubDate>
-    <lastBuildDate>Wed, 13 Dec 2023 21:17:34 -0500</lastBuildDate>
+    <pubDate>Wed, 13 Dec 2023 22:54:31 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Dec 2023 22:54:31 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -206,6 +206,32 @@
         <category>Python</category>
         
         <category>PincherX 100</category>
+        
+      </item>
+    
+      <item>
+        <title>Unmanned Electric Boat</title>
+        <description>&lt;p&gt;ArduPilot, Electronics, Autonomous Systems&lt;/p&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?height=314&amp;amp;href=https%3A%2F%2Fwww.facebook.com%2Fnavalengineers%2Fvideos%2F256584973783468%2F&amp;amp;show_text=false&amp;amp;width=560&amp;amp;t=0&quot; width=&quot;100%&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Video provided by the American Society of Naval Engineers.&lt;/p&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I was part of a team that built a boat that competed in Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition.&lt;/p&gt;
+
+&lt;p&gt;Our fully electric boat placed 3rd in the competition against universities from across the country.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Jun 2023 00:00:00 -0400</pubDate>
+        <link>henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
+        
+        
+        <category>ArduPilot</category>
+        
+        <category>Electronics</category>
+        
+        <category>Autonomous Systems</category>
         
       </item>
     

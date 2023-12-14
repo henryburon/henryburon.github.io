@@ -18,7 +18,7 @@ var documents = [{
     "id": 3,
     "url": "henryburon.github.io/",
     "title": "Home",
-    "body": "      Projects:                                                                                                         KUKA youBot Mobile Manipulation              :       Robotic Manipulation, Python, CoppeliaSim:                               04 Dec 2023        &lt;/span&gt;                                                                                                                                   Machine Learning Emotion Classification              :       Machine Learning, Image Processing, Feature Extraction:                               25 Nov 2023        &lt;/span&gt;                                                                                                                                   PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Oct 2023        &lt;/span&gt;                                      "
+    "body": "      Projects:                                                                                                         KUKA youBot Mobile Manipulation              :       Robotic Manipulation, Python, CoppeliaSim:                               04 Dec 2023        &lt;/span&gt;                                                                                                                                   Machine Learning Emotion Classification              :       Machine Learning, Image Processing, Feature Extraction:                               25 Nov 2023        &lt;/span&gt;                                                                                                                                   PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Oct 2023        &lt;/span&gt;                                                                                                                                   Unmanned Electric Boat              :       ArduPilot, Electronics, Autonomous Systems:                               25 Jun 2023        &lt;/span&gt;                                      "
     }, {
     "id": 4,
     "url": "henryburon.github.io/robots.txt",
@@ -39,6 +39,11 @@ var documents = [{
     "url": "henryburon.github.io/pen_thief/",
     "title": "PincherX 100 Pen Thief",
     "body": "2023/10/15 - OpenCV, Python, PincherX 100 Overview: Goal: Use the PincherX 100 robot arm to autonomously grab a purple pen. Github: https://github. com/henryburon/pen-thief Process:  Detect Location of the Purple Pen     First, I used the RGB image from an Intel RealSense camera to create an HSV mask that filtered out every color except purple.     Identify Contour and Calculate Centroid     I added contours around the selected pixels and found the 2D coordinate of the centroid of the largest contour, which I assumed to be the pen.     Align the Images     I then aligned the camera’s Depth Map with the RGB Image and found the pen’s 3D coordinates in the camera’s reference frame.     Transform to Robot Frame     I converted these coordinates to be in the robot arm’s frame, given its 90° rotation and fixed offset.     Command the End-Effector     Finally, I used the InterbotixManipulatorXS Python package to move the end-effector and gripper to the desired coordinate and position.    "
+    }, {
+    "id": 8,
+    "url": "henryburon.github.io/unmanned_electric_boat/",
+    "title": "Unmanned Electric Boat",
+    "body": "2023/06/25 - ArduPilot, Electronics, Autonomous Systems Video provided by the American Society of Naval Engineers. Overview: For my undergraduate Capstone project at William &amp; Mary, I was part of a team that built a boat that competed in Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition. Our fully electric boat placed 3rd in the competition against universities from across the country. "
     }];
 
 var idx = lunr(function () {
