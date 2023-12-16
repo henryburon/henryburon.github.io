@@ -5,13 +5,26 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Dec 2023 03:27:19 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Dec 2023 03:27:19 -0500</lastBuildDate>
+    <pubDate>Sat, 16 Dec 2023 15:00:16 -0500</pubDate>
+    <lastBuildDate>Sat, 16 Dec 2023 15:00:16 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
-        <title>Polyglotbot: A 7 DoF Translating Robot Arm</title>
-        <description>&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/0c83W_L2l3w?si=pcOT_C1TbMKTk0s2&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <title>Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech</title>
+        <description>&lt;p&gt;ROS2, MoveIt, RViz&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/nJnL6ji5LQk?si=367q6W7z9r8T-e2h&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Develop a ROS2 package that uses a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/ME495-EmbeddedSystems/final-project-dkoh555&quot;&gt;https://github.com/ME495-EmbeddedSystems/final-project-dkoh555&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Teammates&lt;/strong&gt;: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;:&lt;/p&gt;
+
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/polyglotbot/</link>

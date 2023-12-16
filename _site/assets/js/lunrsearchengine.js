@@ -18,7 +18,7 @@ var documents = [{
     "id": 3,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "      Projects:                                                                                                         Polyglotbot: A 7 DoF Translating Robot Arm              :       :                               05 Dec 2023        &lt;/span&gt;                                                                                                                                   KUKA youBot Mobile Manipulation              :       Robotic Manipulation, Python, CoppeliaSim:                               04 Dec 2023        &lt;/span&gt;                                                                                                                                   Machine Learning Emotion Classification              :       Machine Learning, Image Processing, Feature Extraction:                               25 Nov 2023        &lt;/span&gt;                                                                                                                                   PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Oct 2023        &lt;/span&gt;                                                                                                                                   Unmanned Electric Boat              :       ArduPilot, Electronics, Autonomous Systems:                               25 Jun 2023        &lt;/span&gt;                                      "
+    "body": "      Projects:                                                                                                         Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech              :       ROS2, MoveIt, RViz:                               05 Dec 2023        &lt;/span&gt;                                                                                                                                   KUKA youBot Mobile Manipulation              :       Robotic Manipulation, Python, CoppeliaSim:                               04 Dec 2023        &lt;/span&gt;                                                                                                                                   Machine Learning Emotion Classification              :       Machine Learning, Image Processing, Feature Extraction:                               25 Nov 2023        &lt;/span&gt;                                                                                                                                   PincherX 100 Pen Thief              :       OpenCV, Python, PincherX 100:                               15 Oct 2023        &lt;/span&gt;                                                                                                                                   Unmanned Electric Boat              :       ArduPilot, Electronics, Autonomous Systems:                               25 Jun 2023        &lt;/span&gt;                                      "
     }, {
     "id": 4,
     "url": "http://localhost:4000/robots.txt",
@@ -27,8 +27,8 @@ var documents = [{
     }, {
     "id": 5,
     "url": "http://localhost:4000/polyglotbot/",
-    "title": "Polyglotbot: A 7 DoF Translating Robot Arm",
-    "body": "2023/12/05 - "
+    "title": "Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech",
+    "body": "2023/12/05 - ROS2, MoveIt, RViz Overview: Goal: Develop a ROS2 package that uses a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard. GitHub: https://github. com/ME495-EmbeddedSystems/final-project-dkoh555 Teammates: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh Process: "
     }, {
     "id": 6,
     "url": "http://localhost:4000/mobile-manipulation/",
