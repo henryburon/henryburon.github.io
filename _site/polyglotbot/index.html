@@ -167,6 +167,40 @@
 
 <p><strong>Process</strong>:</p>
 
+<ol>
+  <li><strong>Calibrate</strong>
+    <ul>
+      <li>The robot uses an Intel Realsense camera to acquire the location of three AprilTags, which, together, are used to constrain the plane of the whiteboard.</li>
+      <li>The distance and orientation of the whiteboard is made public through a custom message type on a ROS2 topic.</li>
+      <li>Using the known transform between the camera link and the robot arm’s base link, the updated configuration (Pose) of the whiteboard is extrapolated into the frame of reference of the end-effector and is used to position the pen when writing.</li>
+    </ul>
+  </li>
+  <li><strong>Detect Text</strong>
+    <ul>
+      <li>By default, the robot then enters the “Detecting” state, in which it waits for a human to enter the frame and start writing on the whiteboard.</li>
+      <li>Using the YOLOv8 deep learning model, the robot recognizes once a human has entered the frame and then left.</li>
+      <li>Next, the robot uses the PaddleOCR library to detect the text written on the whiteboard and pass it along, without any processing, as a string. The desired language is written as a short language code (e.g. “en” for English) above the unknown word(s).</li>
+      <li>Alternatively, instead of writing a word on the whiteboard, the user could call the <em>speech</em> service which activates the microphone as an input. The user then simply speaks out loud, and the word(s) are passed along as a string from there. By default, the desired language for speech is set to English.</li>
+    </ul>
+  </li>
+  <li><strong>Translate Text</strong>
+    <ul>
+      <li>The next stage of the pipeline is the translation node which takes in both the desired language and the string of the unknown word(s).</li>
+      <li>The translation node uses the Google Translate API and can translate to and from 50+ languages.</li>
+      <li>The output of this step is a fully-translated string of text.</li>
+    </ul>
+  </li>
+  <li><strong>Text to Waypoints</strong>
+    <ul>
+      <li>The <em>string2waypoints</em> node uses matplotlib to convert each character to a series of waypoints–passed along as <em>Point</em> messages–which can then be followed by the robot arm.</li>
+    </ul>
+  </li>
+  <li><strong>Waypoints to Movement</strong>
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+</ol>
 
             </div>
 

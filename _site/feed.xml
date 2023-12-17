@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Dec 2023 15:00:16 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Dec 2023 15:00:16 -0500</lastBuildDate>
+    <pubDate>Sat, 16 Dec 2023 21:31:51 -0500</pubDate>
+    <lastBuildDate>Sat, 16 Dec 2023 21:31:51 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -25,6 +25,40 @@
 
 &lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;:&lt;/p&gt;
 
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Calibrate&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The robot uses an Intel Realsense camera to acquire the location of three AprilTags, which, together, are used to constrain the plane of the whiteboard.&lt;/li&gt;
+      &lt;li&gt;The distance and orientation of the whiteboard is made public through a custom message type on a ROS2 topic.&lt;/li&gt;
+      &lt;li&gt;Using the known transform between the camera link and the robot arm’s base link, the updated configuration (Pose) of the whiteboard is extrapolated into the frame of reference of the end-effector and is used to position the pen when writing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Detect Text&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;By default, the robot then enters the “Detecting” state, in which it waits for a human to enter the frame and start writing on the whiteboard.&lt;/li&gt;
+      &lt;li&gt;Using the YOLOv8 deep learning model, the robot recognizes once a human has entered the frame and then left.&lt;/li&gt;
+      &lt;li&gt;Next, the robot uses the PaddleOCR library to detect the text written on the whiteboard and pass it along, without any processing, as a string. The desired language is written as a short language code (e.g. “en” for English) above the unknown word(s).&lt;/li&gt;
+      &lt;li&gt;Alternatively, instead of writing a word on the whiteboard, the user could call the &lt;em&gt;speech&lt;/em&gt; service which activates the microphone as an input. The user then simply speaks out loud, and the word(s) are passed along as a string from there. By default, the desired language for speech is set to English.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Translate Text&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The next stage of the pipeline is the translation node which takes in both the desired language and the string of the unknown word(s).&lt;/li&gt;
+      &lt;li&gt;The translation node uses the Google Translate API and can translate to and from 50+ languages.&lt;/li&gt;
+      &lt;li&gt;The output of this step is a fully-translated string of text.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Text to Waypoints&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The &lt;em&gt;string2waypoints&lt;/em&gt; node uses matplotlib to convert each character to a series of waypoints–passed along as &lt;em&gt;Point&lt;/em&gt; messages–which can then be followed by the robot arm.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/polyglotbot/</link>
