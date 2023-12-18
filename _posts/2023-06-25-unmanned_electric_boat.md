@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Unmanned Electric Boat"
+title:  "Unmanned Electric Race Boat"
 categories: [ArduPilot, Electronics, Autonomous Systems]
 image: assets/gifs/boat_small.GIF
 featured: true
@@ -16,7 +16,7 @@ Video provided by the American Society of Naval Engineers.
 
 For my undergraduate Capstone project at William & Mary, I lead a team in building a boat from scratch to compete in **Unmanned Division** of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition, a 5-mile endurance race. Our fully electric boat placed **3rd** against universities from across the country.
 
-Our catamaran-style differential-drive boat, fondly named the *Colonial Cruiser*, ran ArduPilot Rover on a Pixhawk Cube Orange and was controlled via radio during the competition, though was capable of autonomous driving during controlled tests.
+Our catamaran-style differential-drive boat, fondly named the *Colonial Cruiser*, ran ArduPilot Rover on a Pixhawk Cube Orange and was controlled via radio during the competition, though was capable of autonomous navigation during controlled tests.
 
 As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems as well.
 

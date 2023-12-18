@@ -5,13 +5,13 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Dec 2023 23:42:09 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Dec 2023 23:42:09 -0500</lastBuildDate>
+    <pubDate>Sun, 17 Dec 2023 21:05:37 -0500</pubDate>
+    <lastBuildDate>Sun, 17 Dec 2023 21:05:37 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech</title>
-        <description>&lt;p&gt;ROS2, MoveIt, RViz&lt;/p&gt;
+        <description>&lt;p&gt;ROS2, MoveIt 2, RViz&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/nJnL6ji5LQk?si=367q6W7z9r8T-e2h&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -56,13 +56,13 @@
   &lt;li&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Finally, the robot uses the &lt;em&gt;write_letters&lt;/em&gt; package to convert the waypoints to movement and draw the letters on the board.&lt;/li&gt;
-      &lt;li&gt;This package makes use of our custom &lt;em&gt;move_robot&lt;/em&gt; Python wrapper to plan and execute robot robot arm paths using the MoveIt2 MoveGroup and ExecuteTrajectory Action Clients, respectively.&lt;/li&gt;
-      &lt;li&gt;We make use of MoveIt2’s &lt;em&gt;compute_cartesian_path&lt;/em&gt; service so as to follow a more direct and stable path when writing the letters, as opposed to &lt;em&gt;compute_ik&lt;/em&gt;.&lt;/li&gt;
+      &lt;li&gt;This package makes use of our custom &lt;em&gt;move_robot&lt;/em&gt; Python wrapper to plan and execute robot robot arm paths using the MoveIt 2 MoveGroup and ExecuteTrajectory Action Clients, respectively.&lt;/li&gt;
+      &lt;li&gt;We make use of MoveIt 2’s &lt;em&gt;compute_cartesian_path&lt;/em&gt; service so as to follow a more direct and stable path when writing the letters, as opposed to &lt;em&gt;compute_ik&lt;/em&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;My primary responsibilities included the localization of the AprilTags, setting up TF tree and visualizing the transformations in RViz, creating the &lt;em&gt;speech&lt;/em&gt; node, and working with MoveIt2 to help convert the waypoints to movement.&lt;/p&gt;
+&lt;p&gt;My primary responsibilities included creating the &lt;em&gt;apriltags&lt;/em&gt; package, setting up TF tree and visualizing the transformations in RViz, creating the &lt;em&gt;speech&lt;/em&gt; package, and working with MoveIt 2 to help convert the waypoints to movement.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
@@ -73,7 +73,7 @@
         
         <category>ROS2</category>
         
-        <category>MoveIt</category>
+        <category>MoveIt 2</category>
         
         <category>RViz</category>
         
@@ -225,7 +225,7 @@
       </item>
     
       <item>
-        <title>PincherX 100 Pen Thief</title>
+        <title>Computer Vision-Controlled Robot Arm</title>
         <description>&lt;p&gt;OpenCV, Python, PincherX 100&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/pturk2xscaA?si=CLWhMrOFVhrZ33sk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -280,7 +280,7 @@
       </item>
     
       <item>
-        <title>Unmanned Electric Boat</title>
+        <title>Unmanned Electric Race Boat</title>
         <description>&lt;p&gt;ArduPilot, Electronics, Autonomous Systems&lt;/p&gt;
 
 &lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?height=314&amp;amp;href=https%3A%2F%2Fwww.facebook.com%2Fnavalengineers%2Fvideos%2F256584973783468%2F&amp;amp;show_text=false&amp;amp;width=560&amp;amp;t=0&quot; width=&quot;100%&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
@@ -290,7 +290,7 @@
 
 &lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I lead a team in building a boat from scratch to compete in &lt;strong&gt;Unmanned Division&lt;/strong&gt; of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition, a 5-mile endurance race. Our fully electric boat placed &lt;strong&gt;3rd&lt;/strong&gt; against universities from across the country.&lt;/p&gt;
 
-&lt;p&gt;Our catamaran-style differential-drive boat, fondly named the &lt;em&gt;Colonial Cruiser&lt;/em&gt;, ran ArduPilot Rover on a Pixhawk Cube Orange and was controlled via radio during the competition, though was capable of autonomous driving during controlled tests.&lt;/p&gt;
+&lt;p&gt;Our catamaran-style differential-drive boat, fondly named the &lt;em&gt;Colonial Cruiser&lt;/em&gt;, ran ArduPilot Rover on a Pixhawk Cube Orange and was controlled via radio during the competition, though was capable of autonomous navigation during controlled tests.&lt;/p&gt;
 
 &lt;p&gt;As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems as well.&lt;/p&gt;
 
