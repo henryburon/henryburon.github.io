@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech"
-categories: [ROS2, MoveIt 2, RViz]
+categories: [ROS2, MoveIt!, RViz]
 image: assets/gifs/polyglotbot.GIF
 featured: true
 hidden: true
 ---
 
-ROS2, MoveIt 2, RViz
+ROS2, MoveIt!, RViz
 
 <iframe width="100%" height="441" src="https://www.youtube.com/embed/nJnL6ji5LQk?si=367q6W7z9r8T-e2h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -42,9 +42,9 @@ ROS2, MoveIt 2, RViz
 
 5. **Waypoints to Movement**
     * Finally, the robot uses the *write_letters* package to convert the waypoints to movement and draw the letters on the board.
-    * This package makes use of our custom *move_robot* Python wrapper to plan and execute robot robot arm paths using the MoveIt 2 MoveGroup and ExecuteTrajectory Action Clients, respectively.
-    * We make use of MoveIt 2's *compute_cartesian_path* service so as to follow a more direct and stable path when writing the letters, as opposed to *compute_ik*.
+    * This package makes use of our custom *move_robot* Python wrapper to plan and execute robot robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.
+    * We make use of MoveIt!'s *compute_cartesian_path* service so as to follow a more direct and stable path when writing the letters, as opposed to *compute_ik*.
 
-My primary responsibilities included creating the *apriltags* package, setting up TF tree and visualizing the transformations in RViz, creating the *speech* package, and working with MoveIt 2 to help convert the waypoints to movement.
+My primary responsibilities included creating the *apriltags* package, setting up TF tree and visualizing the transformations in RViz, creating the *speech* package, and working with MoveIt! to help convert the waypoints to movement.
 
 ![The Robot Is Cool](/assets/images/the_robot_is_cool.jpeg)

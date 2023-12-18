@@ -1,4 +1,3 @@
 # Henry Buron, Robotics Portfolio
 
-Based on the Mediumush Jekyll theme.
-
+View at:  [henryburon.github.io](henryburon.github.io)
