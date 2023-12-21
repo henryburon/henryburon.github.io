@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Dec 2023 15:05:22 -0500</pubDate>
-    <lastBuildDate>Thu, 21 Dec 2023 15:05:22 -0500</lastBuildDate>
+    <link>henryburon.github.io/</link>
+    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 21 Dec 2023 16:17:16 -0500</pubDate>
+    <lastBuildDate>Thu, 21 Dec 2023 16:17:16 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -15,7 +15,7 @@
 
 &lt;p&gt;ROS2, MoveIt!, RViz&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/nJnL6ji5LQk?si=367q6W7z9r8T-e2h&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;416&quot; src=&quot;https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -69,8 +69,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/polyglotbot/</link>
-        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
+        <link>henryburon.github.io/polyglotbot/</link>
+        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -157,8 +157,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Robotic Manipulation</category>
@@ -218,8 +218,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 15 Nov 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/ml_emotion_classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
+        <link>henryburon.github.io/ml_emotion_classification/</link>
+        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -275,8 +275,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <link>henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -317,8 +317,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <link>henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -373,8 +373,8 @@ Some of my notable work includes co-developing a ROS2 package for motion plannin
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 14 Mar 2001 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/HenryBuron_About</link>
-        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
+        <link>henryburon.github.io/HenryBuron_About</link>
+        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
         
         
       </item>
