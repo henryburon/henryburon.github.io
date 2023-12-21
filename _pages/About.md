@@ -26,8 +26,8 @@ comments: false
 
 <ul style="list-style-type: none; padding: 0; color:white; font-size:22px;">
     <li>Current M.S. in Robotics student at Northwestern University.</li>
-    <li>Skilled in ROS/ROS2, embedded systems, machine learning, and mechatronics.</li>
-    <li>Interested in computer vision, autonomous systems, and mobile/field robotics.</li>
+    <li>Skilled in ROS/ROS2, computer vision, machine learning, and robotic manipulation.</li>
+    <li>Interested in autonomous systems, SLAM, path planning, and mobile robots.</li>
 </ul>
 
 
