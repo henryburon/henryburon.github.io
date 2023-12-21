@@ -1,7 +1,7 @@
 ---
 layout: page
 # title: About
-permalink: /HenryBuron_About
+# permalink: /HenryBuron_About
 comments: false
 ---
 

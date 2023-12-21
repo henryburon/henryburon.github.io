@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Dec 2023 23:18:23 -0500</pubDate>
-    <lastBuildDate>Wed, 20 Dec 2023 23:18:23 -0500</lastBuildDate>
+    <pubDate>Thu, 21 Dec 2023 14:53:19 -0500</pubDate>
+    <lastBuildDate>Thu, 21 Dec 2023 14:53:19 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -316,6 +316,56 @@ Testing on the lake.&lt;/p&gt;
         <category>Electronics</category>
         
         <category>Autonomous Systems</category>
+        
+      </item>
+    
+      <item>
+        <title>About Me</title>
+        <description>&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;/assets/images/headshot.jpeg&quot; style=&quot;width: 350px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University and am passionate about machine learning, computer vision, and autonomous systems. My background includes practical experience writing code for robotic manipulation, perception, and navigation, as well as a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code.
+&lt;br /&gt;
+&lt;br /&gt;
+Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo by implementing the Frontier Exploration algorithm, writing software to plan a trajectory for a mobile robot, and using computer vision to control a robot arm as it identifies and grasps objects.&lt;/p&gt;
+
+&lt;h3 id=&quot;education&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Education&lt;/a&gt;&lt;/h3&gt;
+
+&lt;div style=&quot;display: flex; align-items: center; color: white;&quot;&gt;
+    &lt;img src=&quot;/assets/images/nu.jpeg&quot; style=&quot;width: 75px; height: auto; margin-right: 10px;&quot; /&gt;
+    &lt;div&gt;
+        &lt;i&gt;Sep. 2023 - Dec. 2024&lt;/i&gt; &lt;br /&gt;
+        &lt;b&gt;M.S. in Robotics&lt;/b&gt;
+    &lt;/div&gt;
+    &lt;!-- Additional image placed here --&gt;
+    &lt;img src=&quot;/assets/images/wm.jpeg&quot; style=&quot;width: 75px; height: auto; margin-left: 20px;&quot; /&gt;
+    &lt;div style=&quot;margin-left: 10px;&quot;&gt; &lt;!-- Adjusted margin-left for the text div --&gt;
+        &lt;i&gt;Sep. 2019 - May 2023&lt;/i&gt; &lt;br /&gt;
+        &lt;b&gt;B.S. in Engineering Physics&lt;/b&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;contact&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Contact&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;To contact me, please email: &lt;a href=&quot;mailto:henryburon2024@u.northwestern.edu&quot;&gt;henryburon2024@u.northwestern.edu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Linkedin: &lt;a href=&quot;https://www.linkedin.com/in/henryburon/&quot;&gt;https://www.linkedin.com/in/henryburon/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/henryburon&quot;&gt;https://github.com/henryburon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;resume&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Resume&lt;/a&gt;&lt;/h3&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+    &lt;iframe src=&quot;_pages/HenryBuronResume.pdf&quot; width=&quot;100%&quot; height=&quot;1155px&quot; style=&quot;display: inline-block;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 14 Mar 2001 00:00:00 -0500</pubDate>
+        <link>henryburon.github.io/HenryBuron_About</link>
+        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
+        
         
       </item>
     
