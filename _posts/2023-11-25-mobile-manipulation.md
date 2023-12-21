@@ -7,6 +7,8 @@ featured: true
 hidden: true
 ---
 
+<div style="background-color: white; height: 1px;"></div>
+
 Robotic Manipulation, Python, CoppeliaSim
 
 <iframe width="100%" height="441" src="https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
