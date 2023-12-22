@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Dec 2023 19:31:56 -0500</pubDate>
-    <lastBuildDate>Thu, 21 Dec 2023 19:31:56 -0500</lastBuildDate>
+    <pubDate>Thu, 21 Dec 2023 22:50:43 -0500</pubDate>
+    <lastBuildDate>Thu, 21 Dec 2023 22:50:43 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -284,6 +284,28 @@
         <category>Python</category>
         
         <category>PincherX 100</category>
+        
+      </item>
+    
+      <item>
+        <title>Rapidly-Exploring Random Tree (RRT)</title>
+        <description>&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;Path Planning, Python, RRT&lt;/p&gt;
+
+&lt;p&gt;This post is current under construction and will be ready by 12/27/23.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 Sep 2023 00:00:00 -0400</pubDate>
+        <link>henryburon.github.io/path_planning/</link>
+        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
+        
+        
+        <category>Path Planning</category>
+        
+        <category>Python</category>
+        
+        <category>RRT</category>
         
       </item>
     
