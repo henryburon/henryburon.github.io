@@ -7,8 +7,6 @@ featured: true
 hidden: true
 ---
 
-<div style="background-color: white; height: 1px;"></div>
-
 ROS2, MoveIt!, RViz
 
 <iframe width="100%" height="416" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

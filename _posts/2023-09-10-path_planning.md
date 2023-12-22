@@ -7,8 +7,6 @@ featured: true
 hidden: true
 ---
 
-<div style="background-color: white; height: 1px;"></div>
-
 Path Planning, Python, RRT
 
 
