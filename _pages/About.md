@@ -62,5 +62,5 @@ comments: false
 <br>
 
 <div style="text-align: center;">
-    <iframe src="_pages/HenryBuronResume.pdf" width="70%" height="1155px" style="display: inline-block;"></iframe>
+    <iframe src="_pages/HenryBuronResume.pdf" width="65%" height="1055px" style="display: inline-block;"></iframe>
 </div>

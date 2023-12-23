@@ -10,5 +10,5 @@ hidden: true
 Path Planning, Python, RRT
 
 
-This post is current under construction and will be ready by 12/27/23.
+This post is currently under construction and will be ready by 12/27/23.
 
