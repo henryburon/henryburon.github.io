@@ -48,7 +48,7 @@ var documents = [{
     "id": 9,
     "url": "http://localhost:4000/path_planning/",
     "title": "Rapidly-Exploring Random Tree (RRT)",
-    "body": "2023/09/10 - Path Planning, Python, RRT Overview: Goal: Implement the RRT path-planning algorithm. GitHub: https://github. com/henryburon/path-planning/tree/main/path_planning Process: Post under construction. "
+    "body": "2023/09/10 - Path Planning, Python, RRT Overview: Goal: Implement the RRT path-planning algorithm. GitHub: https://github. com/henryburon/path-planning/tree/main/path_planning Process: This is an implementation of the Rapidly-Exploring Random Tree (RRT), a fundamental path planning algorithm in robotics. An RRT consists of a set of vertices, which represent configurations in some domain D and edges, which connect two vertices. The algorithm randomly builds a tree in such a way that, as the number of vertices and n increases to ∞, the vertices are uniformly distributed across the domain D. "
     }, {
     "id": 10,
     "url": "http://localhost:4000/unmanned_electric_boat/",
@@ -58,7 +58,7 @@ var documents = [{
     "id": 11,
     "url": "http://localhost:4000/HenryBuron_About",
     "title": "About Me",
-    "body": "2001/03/14 -  Hello! I am a current Master’s in Robotics student at Northwestern University and am passionate about machine learning, computer vision, and autonomous systems. My background includes practical experience writing code for robotic manipulation, perception, and navigation, as well as a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code. Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo by implementing the Frontier Exploration algorithm, writing software to plan a trajectory for a mobile robot, and using computer vision to control a robot arm as it identifies and grasps objects. Education:         Sep. 2023 - Dec. 2024     M. S. in Robotics             Sep. 2019 - May 2023     B. S. in Engineering Physics   Contact: To contact me, please email: henryburon2024@u. northwestern. edu Linkedin: https://www. linkedin. com/in/henryburon/ GitHub: https://github. com/henryburon Resume:   "
+    "body": "2001/03/14 -  Hello! I am a current Master’s in Robotics student at Northwestern University and am passionate about machine learning, computer vision, and autonomous systems. My background includes practical experience writing code for robotic manipulation, perception, and navigation, as well as a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code. Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo by implementing the Frontier Exploration algorithm, writing software to plan a trajectory for a mobile robot, and using computer vision to control a robot arm as it identifies and grasps objects. Education:         Sep. 2023 - Dec. 2024     NU | M. S. in Robotics             Sep. 2019 - May 2023     W&amp;M | B. S. in Engineering Physics   Contact: To contact me, please email: henryburon2024@u. northwestern. edu Linkedin: https://www. linkedin. com/in/henryburon/ GitHub: https://github. com/henryburon Resume:   "
     }];
 
 var idx = lunr(function () {

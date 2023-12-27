@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Dec 2023 00:15:20 -0500</pubDate>
-    <lastBuildDate>Tue, 26 Dec 2023 00:15:20 -0500</lastBuildDate>
+    <pubDate>Wed, 27 Dec 2023 17:48:38 -0500</pubDate>
+    <lastBuildDate>Wed, 27 Dec 2023 17:48:38 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -293,7 +293,10 @@
 
 &lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p&gt;Post under construction.&lt;/p&gt;
+&lt;p&gt;This is an implementation of the Rapidly-Exploring Random Tree (RRT), a fundamental path planning algorithm in robotics.&lt;/p&gt;
+
+&lt;p&gt;An RRT consists of a set of vertices, which represent configurations in some domain D and edges, which connect two vertices. The algorithm randomly builds a tree in such a way that, as the number of vertices and &lt;em&gt;n&lt;/em&gt; increases to ∞, the vertices are uniformly distributed across the domain D.&lt;/p&gt;
+
 </description>
         <pubDate>Sun, 10 Sep 2023 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/path_planning/</link>
@@ -366,13 +369,13 @@ Some of my notable work includes co-developing a ROS2 package for motion plannin
     &lt;img src=&quot;/assets/images/nu.jpeg&quot; style=&quot;width: 75px; height: auto; margin-right: 10px;&quot; /&gt;
     &lt;div&gt;
         &lt;i&gt;Sep. 2023 - Dec. 2024&lt;/i&gt; &lt;br /&gt;
-        &lt;b&gt;M.S. in Robotics&lt;/b&gt;
+        &lt;b&gt;NU | M.S. in Robotics&lt;/b&gt;
     &lt;/div&gt;
     &lt;!-- Additional image placed here --&gt;
     &lt;img src=&quot;/assets/images/wm.jpeg&quot; style=&quot;width: 75px; height: auto; margin-left: 20px;&quot; /&gt;
     &lt;div style=&quot;margin-left: 10px;&quot;&gt; &lt;!-- Adjusted margin-left for the text div --&gt;
         &lt;i&gt;Sep. 2019 - May 2023&lt;/i&gt; &lt;br /&gt;
-        &lt;b&gt;B.S. in Engineering Physics&lt;/b&gt;
+        &lt;b&gt;W&amp;amp;M | B.S. in Engineering Physics&lt;/b&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
