@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Dec 2023 17:48:38 -0500</pubDate>
-    <lastBuildDate>Wed, 27 Dec 2023 17:48:38 -0500</lastBuildDate>
+    <pubDate>Wed, 27 Dec 2023 18:27:04 -0500</pubDate>
+    <lastBuildDate>Wed, 27 Dec 2023 18:27:04 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -296,6 +296,37 @@
 &lt;p&gt;This is an implementation of the Rapidly-Exploring Random Tree (RRT), a fundamental path planning algorithm in robotics.&lt;/p&gt;
 
 &lt;p&gt;An RRT consists of a set of vertices, which represent configurations in some domain D and edges, which connect two vertices. The algorithm randomly builds a tree in such a way that, as the number of vertices and &lt;em&gt;n&lt;/em&gt; increases to ∞, the vertices are uniformly distributed across the domain D.&lt;/p&gt;
+
+&lt;p&gt;In this implementation, the RRT algorithm uses two key components:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Tree Data Structure&lt;/strong&gt;: The RRT algorithm maintains a tree data structure to explore and represent the configuration space efficiently. Each node in the tree corresponds to a specific vertex, and edges between nodes represent feasible transitions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;State Machine&lt;/strong&gt;: To control the decision-making process during tree expansion and exploration, I employed a state machine to guide the algorithm’s behavior.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The inputs are as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;q_init&lt;/strong&gt;: initial configuration&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;K&lt;/strong&gt;: max vertices in RRT&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;delta&lt;/strong&gt;: incremental distance&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;domain&lt;/strong&gt;: the planning domain&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The algorithm begins by randomely creating the obstacles, initializing the goal (and checking it’s in an acceptable location), and initializing the matplotlib plot. It then enters the main &lt;em&gt;process&lt;/em&gt;, which repeats up to &lt;strong&gt;K&lt;/strong&gt; times.&lt;/p&gt;
+
+&lt;p&gt;Every iteration, the algorithm:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Finds a random configuration (random coordinate within the domain).&lt;/li&gt;
+  &lt;li&gt;Identifies the closest existing vertex.&lt;/li&gt;
+  &lt;li&gt;Calculates the direction of the random configuration.&lt;/li&gt;
+  &lt;li&gt;Plans a new vertex delta (1) in the direction of the random configuration.&lt;/li&gt;
+  &lt;li&gt;Checks if the planned vertex collides with an obstacle, and either returns to Step 1 if needed, or continues if there will not be a collision.&lt;/li&gt;
+  &lt;li&gt;Checks if the goal can be spotted (straight line, no obstacles) from the newest vertex. If so, a flag is activated and the algorithm ends.&lt;/li&gt;
+  &lt;li&gt;Updates the tree with the newest child vertex.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The RRT is then animated with matplotlib.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 10 Sep 2023 00:00:00 -0400</pubDate>

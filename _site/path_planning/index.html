@@ -169,6 +169,37 @@
 
 <p>An RRT consists of a set of vertices, which represent configurations in some domain D and edges, which connect two vertices. The algorithm randomly builds a tree in such a way that, as the number of vertices and <em>n</em> increases to ∞, the vertices are uniformly distributed across the domain D.</p>
 
+<p>In this implementation, the RRT algorithm uses two key components:</p>
+
+<ol>
+  <li><strong>Tree Data Structure</strong>: The RRT algorithm maintains a tree data structure to explore and represent the configuration space efficiently. Each node in the tree corresponds to a specific vertex, and edges between nodes represent feasible transitions.</li>
+  <li><strong>State Machine</strong>: To control the decision-making process during tree expansion and exploration, I employed a state machine to guide the algorithm’s behavior.</li>
+</ol>
+
+<p>The inputs are as follows:</p>
+
+<ul>
+  <li><strong>q_init</strong>: initial configuration</li>
+  <li><strong>K</strong>: max vertices in RRT</li>
+  <li><strong>delta</strong>: incremental distance</li>
+  <li><strong>domain</strong>: the planning domain</li>
+</ul>
+
+<p>The algorithm begins by randomely creating the obstacles, initializing the goal (and checking it’s in an acceptable location), and initializing the matplotlib plot. It then enters the main <em>process</em>, which repeats up to <strong>K</strong> times.</p>
+
+<p>Every iteration, the algorithm:</p>
+<ol>
+  <li>Finds a random configuration (random coordinate within the domain).</li>
+  <li>Identifies the closest existing vertex.</li>
+  <li>Calculates the direction of the random configuration.</li>
+  <li>Plans a new vertex delta (1) in the direction of the random configuration.</li>
+  <li>Checks if the planned vertex collides with an obstacle, and either returns to Step 1 if needed, or continues if there will not be a collision.</li>
+  <li>Checks if the goal can be spotted (straight line, no obstacles) from the newest vertex. If so, a flag is activated and the algorithm ends.</li>
+  <li>Updates the tree with the newest child vertex.</li>
+</ol>
+
+<p>The RRT is then animated with matplotlib.</p>
+
 
             </div>
 
