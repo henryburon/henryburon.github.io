@@ -215,7 +215,7 @@
 
 <p>See the <em>move_robot</em> API: <a href="https://github.com/henryburon/move-robot/tree/main/move_robot"><em>move_robot</em></a></p>
 
-<p>The API plans collision-free paths and allows us to send the end-effector to a desired configuration with code as simple as:</p>
+<p>The API plans collision-free paths and allows the user to send the end-effector to a desired configuration with code as simple as:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -224,12 +224,14 @@
 5
 6
 7
-</pre></td><td class="rouge-code"><pre><span class="bp">self</span><span class="p">.</span><span class="n">pos_list</span> <span class="o">=</span> <span class="p">[</span>
+8
+</pre></td><td class="rouge-code"><pre><span class="bp">self</span><span class="p">.</span><span class="n">comm_count</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># self.comm_count is incremented after each successful execution of a position command
+</span><span class="bp">self</span><span class="p">.</span><span class="n">pos_list</span> <span class="o">=</span> <span class="p">[</span>
             <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)]</span>
 <span class="bp">self</span><span class="p">.</span><span class="n">ori_list</span> <span class="o">=</span> <span class="p">[</span>
             <span class="n">Quaternion</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)]</span>
 <span class="bp">self</span><span class="p">.</span><span class="n">robot</span><span class="p">.</span><span class="n">find_and_execute</span><span class="p">(</span>
-                    <span class="n">point</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">pos_list</span><span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">comm_count</span><span class="p">],</span>
+                    <span class="n">point</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">pos_list</span><span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">comm_count</span><span class="p">],</span> 
                     <span class="n">quat</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">ori_list</span><span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">comm_count</span><span class="p">],)</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 

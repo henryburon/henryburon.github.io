@@ -63,15 +63,16 @@ Each letter that the robot writes begins as a series of waypoints (2D-coordinate
 
 See the *move_robot* API: [*move_robot*](https://github.com/henryburon/move-robot/tree/main/move_robot)
 
-The API plans collision-free paths and allows us to send the end-effector to a desired configuration with code as simple as:
+The API plans collision-free paths and allows the user to send the end-effector to a desired configuration with code as simple as:
 
 ```python
+self.comm_count = 0  # self.comm_count is incremented after each successful execution of a position command
 self.pos_list = [
             Point(x=0.2, y=0.4, z=0.2)]
 self.ori_list = [
             Quaternion(x=1.0, y=0.0, z=0.0, w=0.0)]
 self.robot.find_and_execute(
-                    point=self.pos_list[self.comm_count],
+                    point=self.pos_list[self.comm_count], 
                     quat=self.ori_list[self.comm_count],)
 ```
 
