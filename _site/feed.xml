@@ -5,25 +5,67 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Dec 2023 02:04:02 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Dec 2023 02:04:02 -0500</lastBuildDate>
+    <pubDate>Thu, 28 Dec 2023 03:03:21 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Dec 2023 03:03:21 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech</title>
         <description>&lt;p&gt;ROS2, MoveIt!, RViz&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;416&quot; src=&quot;https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Develop a ROS2 package that uses a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Develop a ROS2 package that allows a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/ME495-EmbeddedSystems/final-project-dkoh555&quot;&gt;https://github.com/ME495-EmbeddedSystems/final-project-dkoh555&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Teammates&lt;/strong&gt;: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;My primary responsibilities for this project included:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Creating the &lt;em&gt;apriltags&lt;/em&gt;  and &lt;em&gt;speech&lt;/em&gt; packages&lt;/li&gt;
+  &lt;li&gt;Working with the MoveIt! package to help convert waypoints to movement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;apriltags&lt;/em&gt; Package&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The purpose of this package is to localize the AprilTags on the whiteboard, transform their 3D-locations into the robot’s base frame (panda_link0), and publish these coordinates so they can be accessed by the node used for movement.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;GetAprilTags&lt;/em&gt; node in the package creates a static transformation that links the camera to robot base, looks up transforms between the tags and camera, constructs transformation matrices from Quaternions, and publishes the coordinates using a custom message type.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;speech&lt;/em&gt; Package&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The purpose of this package is to provide the speech-to-text functionality, as an alternative to the default text-to-text.&lt;/p&gt;
+
+&lt;p&gt;The node, &lt;em&gt;ListenSpeech&lt;/em&gt;, is triggered by a service call. The package makes use of PyAudio and the speech_recognition library. By default, it translates the spoken language to English, but this can be changed with a different language code.&lt;/p&gt;
+
+&lt;p&gt;The service call activates the &lt;em&gt;LISTENING&lt;/em&gt; state, which listens, then continues the pipeline in the &lt;em&gt;RECOGNIZING&lt;/em&gt; state.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LISTENING&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Microphone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;device_index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# detects presence of external microphone
+&lt;/span&gt;                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_logger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Say something...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;adjust_for_ambient_noise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# adjusts for ambient noise
+&lt;/span&gt;                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# by default, it listens until it detects a pause
+&lt;/span&gt;
+            &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RECOGNIZING&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Each letter that the robot writes begins as a series of waypoints (2D-coordinates) that must be converted into physical movement by the robot arm. To do this, we created a custom &lt;em&gt;move_robot&lt;/em&gt; Python wrapper to plan and execute paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively. We make use of MoveIt!’s &lt;em&gt;compute_cartesian_path&lt;/em&gt; service to follow a smooth and stable path.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How it Works&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;Calibrate&lt;/strong&gt;
@@ -56,13 +98,11 @@
   &lt;li&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Finally, the robot uses the &lt;em&gt;write_letters&lt;/em&gt; package to convert the waypoints to movement and draw the letters on the board.&lt;/li&gt;
-      &lt;li&gt;This package makes use of our custom &lt;em&gt;move_robot&lt;/em&gt; Python wrapper to plan and execute robot robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.&lt;/li&gt;
+      &lt;li&gt;This package makes use of our custom &lt;em&gt;move_robot&lt;/em&gt; Python wrapper to plan and execute robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.&lt;/li&gt;
       &lt;li&gt;We make use of MoveIt!’s &lt;em&gt;compute_cartesian_path&lt;/em&gt; service so as to follow a more direct and stable path when writing the letters, as opposed to &lt;em&gt;compute_ik&lt;/em&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;My primary responsibilities included creating the &lt;em&gt;apriltags&lt;/em&gt; package, setting up TF tree and visualizing the transformations in RViz, creating the &lt;em&gt;speech&lt;/em&gt; package, and working with MoveIt! to help convert the waypoints to movement.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>

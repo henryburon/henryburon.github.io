@@ -9,17 +9,52 @@ hidden: true
 
 ROS2, MoveIt!, RViz
 
-<iframe width="100%" height="416" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="441" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 
-**Goal**: Develop a ROS2 package that uses a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.
+**Goal**: Develop a ROS2 package that allows a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.
 
 **GitHub**: [https://github.com/ME495-EmbeddedSystems/final-project-dkoh555](https://github.com/ME495-EmbeddedSystems/final-project-dkoh555)
 
 **Teammates**: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh
 
 **Process**:
+
+My primary responsibilities for this project included:
+* Creating the *apriltags*  and *speech* packages
+* Working with the MoveIt! package to help convert waypoints to movement
+
+***apriltags* Package**
+
+The purpose of this package is to localize the AprilTags on the whiteboard, transform their 3D-locations into the robot's base frame (panda_link0), and publish these coordinates so they can be accessed by the node used for movement.
+
+The *GetAprilTags* node in the package creates a static transformation that links the camera to robot base, looks up transforms between the tags and camera, constructs transformation matrices from Quaternions, and publishes the coordinates using a custom message type.
+
+***speech* Package**
+
+The purpose of this package is to provide the speech-to-text functionality, as an alternative to the default text-to-text.
+
+The node, *ListenSpeech*, is triggered by a service call. The package makes use of PyAudio and the speech_recognition library. By default, it translates the spoken language to English, but this can be changed with a different language code.
+
+The service call activates the *LISTENING* state, which listens, then continues the pipeline in the *RECOGNIZING* state.
+
+```python
+if self.state == State.LISTENING:
+            with sr.Microphone(device_index=self.index) as source: # detects presence of external microphone
+                self.get_logger().info("Say something...")
+                self.recognizer.adjust_for_ambient_noise(source) # adjusts for ambient noise
+                self.audio = self.recognizer.listen(source) # by default, it listens until it detects a pause
+
+            self.state = State.RECOGNIZING
+```
+
+**Waypoints to Movement**:
+
+Each letter that the robot writes begins as a series of waypoints (2D-coordinates) that must be converted into physical movement by the robot arm. To do this, we created a custom *move_robot* Python wrapper to plan and execute paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively. We make use of MoveIt!'s *compute_cartesian_path* service to follow a smooth and stable path. 
+
+
+**How it Works**:
 
 1. **Calibrate**
     * The robot uses an Intel Realsense camera to acquire the location of three AprilTags, which, together, are used to constrain the plane of the whiteboard.
@@ -42,9 +77,7 @@ ROS2, MoveIt!, RViz
 
 5. **Waypoints to Movement**
     * Finally, the robot uses the *write_letters* package to convert the waypoints to movement and draw the letters on the board.
-    * This package makes use of our custom *move_robot* Python wrapper to plan and execute robot robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.
+    * This package makes use of our custom *move_robot* Python wrapper to plan and execute robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.
     * We make use of MoveIt!'s *compute_cartesian_path* service so as to follow a more direct and stable path when writing the letters, as opposed to *compute_ik*.
-
-My primary responsibilities included creating the *apriltags* package, setting up TF tree and visualizing the transformations in RViz, creating the *speech* package, and working with MoveIt! to help convert the waypoints to movement.
 
 ![The Robot Is Cool](/assets/images/the_robot_is_cool.jpeg)
