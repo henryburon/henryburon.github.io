@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Dec 2023 03:03:21 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Dec 2023 03:03:21 -0500</lastBuildDate>
+    <pubDate>Thu, 28 Dec 2023 13:30:31 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Dec 2023 13:30:31 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -31,11 +31,15 @@
   &lt;li&gt;Working with the MoveIt! package to help convert waypoints to movement&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;apriltags&lt;/em&gt; Package&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The purpose of this package is to localize the AprilTags on the whiteboard, transform their 3D-locations into the robot’s base frame (panda_link0), and publish these coordinates so they can be accessed by the node used for movement.&lt;/p&gt;
 
 &lt;p&gt;The &lt;em&gt;GetAprilTags&lt;/em&gt; node in the package creates a static transformation that links the camera to robot base, looks up transforms between the tags and camera, constructs transformation matrices from Quaternions, and publishes the coordinates using a custom message type.&lt;/p&gt;
+
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;speech&lt;/em&gt; Package&lt;/strong&gt;&lt;/p&gt;
 
@@ -43,7 +47,7 @@
 
 &lt;p&gt;The node, &lt;em&gt;ListenSpeech&lt;/em&gt;, is triggered by a service call. The package makes use of PyAudio and the speech_recognition library. By default, it translates the spoken language to English, but this can be changed with a different language code.&lt;/p&gt;
 
-&lt;p&gt;The service call activates the &lt;em&gt;LISTENING&lt;/em&gt; state, which listens, then continues the pipeline in the &lt;em&gt;RECOGNIZING&lt;/em&gt; state.&lt;/p&gt;
+&lt;p&gt;The service call activates the &lt;em&gt;LISTENING&lt;/em&gt; state, which listens, then continues the node’s pipeline in the &lt;em&gt;RECOGNIZING&lt;/em&gt; state.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -61,9 +65,33 @@
             &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RECOGNIZING&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;:&lt;/p&gt;
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
-&lt;p&gt;Each letter that the robot writes begins as a series of waypoints (2D-coordinates) that must be converted into physical movement by the robot arm. To do this, we created a custom &lt;em&gt;move_robot&lt;/em&gt; Python wrapper to plan and execute paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively. We make use of MoveIt!’s &lt;em&gt;compute_cartesian_path&lt;/em&gt; service to follow a smooth and stable path.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Each letter that the robot writes begins as a series of waypoints (2D-coordinates) that must be converted into physical movement by the robot arm. To do this, we created a custom &lt;em&gt;move_robot&lt;/em&gt; Python API to plan and execute paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively. We make use of MoveIt!’s &lt;em&gt;compute_cartesian_path&lt;/em&gt; service to follow a smooth and stable path.&lt;/p&gt;
+
+&lt;p&gt;See the &lt;em&gt;move_robot&lt;/em&gt; API: &lt;a href=&quot;https://github.com/henryburon/move-robot/tree/main/move_robot&quot;&gt;&lt;em&gt;move_robot&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The API plans collision-free paths and allows us to send the end-effector to a desired configuration with code as simple as:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ori_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Quaternion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;robot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_and_execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;comm_count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;quat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ori_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;comm_count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;How it Works&lt;/strong&gt;:&lt;/p&gt;
 
@@ -98,7 +126,7 @@
   &lt;li&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;Finally, the robot uses the &lt;em&gt;write_letters&lt;/em&gt; package to convert the waypoints to movement and draw the letters on the board.&lt;/li&gt;
-      &lt;li&gt;This package makes use of our custom &lt;em&gt;move_robot&lt;/em&gt; Python wrapper to plan and execute robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.&lt;/li&gt;
+      &lt;li&gt;This package makes use of our custom &lt;em&gt;move_robot&lt;/em&gt; Python API to plan and execute robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.&lt;/li&gt;
       &lt;li&gt;We make use of MoveIt!’s &lt;em&gt;compute_cartesian_path&lt;/em&gt; service so as to follow a more direct and stable path when writing the letters, as opposed to &lt;em&gt;compute_ik&lt;/em&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
