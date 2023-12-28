@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Dec 2023 18:27:04 -0500</pubDate>
-    <lastBuildDate>Wed, 27 Dec 2023 18:27:04 -0500</lastBuildDate>
+    <link>henryburon.github.io/</link>
+    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 27 Dec 2023 19:58:47 -0500</pubDate>
+    <lastBuildDate>Wed, 27 Dec 2023 19:58:47 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -67,8 +67,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/polyglotbot/</link>
-        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
+        <link>henryburon.github.io/polyglotbot/</link>
+        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -153,8 +153,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Robotic Manipulation</category>
@@ -212,8 +212,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 15 Nov 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/ml_emotion_classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
+        <link>henryburon.github.io/ml_emotion_classification/</link>
+        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -267,8 +267,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <link>henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -304,6 +304,12 @@
   &lt;li&gt;&lt;strong&gt;State Machine&lt;/strong&gt;: To control the decision-making process during tree expansion and exploration, I employed a state machine to guide the algorithm’s behavior.&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;p&gt;Run with:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RRT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;The inputs are as follows:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -313,7 +319,7 @@
   &lt;li&gt;&lt;strong&gt;domain&lt;/strong&gt;: the planning domain&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The algorithm begins by randomely creating the obstacles, initializing the goal (and checking it’s in an acceptable location), and initializing the matplotlib plot. It then enters the main &lt;em&gt;process&lt;/em&gt;, which repeats up to &lt;strong&gt;K&lt;/strong&gt; times.&lt;/p&gt;
+&lt;p&gt;The algorithm begins by randomly creating the obstacles, initializing the goal (and checking it’s in an acceptable location), and initializing the matplotlib plot. It then enters the main &lt;em&gt;process&lt;/em&gt;, which repeats up to &lt;strong&gt;K&lt;/strong&gt; times.&lt;/p&gt;
 
 &lt;p&gt;Every iteration, the algorithm:&lt;/p&gt;
 &lt;ol&gt;
@@ -321,7 +327,33 @@
   &lt;li&gt;Identifies the closest existing vertex.&lt;/li&gt;
   &lt;li&gt;Calculates the direction of the random configuration.&lt;/li&gt;
   &lt;li&gt;Plans a new vertex delta (1) in the direction of the random configuration.&lt;/li&gt;
-  &lt;li&gt;Checks if the planned vertex collides with an obstacle, and either returns to Step 1 if needed, or continues if there will not be a collision.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Checks if the planned vertex collides with an obstacle, and either returns to Step 1 if needed, or continues if there will not be a collision.&lt;/p&gt;
+
+    &lt;p&gt;Collision checking is implemented as follows:&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;CHECK_COLLISIONS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+             &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obstacle&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;circles_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# check each obstacle
+&lt;/span&gt;                 &lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obstacle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;coordinate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# get the center coordinate of the obstacle
+&lt;/span&gt;                 &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q_new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+                 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obstacle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# if new configuration is within obstacle, get new random coordinate
+&lt;/span&gt;                     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;RANDOM_CONFIG&quot;&lt;/span&gt;
+                     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+                    
+                 &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;CHECK_FOR_GOAL&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# continue to next stage if no collision detected
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;Checks if the goal can be spotted (straight line, no obstacles) from the newest vertex. If so, a flag is activated and the algorithm ends.&lt;/li&gt;
   &lt;li&gt;Updates the tree with the newest child vertex.&lt;/li&gt;
 &lt;/ol&gt;
@@ -330,8 +362,8 @@
 
 </description>
         <pubDate>Sun, 10 Sep 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/path_planning/</link>
-        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
+        <link>henryburon.github.io/path_planning/</link>
+        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -370,8 +402,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <link>henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -426,8 +458,8 @@ Some of my notable work includes co-developing a ROS2 package for motion plannin
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 14 Mar 2001 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/HenryBuron_About</link>
-        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
+        <link>henryburon.github.io/HenryBuron_About</link>
+        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
         
         
       </item>
