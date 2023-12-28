@@ -32,8 +32,10 @@ My primary responsibilities for this project included:
 
 The purpose of this package is to localize the AprilTags on the whiteboard, transform their 3D-locations into the robot's base frame (panda_link0), and publish these coordinates so they can be accessed by the node used for movement.
 
-The *GetAprilTags* node in the package creates a static transformation that links the camera to robot base, looks up transforms between the tags and camera, constructs transformation matrices from Quaternions, and publishes the coordinates using a custom message type.
+The *GetAprilTags* node in the package creates a static transformation that links the camera to robot base, looks up transforms between the tags and camera, constructs transformation matrices from Quaternions, extracts the coordinate values, and publishes them using a custom message type.
 
+In the image below, the AprilTags have been localized and transformed into the robot's frame.
+![Localize Tags](/assets/images/localize_tags.png)
 
 <div style="background-color: white; height: 1px;"></div>
 
@@ -68,9 +70,9 @@ The API plans collision-free paths and allows the user to send the end-effector 
 ```python
 self.comm_count = 0  # self.comm_count is incremented after each successful execution of a position command
 self.pos_list = [
-            Point(x=0.2, y=0.4, z=0.2)]
+            Point(x=0.2, y=0.4, z=0.2)] # desired location
 self.ori_list = [
-            Quaternion(x=1.0, y=0.0, z=0.0, w=0.0)]
+            Quaternion(x=1.0, y=0.0, z=0.0, w=0.0)] # desired orientation
 self.robot.find_and_execute(
                     point=self.pos_list[self.comm_count], 
                     quat=self.ori_list[self.comm_count],)
