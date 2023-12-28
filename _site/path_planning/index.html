@@ -15,17 +15,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Path Planning, Python, RRT" />
 <meta property="og:description" content="Path Planning, Python, RRT" />
-<link rel="canonical" href="henryburon.github.io/path_planning/" />
-<meta property="og:url" content="henryburon.github.io/path_planning/" />
+<link rel="canonical" href="http://localhost:4000/path_planning/" />
+<meta property="og:url" content="http://localhost:4000/path_planning/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="henryburon.github.io/assets/gifs/RRT.GIF" />
+<meta property="og:image" content="http://localhost:4000/assets/gifs/RRT.GIF" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-09-10T00:00:00-04:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="henryburon.github.io/assets/gifs/RRT.GIF" />
+<meta property="twitter:image" content="http://localhost:4000/assets/gifs/RRT.GIF" />
 <meta property="twitter:title" content="Rapidly-Exploring Random Tree (RRT)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-10T00:00:00-04:00","datePublished":"2023-09-10T00:00:00-04:00","description":"Path Planning, Python, RRT","headline":"Rapidly-Exploring Random Tree (RRT)","image":"henryburon.github.io/assets/gifs/RRT.GIF","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/path_planning/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/path_planning/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-10T00:00:00-04:00","datePublished":"2023-09-10T00:00:00-04:00","description":"Path Planning, Python, RRT","headline":"Rapidly-Exploring Random Tree (RRT)","image":"http://localhost:4000/assets/gifs/RRT.GIF","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/path_planning/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/path_planning/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -176,22 +176,56 @@
   <li><strong>State Machine</strong>: To control the decision-making process during tree expansion and exploration, I employed a state machine to guide the algorithm’s behavior.</li>
 </ol>
 
-<p>Run with:</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">python</span> <span class="n">RRT</span><span class="p">.</span><span class="n">py</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
 <p>The inputs are as follows:</p>
 
 <ul>
   <li><strong>q_init</strong>: initial configuration</li>
-  <li><strong>K</strong>: max vertices in RRT</li>
-  <li><strong>delta</strong>: incremental distance</li>
-  <li><strong>domain</strong>: the planning domain</li>
+  <li><strong>K</strong>: max vertices in the RRT</li>
+  <li><strong>delta</strong>: incremental distance between vertices</li>
+  <li><strong>domain</strong>: the planning domain (default 100x100)</li>
 </ul>
 
-<p>The algorithm begins by randomly creating the obstacles, initializing the goal (and checking it’s in an acceptable location), and initializing the matplotlib plot. It then enters the main <em>process</em>, which repeats up to <strong>K</strong> times.</p>
+<p>The algorithm begins by randomly creating the obstacles, initializing the goal (and checking it’s in an acceptable location), and initializing the matplotlib plot. It then begins the main process, which repeats up to <strong>K</strong> times.</p>
+
+<p>A goal is considered acceptable if it is near the edge of the domain and not inside an obstacle:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">initialize_goal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">acceptable_goal</span> <span class="o">=</span> <span class="bp">False</span>
+
+    <span class="k">while</span> <span class="n">acceptable_goal</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+        <span class="n">check1</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="n">check2</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">x_goal</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">domain</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="bp">self</span><span class="p">.</span><span class="n">domain</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="mi">5</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">y_goal</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">domain</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="bp">self</span><span class="p">.</span><span class="n">domain</span><span class="p">[</span><span class="mi">3</span><span class="p">]),</span> <span class="mi">5</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">50</span> <span class="o">-</span> <span class="bp">self</span><span class="p">.</span><span class="n">x_goal</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">35</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">50</span> <span class="o">-</span> <span class="bp">self</span><span class="p">.</span><span class="n">y_goal</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">35</span><span class="p">:</span> <span class="c1"># goal must be near edge of domain (so RRT has to search a little)
+</span>            <span class="n">check1</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">for</span> <span class="n">circle</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">circles_list</span><span class="p">:</span> <span class="c1"># goal must not be inside an obstacle
+</span>                <span class="n">coord</span> <span class="o">=</span> <span class="n">circle</span><span class="p">[</span><span class="s">"coordinate"</span><span class="p">]</span>
+                <span class="n">distance</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">distance</span><span class="p">(</span><span class="n">coord</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">x_goal</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">y_goal</span><span class="p">))</span>
+                <span class="k">if</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="n">circle</span><span class="p">[</span><span class="s">"size"</span><span class="p">]:</span>
+                    <span class="n">check2</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">if</span> <span class="n">check1</span> <span class="ow">and</span> <span class="n">check2</span><span class="p">:</span>
+            <span class="n">acceptable_goal</span> <span class="o">=</span> <span class="bp">True</span> <span class="c1"># proceed with current goal
+</span></pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>Every iteration, the algorithm:</p>
 <ol>
@@ -216,7 +250,7 @@
 10
 </pre></td><td class="rouge-code"><pre> <span class="k">elif</span> <span class="bp">self</span><span class="p">.</span><span class="n">state</span> <span class="o">==</span> <span class="s">"CHECK_COLLISIONS"</span><span class="p">:</span>
              <span class="k">for</span> <span class="n">obstacle</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">circles_list</span><span class="p">:</span> <span class="c1"># check each obstacle
-</span>                 <span class="n">coord</span> <span class="o">=</span> <span class="n">obstacle</span><span class="p">[</span><span class="s">"coordinate"</span><span class="p">]</span> <span class="c1"># get the center coordinate of the obstacle
+</span>                 <span class="n">coord</span> <span class="o">=</span> <span class="n">obstacle</span><span class="p">[</span><span class="s">"coordinate"</span><span class="p">]</span> <span class="c1"># get center coordinate of obstacle
 </span>                 <span class="n">distance</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">distance</span><span class="p">(</span><span class="n">coord</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">q_new</span><span class="p">)</span> 
                  <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="n">obstacle</span><span class="p">[</span><span class="s">"size"</span><span class="p">]:</span> <span class="c1"># if new configuration is within obstacle, get new random coordinate
 </span>                     <span class="bp">self</span><span class="p">.</span><span class="n">state</span> <span class="o">=</span> <span class="s">"RANDOM_CONFIG"</span>
@@ -231,6 +265,8 @@
 </ol>
 
 <p>The RRT is then animated with matplotlib.</p>
+
+<p><img src="/assets/images/rrt1.png" style="width: 750px; height: auto; margin: 0 auto; display: block;" /></p>
 
 
             </div>

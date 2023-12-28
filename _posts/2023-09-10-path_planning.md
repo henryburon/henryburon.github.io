@@ -29,21 +29,37 @@ In this implementation, the RRT algorithm uses two key components:
 1. **Tree Data Structure**: The RRT algorithm maintains a tree data structure to explore and represent the configuration space efficiently. Each node in the tree corresponds to a specific vertex, and edges between nodes represent feasible transitions.
 2. **State Machine**: To control the decision-making process during tree expansion and exploration, I employed a state machine to guide the algorithm's behavior.
 
-Run with:
-
-
-```python
-python RRT.py
-```
-
 The inputs are as follows:
 
-* **q_init**: initial configuration  
-* **K**: max vertices in RRT  
-* **delta**: incremental distance  
-* **domain**: the planning domain  
+* **q_init**: initial configuration    
+* **K**: max vertices in the RRT  
+* **delta**: incremental distance between vertices  
+* **domain**: the planning domain (default 100x100)  
 
-The algorithm begins by randomly creating the obstacles, initializing the goal (and checking it's in an acceptable location), and initializing the matplotlib plot. It then enters the main *process*, which repeats up to **K** times. 
+The algorithm begins by randomly creating the obstacles, initializing the goal (and checking it's in an acceptable location), and initializing the matplotlib plot. It then begins the main process, which repeats up to **K** times. 
+
+A goal is considered acceptable if it is near the edge of the domain and not inside an obstacle:
+
+```python
+def initialize_goal(self):
+    acceptable_goal = False
+
+    while acceptable_goal == False:
+        check1 = False
+        check2 = False
+        self.x_goal = round(np.random.uniform(self.domain[0],self.domain[1]), 5)
+        self.y_goal = round(np.random.uniform(self.domain[2],self.domain[3]), 5)
+
+        if abs(50 - self.x_goal) > 35 and abs(50 - self.y_goal) > 35: # goal must be near edge of domain (so RRT has to search a little)
+            check1 = True
+        for circle in self.circles_list: # goal must not be inside an obstacle
+                coord = circle["coordinate"]
+                distance = self.distance(coord, (self.x_goal, self.y_goal))
+                if distance > circle["size"]:
+                    check2 = True
+        if check1 and check2:
+            acceptable_goal = True # proceed with current goal
+```
 
 Every iteration, the algorithm:
 1. Finds a random configuration (random coordinate within the domain).
@@ -57,7 +73,7 @@ Every iteration, the algorithm:
     ```python
     elif self.state == "CHECK_COLLISIONS":
                 for obstacle in self.circles_list: # check each obstacle
-                    coord = obstacle["coordinate"] # get the center coordinate of the obstacle
+                    coord = obstacle["coordinate"] # get center coordinate of obstacle
                     distance = self.distance(coord, self.q_new) 
                     if distance < obstacle["size"]: # if new configuration is within obstacle, get new random coordinate
                         self.state = "RANDOM_CONFIG"
@@ -72,7 +88,7 @@ Every iteration, the algorithm:
 
 The RRT is then animated with matplotlib.
 
-
+<img src="/assets/images/rrt1.png" style="width: 750px; height: auto; margin: 0 auto; display: block;">
 
 
 
