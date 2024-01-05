@@ -13,7 +13,7 @@ Robotic Manipulation, Python, CoppeliaSim
 
 ## Overview
 
-**Goal**: Write a program that automatically plans a trajectory for a KUKA youBot mobile manipulator as it moves to, grasps, and places a block in a desired location.
+**Goal**: Write a program that automatically plans a trajectory for a KUKA youBot mobile manipulator as it grasps a block and places it in a desired location.
 
 **GitHub**: [https://github.com/henryburon/mobile-manipulation](https://github.com/henryburon/mobile-manipulation)
 
