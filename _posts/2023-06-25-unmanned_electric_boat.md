@@ -20,7 +20,7 @@ Our catamaran-style differential-drive boat, fondly named the *Colonial Cruiser*
 
 As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems as well.
 
-**Teammates**: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai<br>
+**Team Members**: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai<br>
 **Advisor**: Jonathan Frey
 
 ![ArduPilot](/assets/images/ardupilot.jpg)
