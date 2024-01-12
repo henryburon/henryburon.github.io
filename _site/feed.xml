@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Jan 2024 19:55:27 -0600</pubDate>
-    <lastBuildDate>Wed, 10 Jan 2024 19:55:27 -0600</lastBuildDate>
+    <link>henryburon.github.io/</link>
+    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 12 Jan 2024 02:06:13 -0600</pubDate>
+    <lastBuildDate>Fri, 12 Jan 2024 02:06:13 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -140,8 +140,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/polyglotbot/</link>
-        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
+        <link>henryburon.github.io/polyglotbot/</link>
+        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -226,8 +226,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Robotic Manipulation</category>
@@ -285,8 +285,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 15 Nov 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/ml_emotion_classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
+        <link>henryburon.github.io/ml_emotion_classification/</link>
+        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -340,8 +340,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <link>henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -471,8 +471,8 @@
 
 </description>
         <pubDate>Sun, 10 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/path_planning/</link>
-        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
+        <link>henryburon.github.io/path_planning/</link>
+        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -492,13 +492,13 @@
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I lead a team in building a boat from scratch to compete in Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition, a 5-mile endurance race. Our fully electric boat placed 3rd against universities from across the country.&lt;/p&gt;
+&lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I led a team in building a boat from scratch to compete in the Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition, a 5-mile endurance race. Our fully electric boat placed 3rd against universities from across the country.&lt;/p&gt;
 
 &lt;p&gt;Our catamaran-style differential-drive boat, fondly named the &lt;em&gt;Colonial Cruiser&lt;/em&gt;, ran ArduPilot Rover on a Pixhawk Cube Orange and was controlled via radio during the competition, though it was capable of autonomous navigation during controlled tests.&lt;/p&gt;
 
-&lt;p&gt;As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems as well.&lt;/p&gt;
+&lt;p&gt;As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Teammates&lt;/strong&gt;: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;Team Members&lt;/strong&gt;: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai&lt;br /&gt;
 &lt;strong&gt;Advisor&lt;/strong&gt;: Jonathan Frey&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/ardupilot.jpg&quot; alt=&quot;ArduPilot&quot; /&gt;
@@ -511,8 +511,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <link>henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -530,10 +530,13 @@ Testing on the lake.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 &lt;img src=&quot;/assets/images/headshot.jpeg&quot; style=&quot;width: 350px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University and am passionate about computer vision, motion planning, and autonomous systems. My background includes practical experience writing code for robotic manipulation and navigation, developing ROS2 packages, and a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code.
+&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University in Evanston, IL. My background includes practical experience writing code for robotic manipulation and navigation, developing ROS2 packages, processing images and extracting features for machine learning, and a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code in Python and C/C++.
 &lt;br /&gt;
 &lt;br /&gt;
-Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo by implementing the Frontier Exploration algorithm, writing software to plan a trajectory for a mobile robot’s end-effector, building a quadcopter from scratch, and using computer vision to control a robot arm as it identifies and grasps objects.&lt;/p&gt;
+Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo, writing software to plan a trajectory for a mobile robot’s end-effector, building a quadcopter from scratch, and using computer vision to control a robot arm as it identifies and grasps objects.
+&lt;br /&gt;
+&lt;br /&gt;
+I am passionate about autonomous systems, computer vision, and mobile robotics, and I am currently seeking an internship or full-time position in robotics and software engineering.&lt;/p&gt;
 
 &lt;h3 id=&quot;education&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Education&lt;/a&gt;&lt;/h3&gt;
 
@@ -567,8 +570,8 @@ Some of my notable work includes co-developing a ROS2 package for motion plannin
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 14 Mar 2001 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/HenryBuron_About</link>
-        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
+        <link>henryburon.github.io/HenryBuron_About</link>
+        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
         
         
       </item>
