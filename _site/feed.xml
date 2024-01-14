@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>henryburon.github.io/</link>
-    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Jan 2024 22:40:34 -0600</pubDate>
-    <lastBuildDate>Sat, 13 Jan 2024 22:40:34 -0600</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 14 Jan 2024 14:27:40 -0600</pubDate>
+    <lastBuildDate>Sun, 14 Jan 2024 14:27:40 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -140,8 +140,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
-        <link>henryburon.github.io/polyglotbot/</link>
-        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
+        <link>http://localhost:4000/polyglotbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -226,8 +226,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
-        <link>henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Robotic Manipulation</category>
@@ -285,8 +285,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 15 Nov 2023 00:00:00 -0600</pubDate>
-        <link>henryburon.github.io/ml_emotion_classification/</link>
-        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
+        <link>http://localhost:4000/ml_emotion_classification/</link>
+        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -340,8 +340,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -471,8 +471,8 @@
 
 </description>
         <pubDate>Sun, 10 Sep 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/path_planning/</link>
-        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
+        <link>http://localhost:4000/path_planning/</link>
+        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -511,8 +511,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -570,8 +570,8 @@ I am passionate about autonomous systems, computer vision, and mobile robotics, 
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 14 Mar 2001 00:00:00 -0600</pubDate>
-        <link>henryburon.github.io/HenryBuron_About</link>
-        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
+        <link>http://localhost:4000/HenryBuron_About</link>
+        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
         
         
       </item>
