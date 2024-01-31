@@ -13,7 +13,7 @@ C++, ROS2, Unit Testing
 
 # Overview
 
-I am currently implementing a SLAM algorithm from scratch through several ROS2 packages and a C++ library.
+I am currently implementing a SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.
 
 **GitHub**: [https://github.com/henryburon/ekf-slam-turtlebot](https://github.com/henryburon/ekf-slam-turtlebot)
 
