@@ -11,12 +11,27 @@ C++, ROS2, Unit Testing
 
 ![SLAM](/assets/images/slam_all.png)
 
-Currently implementing a SLAM algorithm from scratch by building several ROS2 packages and a C++ library.
+# Overview
+
+I am currently implementing a SLAM algorithm from scratch by building several ROS2 packages and a C++ library.
 
 So far, I have built:
 
-`nuturtle_description`: Dispalys multiple turtlebot3 models in RViz.
+`nuturtle_description`: Dispalys multiple turtlebot3 models in RViz.  
+`nusim`: Provides a simulated environment for the robots.  
+`turtlelib`: A C++ library for handling SE(2) math and other turtlebot-related math.  
 
-`nusim`: Provides a simulated environment for the robots.
+## Details
 
-`turtlelib`: A C++ library for handling SE(2) math and other turtlebot-related math.
+`nuturtle_description`  
+
+
+
+`nusim`  
+
+
+
+`turtlelib`  
+
+
+

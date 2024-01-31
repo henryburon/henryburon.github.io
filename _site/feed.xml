@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jan 2024 19:48:13 -0600</pubDate>
-    <lastBuildDate>Tue, 30 Jan 2024 19:48:13 -0600</lastBuildDate>
+    <pubDate>Tue, 30 Jan 2024 20:28:13 -0600</pubDate>
+    <lastBuildDate>Tue, 30 Jan 2024 20:28:13 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -15,15 +15,24 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/slam_all.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Currently implementing a SLAM algorithm from scratch by building several ROS2 packages and a C++ library.&lt;/p&gt;
+&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;I am currently implementing a SLAM algorithm from scratch by building several ROS2 packages and a C++ library.&lt;/p&gt;
 
 &lt;p&gt;So far, I have built:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_description&lt;/code&gt;: Dispalys multiple turtlebot3 models in RViz.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_description&lt;/code&gt;: Dispalys multiple turtlebot3 models in RViz.&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nusim&lt;/code&gt;: Provides a simulated environment for the robots.&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlelib&lt;/code&gt;: A C++ library for handling SE(2) math and other turtlebot-related math.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nusim&lt;/code&gt;: Provides a simulated environment for the robots.&lt;/p&gt;
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlelib&lt;/code&gt;: A C++ library for handling SE(2) math and other turtlebot-related math.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_description&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nusim&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlelib&lt;/code&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
         <link>henryburon.github.io/turtlebot_slam/</link>
