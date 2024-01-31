@@ -51,6 +51,3 @@ ROS2 C++ node that provides a simulated environment for the robot. Launches RViz
 ## Future Work
 
 This project is currently in progress. I will soon be finishing the EKF SLAM algorithm and implementing it on a robot in the physical world.
-
-
-

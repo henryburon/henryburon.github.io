@@ -15,7 +15,7 @@ ROS2, MoveIt!, RViz
 
 **Goal**: Develop a ROS2 package that allows a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.
 
-**Team Members**: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh
+**Team**: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh
 
 **GitHub**: [https://github.com/ME495-EmbeddedSystems/final-project-dkoh555](https://github.com/ME495-EmbeddedSystems/final-project-dkoh555)
 

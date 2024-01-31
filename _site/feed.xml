@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Henry&apos;s Portfolio</title>
-    <description>M.S. in Robotics @ Northwestern University</description>
+    <description>Master&apos;s in Robotics at Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 31 Jan 2024 16:55:09 -0600</pubDate>
-    <lastBuildDate>Wed, 31 Jan 2024 16:55:09 -0600</lastBuildDate>
+    <pubDate>Wed, 31 Jan 2024 17:21:09 -0600</pubDate>
+    <lastBuildDate>Wed, 31 Jan 2024 17:21:09 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -17,7 +17,7 @@
 
 &lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
 
-&lt;p&gt;I am currently implementing a SLAM algorithm from scratch through several ROS2 packages and a C++ library.&lt;/p&gt;
+&lt;p&gt;I am currently implementing a SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/ekf-slam-turtlebot&quot;&gt;https://github.com/henryburon/ekf-slam-turtlebot&lt;/a&gt;&lt;/p&gt;
 
@@ -55,7 +55,6 @@
 &lt;h2 id=&quot;future-work&quot;&gt;Future Work&lt;/h2&gt;
 
 &lt;p&gt;This project is currently in progress. I will soon be finishing the EKF SLAM algorithm and implementing it on a robot in the physical world.&lt;/p&gt;
-
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/turtlebot_slam/</link>
@@ -80,7 +79,7 @@
 
 &lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Develop a ROS2 package that allows a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Team Members&lt;/strong&gt;: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/ME495-EmbeddedSystems/final-project-dkoh555&quot;&gt;https://github.com/ME495-EmbeddedSystems/final-project-dkoh555&lt;/a&gt;&lt;/p&gt;
 
@@ -428,7 +427,7 @@
 
 &lt;p&gt;As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Team Members&lt;/strong&gt;: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai&lt;br /&gt;
 &lt;strong&gt;Advisor&lt;/strong&gt;: Jonathan Frey&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/ardupilot.jpg&quot; alt=&quot;ArduPilot&quot; /&gt;
