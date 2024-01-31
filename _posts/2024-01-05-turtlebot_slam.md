@@ -15,23 +15,41 @@ C++, ROS2, Unit Testing
 
 I am currently implementing a SLAM algorithm from scratch by building several ROS2 packages and a C++ library.
 
-So far, I have built:
+**GitHub**: [https://github.com/henryburon/ekf-slam-turtlebot](https://github.com/henryburon/ekf-slam-turtlebot)
 
-`nuturtle_description`: Dispalys multiple turtlebot3 models in RViz.  
-`nusim`: Provides a simulated environment for the robots.  
-`turtlelib`: A C++ library for handling SE(2) math and other turtlebot-related math.  
+**`turtlelib`**: A C++ library for handling SE(2) math and other turtlebot-related calculations.  
+**`nuturtle_description`**: Dispalys multiple turtlebot3 models in RViz.  
+**`nusim`**: Provides a simulated environment for the robots.  
 
 ## Details
 
-`nuturtle_description`  
+**`turtlelib`**
+
+Designed to facilitate geometric computations and two-dimensional rigid body transformations. Provided functionalities include:  
+* Point, vector, and twist manipulation
+* SVG-based visualization
+* Operator overloading
+
+All functions are tested using the Catch2 unit test framework.
+
+**`nuturtle_description`**    
+
+Builds turtlebot models with imported meshes in URDF; displays in RViz. Option to display all four models, or just one.
+
+Launch with:
+
+```
+ros2 launch nuturtle_description load_one.launch.py
+```
+
+**`nusim`**  
+
+ROS2 C++ node that provides a simulated environment for the robot. Launches RViz and displays walls, obstacles, and a single red robot. User can configure launch parameters in basic_world.yaml.
 
 
+## Future Work
 
-`nusim`  
-
-
-
-`turtlelib`  
+This project is currently in progress. I will soon be finishing the EKF SLAM algorithm and implementing it on a robot in the physical world.
 
 
 
