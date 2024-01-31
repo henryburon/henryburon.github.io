@@ -6,26 +6,26 @@
 
 <link rel="icon" href="/assets/images/logo.png">
 
-<title>Computer Vision-Controlled Robot Arm | Henry Buron</title>
+<title>SLAM from Scratch (C++) [Current] | Henry Buron</title>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Computer Vision-Controlled Robot Arm | Henry’s Portfolio</title>
+<title>SLAM from Scratch (C++) [Current] | Henry’s Portfolio</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Computer Vision-Controlled Robot Arm" />
+<meta property="og:title" content="SLAM from Scratch (C++) [Current]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="OpenCV, Python, Transforms" />
-<meta property="og:description" content="OpenCV, Python, Transforms" />
-<link rel="canonical" href="henryburon.github.io/pen_thief/" />
-<meta property="og:url" content="henryburon.github.io/pen_thief/" />
+<meta name="description" content="C++, ROS2, Unit Testing" />
+<meta property="og:description" content="C++, ROS2, Unit Testing" />
+<link rel="canonical" href="henryburon.github.io/turtlebot_slam/" />
+<meta property="og:url" content="henryburon.github.io/turtlebot_slam/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="henryburon.github.io/assets/images/pen_thief.png" />
+<meta property="og:image" content="henryburon.github.io/assets/images/slam_env.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-15T00:00:00-05:00" />
+<meta property="article:published_time" content="2024-01-05T00:00:00-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="henryburon.github.io/assets/images/pen_thief.png" />
-<meta property="twitter:title" content="Computer Vision-Controlled Robot Arm" />
+<meta property="twitter:image" content="henryburon.github.io/assets/images/slam_env.png" />
+<meta property="twitter:title" content="SLAM from Scratch (C++) [Current]" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-15T00:00:00-05:00","datePublished":"2023-09-15T00:00:00-05:00","description":"OpenCV, Python, Transforms","headline":"Computer Vision-Controlled Robot Arm","image":"henryburon.github.io/assets/images/pen_thief.png","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/pen_thief/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/pen_thief/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-05T00:00:00-06:00","datePublished":"2024-01-05T00:00:00-06:00","description":"C++, ROS2, Unit Testing","headline":"SLAM from Scratch (C++) [Current]","image":"henryburon.github.io/assets/images/slam_env.png","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/turtlebot_slam/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/turtlebot_slam/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -140,7 +140,7 @@
                 
 
                 <!-- Post Title -->
-                <h1 class="posttitle">Computer Vision-Controlled Robot Arm</h1>
+                <h1 class="posttitle">SLAM from Scratch (C++) [Current]</h1>
 
             </div>
 
@@ -153,45 +153,19 @@
                 <!-- Toc if any -->
                 
                 <!-- End Toc -->
-                <p>OpenCV, Python, Transforms</p>
+                <p>C++, ROS2, Unit Testing</p>
 
-<iframe width="100%" height="441" src="https://www.youtube.com/embed/pturk2xscaA?si=CLWhMrOFVhrZ33sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p><img src="/assets/images/slam_all.png" alt="SLAM" /></p>
 
-<h2 id="overview">Overview</h2>
+<p>Currently implementing a SLAM algorithm from scratch by building several ROS2 packages and a C++ library.</p>
 
-<p><strong>Goal:</strong> Use the PincherX 100 robot arm to autonomously grab a purple pen.</p>
+<p>So far, I have built:</p>
 
-<p><strong>Github:</strong> <a href="https://github.com/henryburon/pen-thief">https://github.com/henryburon/pen-thief</a></p>
+<p><code class="language-plaintext highlighter-rouge">nuturtle_description</code>: Dispalys multiple turtlebot3 models in RViz.</p>
 
-<p><strong>Process:</strong></p>
+<p><code class="language-plaintext highlighter-rouge">nusim</code>: Provides a simulated environment for the robots.</p>
 
-<ol>
-  <li><strong>Detect Location of the Purple Pen</strong>
-    <ul>
-      <li>First, I used the RGB image from an Intel RealSense camera to create an HSV mask that filtered out every color except purple.</li>
-    </ul>
-  </li>
-  <li><strong>Identify Contour and Calculate Centroid</strong>
-    <ul>
-      <li>I added contours around the selected pixels and found the 2D coordinate of the centroid of the largest contour, which I assumed to be the pen.</li>
-    </ul>
-  </li>
-  <li><strong>Align the Images</strong>
-    <ul>
-      <li>I then aligned the camera’s Depth Map with the RGB Image and found the pen’s 3D coordinates in the camera’s reference frame.</li>
-    </ul>
-  </li>
-  <li><strong>Transform to Robot Frame</strong>
-    <ul>
-      <li>I converted these coordinates to be in the robot arm’s frame, given its 90° rotation and fixed offset.</li>
-    </ul>
-  </li>
-  <li><strong>Command the End-Effector</strong>
-    <ul>
-      <li>Finally, I used the InterbotixManipulatorXS Python package to move the end-effector and gripper to the desired coordinate and position.</li>
-    </ul>
-  </li>
-</ol>
+<p><code class="language-plaintext highlighter-rouge">turtlelib</code>: A C++ library for handling SE(2) math and other turtlebot-related math.</p>
 
             </div>
 
@@ -201,7 +175,7 @@
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="2023-09-15">15 Sep 2023</time></span>           
+                <span class="post-date"><time class="post-date" datetime="2024-01-05">05 Jan 2024</time></span>           
                 
                 </small>
             </p>
@@ -212,15 +186,15 @@
                     
                     
                     <li>
-                        <a class="smoothscroll" href="/categories#OpenCV">OpenCV</a>
+                        <a class="smoothscroll" href="/categories#C++">C++</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="/categories#Python">Python</a>
+                        <a class="smoothscroll" href="/categories#ROS2">ROS2</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="/categories#Transforms">Transforms</a>
+                        <a class="smoothscroll" href="/categories#Unit-Testing">Unit Testing</a>
                     </li>
                     
                 </ul>
@@ -239,10 +213,8 @@
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             
-            <a class="prev d-block col-md-6" href="/path_planning/"> &laquo; Rapidly-Exploring Random Tree (RRT)</a>
+            <a class="prev d-block col-md-6" href="/polyglotbot/"> &laquo; Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech</a>
             
-            
-            <a class="next d-block col-md-6 text-lg-right" href="/ml_emotion_classification/">Machine Learning Emotion Classification &raquo; </a>
             
             <div class="clearfix"></div>
             </div>
