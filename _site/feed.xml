@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 31 Jan 2024 14:52:38 -0600</pubDate>
-    <lastBuildDate>Wed, 31 Jan 2024 14:52:38 -0600</lastBuildDate>
+    <pubDate>Wed, 31 Jan 2024 15:01:34 -0600</pubDate>
+    <lastBuildDate>Wed, 31 Jan 2024 15:01:34 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -21,9 +21,9 @@
 
 &lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/ekf-slam-turtlebot&quot;&gt;https://github.com/henryburon/ekf-slam-turtlebot&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlelib&lt;/code&gt;&lt;/strong&gt;: A C++ library for handling SE(2) math and other turtlebot-related calculations.&lt;br /&gt;
-&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_description&lt;/code&gt;&lt;/strong&gt;: Dispalys multiple turtlebot3 models in RViz.&lt;br /&gt;
-&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nusim&lt;/code&gt;&lt;/strong&gt;: Provides a simulated environment for the robots.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlelib&lt;/code&gt;&lt;/strong&gt; is a C++ library for handling SE(2) math and other turtlebot-related calculations.&lt;br /&gt;
+&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_description&lt;/code&gt;&lt;/strong&gt; is a ROS2 package that dispalys turtlebot3 models in RViz.&lt;br /&gt;
+&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nusim&lt;/code&gt;&lt;/strong&gt; is a ROS2 package that provides a simulated environment for the robots.&lt;/p&gt;
 
 &lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
 

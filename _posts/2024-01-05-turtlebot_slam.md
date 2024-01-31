@@ -17,9 +17,10 @@ I am currently implementing a SLAM algorithm from scratch by building several RO
 
 **GitHub**: [https://github.com/henryburon/ekf-slam-turtlebot](https://github.com/henryburon/ekf-slam-turtlebot)
 
-**`turtlelib`**: A C++ library for handling SE(2) math and other turtlebot-related calculations.  
-**`nuturtle_description`**: Dispalys multiple turtlebot3 models in RViz.  
-**`nusim`**: Provides a simulated environment for the robots.  
+**`turtlelib`** is a C++ library for handling SE(2) math and other turtlebot-related calculations.  
+**`nuturtle_description`** is a ROS2 package that dispalys turtlebot3 models in RViz.  
+**`nusim`** is a ROS2 package that provides a simulated environment for the robots.  
+
 
 ## Details
 
