@@ -7,7 +7,7 @@ featured: true
 hidden: true
 ---
 
-Machine Learning, Image Processing, Feature Extraction
+Machine Learning, Python, Image Processing
 
 <iframe width="100%" height="441" src="https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

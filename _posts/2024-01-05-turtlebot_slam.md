@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "SLAM from Scratch (C++) [Current]"
-categories: [C++, ROS2, Unit Testing]
+categories: [C++, ROS2, Unit Testing, CMake]
 image: assets/images/slam_env.png
 featured: true
 hidden: true
 ---
 
-C++, ROS2, Unit Testing
+C++, ROS2, Unit Testing, CMake
 
 ![SLAM](/assets/images/slam_all.png)
 
@@ -24,6 +24,9 @@ I am currently implementing a SLAM algorithm from scratch through several ROS2 p
 
 ## Details
 
+<div style="background-color: white; height: 1px;"></div>
+
+
 **`turtlelib`**
 
 Designed to facilitate geometric computations and two-dimensional rigid body transformations. Provided functionalities include:  
@@ -32,6 +35,8 @@ Designed to facilitate geometric computations and two-dimensional rigid body tra
 * Operator overloading
 
 All functions are tested using the Catch2 unit test framework.
+
+<div style="background-color: white; height: 1px;"></div>
 
 **`nuturtle_description`**    
 
@@ -43,10 +48,11 @@ Launch with:
 ros2 launch nuturtle_description load_one.launch.py
 ```
 
+<div style="background-color: white; height: 1px;"></div>
+
 **`nusim`**  
 
 ROS2 C++ node that provides a simulated environment for the robot. Launches RViz and displays walls, obstacles, and a single red robot. User can configure launch parameters in basic_world.yaml.
-
 
 ## Future Work
 

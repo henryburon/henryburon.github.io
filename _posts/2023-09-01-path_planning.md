@@ -18,8 +18,6 @@ Path Planning, Python, RRT
 
 **GitHub**: [https://github.com/henryburon/path-planning/tree/main/path_planning](https://github.com/henryburon/path-planning/tree/main/path_planning/RRT)
 
-**Process**:
-
 This is an implementation of the Rapidly-Exploring Random Tree (RRT), a fundamental path planning algorithm in robotics.
 
 An RRT consists of a set of vertices, which represent configurations in some domain D and edges, which connect two vertices. The algorithm randomly builds a tree in such a way that, as the number of vertices and *n* increases to &#8734;, the vertices are uniformly distributed across the domain D.

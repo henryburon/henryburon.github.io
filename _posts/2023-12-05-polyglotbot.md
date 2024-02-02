@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech"
-categories: [ROS2, MoveIt!, RViz]
+categories: [ROS2, MoveIt2, Python, Motion Planning]
 image: assets/gifs/polyglotbot.GIF
 featured: true
 hidden: true
 ---
 
-ROS2, MoveIt!, RViz
+ROS2, Python, MoveIt2, Motion Planning
 
 <iframe width="100%" height="441" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -19,16 +19,14 @@ ROS2, MoveIt!, RViz
 
 **GitHub**: [https://github.com/ME495-EmbeddedSystems/final-project-dkoh555](https://github.com/ME495-EmbeddedSystems/final-project-dkoh555)
 
-**Process**:
-
 My primary responsibilities for this project included:
-* Creating the *apriltags*  and *speech* packages
-* Working with the MoveIt! package to help convert waypoints to movement
+* Creating the ```apriltags```  and ```speech``` packages
+* Working with the MoveIt2 package to help convert waypoints to movement
 
 <div style="background-color: white; height: 1px;"></div>
 
 
-***apriltags* Package**
+```apriltags``` package
 
 The purpose of this package is to localize the AprilTags on the whiteboard, transform their 3D-locations into the robot's base frame (panda_link0), and publish these coordinates so they can be accessed by the node used for movement.
 
@@ -39,7 +37,7 @@ In the image below, the AprilTags have been localized and transformed into the r
 
 <div style="background-color: white; height: 1px;"></div>
 
-***speech* Package**
+```speech``` package
 
 The purpose of this package is to provide the speech-to-text functionality, as an alternative to the default text-to-text.
 
@@ -61,7 +59,7 @@ if self.state == State.LISTENING:
 
 **Waypoints to Movement**
 
-Each letter that the robot writes begins as a series of waypoints (2D-coordinates) that must be converted into physical movement by the robot arm. To do this, we created a custom *move_robot* Python API to plan and execute paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively. We make use of MoveIt!'s *compute_cartesian_path* service to follow a smooth and stable path.
+Each letter that the robot writes begins as a series of waypoints (2D-coordinates) that must be converted into physical movement by the robot arm. To do this, we created a custom *move_robot* Python API to plan and execute paths using the MoveIt2 MoveGroup and ExecuteTrajectory Action Clients, respectively. We make use of MoveIt2's *compute_cartesian_path* service to follow a smooth and stable path.
 
 See the *move_robot* API: [*move_robot*](https://github.com/henryburon/move-robot/tree/main/move_robot)
 
@@ -103,7 +101,7 @@ self.robot.find_and_execute(
 
 5. **Waypoints to Movement**
     * Finally, the robot uses the *write_letters* package to convert the waypoints to movement and draw the letters on the board.
-    * This package makes use of our custom *move_robot* Python API to plan and execute robot arm paths using the MoveIt! MoveGroup and ExecuteTrajectory Action Clients, respectively.
-    * We make use of MoveIt!'s *compute_cartesian_path* service so as to follow a more direct and stable path when writing the letters, as opposed to *compute_ik*.
+    * This package makes use of our custom *move_robot* Python API to plan and execute robot arm paths using the MoveIt2 MoveGroup and ExecuteTrajectory Action Clients, respectively.
+    * We make use of MoveIt2's *compute_cartesian_path* service so as to follow a more direct and stable path when writing the letters, as opposed to *compute_ik*.
 
 ![The Robot Is Cool](/assets/images/the_robot_is_cool.jpeg)
