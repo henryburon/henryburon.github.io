@@ -5,15 +5,48 @@
     <description>Master&apos;s in Robotics at Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Feb 2024 23:56:22 -0600</pubDate>
-    <lastBuildDate>Thu, 01 Feb 2024 23:56:22 -0600</lastBuildDate>
+    <pubDate>Mon, 19 Feb 2024 23:44:40 -0600</pubDate>
+    <lastBuildDate>Mon, 19 Feb 2024 23:44:40 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Mobile Exploration Robot with Auxiliary Drone [Current]</title>
+        <description>&lt;p&gt;Python, ROS2, Embedded Systems&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gifs/terraflight_1.gif&quot; alt=&quot;terraflight1&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;I am in the process of building a mobile exploration robot from the ground up. The robot is designed to stream live video to a base station (a laptop) and deploy an auxiliary drone from its top platform. Upon the drone’s deployment, the live video feed switches to the drone’s camera.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/terra-flight&quot;&gt;https://github.com/henryburon/terra-flight&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;The robot is currently operated via teleoperation. However, plans are underway to incorporate a LiDAR module, which will enable the robot to have autonomous path planning capabilities.&lt;/p&gt;
+
+&lt;p&gt;The robot is powered by a Raspberry Pi 4 and is fully controlled using ROS2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/terraflight_2.jpg&quot; alt=&quot;terraflight2&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Feb 2024 00:00:00 -0600</pubDate>
+        <link>henryburon.github.io/terraflight/</link>
+        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
+        
+        
+        <category>Python</category>
+        
+        <category>ROS2</category>
+        
+        <category>Embedded Systems</category>
+        
+      </item>
     
       <item>
         <title>SLAM from Scratch (C++) [Current]</title>
         <description>&lt;p&gt;C++, ROS2, Unit Testing, CMake&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/slam_all.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/slam_env.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
 
@@ -222,7 +255,7 @@
     
       <item>
         <title>KUKA youBot Mobile Manipulation</title>
-        <description>&lt;p&gt;Robotic Manipulation, Python, CoppeliaSim&lt;/p&gt;
+        <description>&lt;p&gt;Python, Robotic Manipulation, CoppeliaSim&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -298,9 +331,9 @@
         <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
-        <category>Robotic Manipulation</category>
-        
         <category>Python</category>
+        
+        <category>Robotic Manipulation</category>
         
         <category>CoppeliaSim</category>
         

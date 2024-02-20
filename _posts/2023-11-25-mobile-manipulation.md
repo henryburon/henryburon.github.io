@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "KUKA youBot Mobile Manipulation"
-categories: [Robotic Manipulation, Python, CoppeliaSim]
+categories: [Python, Robotic Manipulation, CoppeliaSim]
 image: assets/gifs/kuka.GIF
 featured: true
 hidden: true
 ---
 
-Robotic Manipulation, Python, CoppeliaSim
+Python, Robotic Manipulation, CoppeliaSim
 
 <iframe width="100%" height="441" src="https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

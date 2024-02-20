@@ -2,14 +2,14 @@
 layout: post
 title:  "SLAM from Scratch (C++) [Current]"
 categories: [C++, ROS2, Unit Testing, CMake]
-image: assets/images/slam_env.png
+image: assets/gifs/red_slam.gif
 featured: true
 hidden: true
 ---
 
 C++, ROS2, Unit Testing, CMake
 
-![SLAM](/assets/images/slam_all.png)
+![SLAM](/assets/images/slam_env.png)
 
 # Overview
 
