@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mobile Exploration Robot with Auxiliary Drone [Current]"
+title:  "Mobile Exploration Robot with Auxiliary Drone [In Progress]"
 categories: [Python, ROS2, Embedded Systems]
 image: assets/images/terraflight_1.png
 featured: true
@@ -11,7 +11,7 @@ Python, ROS2, Embedded Systems
 
 ![terraflight1](/assets/gifs/terraflight_1.gif)
 
-## Overview
+## Overview [In Progress]
 
 I am in the process of building a mobile exploration robot from the ground up. The robot is designed to stream live video to a base station (a laptop) and deploy an auxiliary drone from its top platform. Upon the drone's deployment, the live video feed switches to the drone's camera.
 
