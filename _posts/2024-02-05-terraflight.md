@@ -21,8 +21,8 @@ I am in the process of building a mobile exploration robot from the ground up. T
 <div style="background-color: white; height: 1px;"></div>
 
 
-The robot is currently operated via teleoperation. However, plans are underway to incorporate a LiDAR module, which will enable the robot to have autonomous path planning capabilities.
+The robot is currently operated via teleoperation. However, plans are underway to incorporate a LiDAR module, which will enable the robot to have autonomous path planning capabilities. The drone is able to localize itself and autonomously re-land on the rover.
 
-The robot is powered by a Raspberry Pi 4 and is fully controlled using ROS2.
+The robot is operated with a Raspberry Pi 4 and is fully controlled using ROS2.
 
 ![terraflight2](/assets/images/terraflight_2.jpg)
