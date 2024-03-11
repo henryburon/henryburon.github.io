@@ -3,35 +3,42 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>Master&apos;s in Robotics at Northwestern University</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Mar 2024 18:13:15 -0500</pubDate>
-    <lastBuildDate>Mon, 04 Mar 2024 18:13:15 -0500</lastBuildDate>
+    <link>henryburon.github.io/</link>
+    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 11 Mar 2024 11:34:39 -0500</pubDate>
+    <lastBuildDate>Mon, 11 Mar 2024 11:34:39 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Mobile Exploration Robot with Auxiliary Drone [In Progress]</title>
         <description>&lt;p&gt;Python, ROS2, Embedded Systems&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/gifs/terraflight_1.gif&quot; alt=&quot;terraflight1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/gifs/terraflight_1.gif&quot; alt=&quot;terraflight1&quot; /&gt;&lt;br /&gt;
+First differential-driving test.&lt;/p&gt;
 
 &lt;h2 id=&quot;overview-in-progress&quot;&gt;Overview [In Progress]&lt;/h2&gt;
 
-&lt;p&gt;I am in the process of building a mobile exploration robot from the ground up. The robot is designed to stream live video to a base station (a laptop) and deploy an auxiliary drone from its top platform. Upon the drone’s deployment, the live video feed switches to the drone’s camera.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This post will be completed on March 16, 2024.&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;I am in the process of building a &lt;strong&gt;mobile exploration robot&lt;/strong&gt; from the ground up. The robot has a variety of sensing capabilities, including an IntelRealsense Depth camera and a LiDAR module, which, together, allow it to live stream video and build a map of its environment with slam_toolbox.&lt;/p&gt;
+
+&lt;p&gt;In addition, the robot carries a drone on its top platform, which it is able to deploy from the field. The drone, which also live streams video, is controlled via teleoperation, but is able to autonomously land itself on the mobile chassis which it localizes using AprilTags.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/terra-flight&quot;&gt;https://github.com/henryburon/terra-flight&lt;/a&gt;&lt;/p&gt;
 
 &lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
-&lt;p&gt;The robot is currently operated via teleoperation. However, plans are underway to incorporate a LiDAR module, which will enable the robot to have autonomous path planning capabilities. The drone is able to localize itself and autonomously re-land on the rover.&lt;/p&gt;
+&lt;p&gt;The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.&lt;/p&gt;
 
-&lt;p&gt;The robot is operated with a Raspberry Pi 4 and is fully controlled using ROS2.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/terraflight_slam_1.png&quot; alt=&quot;terraflight1&quot; /&gt;
+Preliminary image from the base station. View a frame from the rover’s live stream and the map it has started to build. The top “No Image” is the drone’s feed, which was not flying at the time. Note: this was in a room with many chairs and table legs.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/terraflight_2.jpg&quot; alt=&quot;terraflight2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/terraflight_2.jpg&quot; alt=&quot;terraflight2&quot; /&gt;
+Wiring and electronics.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 05 Feb 2024 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/terraflight/</link>
-        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
+        <pubDate>Mon, 05 Feb 2024 00:00:00 -0600</pubDate>
+        <link>henryburon.github.io/terraflight/</link>
+        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
         
         
         <category>Python</category>
@@ -49,6 +56,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/slam_env.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;overview-in-progress&quot;&gt;Overview [In Progress]&lt;/h1&gt;
+
+&lt;p&gt;&lt;u&gt;This post will be completed on March 18, 2024.&lt;/u&gt;&lt;/p&gt;
 
 &lt;p&gt;I am currently implementing an Extended Kalman filter SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.&lt;/p&gt;
 
@@ -97,9 +106,9 @@
 
 &lt;p&gt;This project is currently in progress. I will soon be finishing the EKF SLAM algorithm and implementing it on a robot in the physical world.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 05 Jan 2024 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/turtlebot_slam/</link>
-        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
+        <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
+        <link>henryburon.github.io/turtlebot_slam/</link>
+        <guid isPermaLink="true">henryburon.github.io/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -240,9 +249,9 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Dec 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/polyglotbot/</link>
-        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
+        <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
+        <link>henryburon.github.io/polyglotbot/</link>
+        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -328,9 +337,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Sat, 25 Nov 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -387,9 +396,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Wed, 15 Nov 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/ml_emotion_classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
+        <pubDate>Wed, 15 Nov 2023 00:00:00 -0600</pubDate>
+        <link>henryburon.github.io/ml_emotion_classification/</link>
+        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -442,9 +451,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Fri, 15 Sep 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
+        <link>henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -482,9 +491,9 @@ Final touches before the competition.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/lake_test.jpg&quot; alt=&quot;Lake Test&quot; /&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Sep 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <pubDate>Tue, 05 Sep 2023 00:00:00 -0500</pubDate>
+        <link>henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -611,9 +620,9 @@ Testing on the lake.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/rrt1.png&quot; style=&quot;width: 750px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 01 Sep 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/path_planning/</link>
-        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
+        <pubDate>Fri, 01 Sep 2023 00:00:00 -0500</pubDate>
+        <link>henryburon.github.io/path_planning/</link>
+        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -670,9 +679,9 @@ I am passionate about autonomous systems, computer vision, and mobile robotics, 
     &lt;iframe src=&quot;_pages/HenryBuronResume.pdf&quot; width=&quot;100%&quot; height=&quot;1200px&quot; style=&quot;display: inline-block;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 14 Mar 2001 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/HenryBuron_About</link>
-        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
+        <pubDate>Wed, 14 Mar 2001 00:00:00 -0600</pubDate>
+        <link>henryburon.github.io/HenryBuron_About</link>
+        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
         
         
       </item>

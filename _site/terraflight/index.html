@@ -15,17 +15,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Python, ROS2, Embedded Systems" />
 <meta property="og:description" content="Python, ROS2, Embedded Systems" />
-<link rel="canonical" href="http://localhost:4000/terraflight/" />
-<meta property="og:url" content="http://localhost:4000/terraflight/" />
+<link rel="canonical" href="henryburon.github.io/terraflight/" />
+<meta property="og:url" content="henryburon.github.io/terraflight/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="http://localhost:4000/assets/images/terraflight_1.png" />
+<meta property="og:image" content="henryburon.github.io/assets/images/terraflight_1.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-05T00:00:00-05:00" />
+<meta property="article:published_time" content="2024-02-05T00:00:00-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/images/terraflight_1.png" />
+<meta property="twitter:image" content="henryburon.github.io/assets/images/terraflight_1.png" />
 <meta property="twitter:title" content="Mobile Exploration Robot with Auxiliary Drone [In Progress]" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-05T00:00:00-05:00","datePublished":"2024-02-05T00:00:00-05:00","description":"Python, ROS2, Embedded Systems","headline":"Mobile Exploration Robot with Auxiliary Drone [In Progress]","image":"http://localhost:4000/assets/images/terraflight_1.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/terraflight/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-05T00:00:00-06:00","datePublished":"2024-02-05T00:00:00-06:00","description":"Python, ROS2, Embedded Systems","headline":"Mobile Exploration Robot with Auxiliary Drone [In Progress]","image":"henryburon.github.io/assets/images/terraflight_1.png","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/terraflight/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -155,21 +155,28 @@
                 <!-- End Toc -->
                 <p>Python, ROS2, Embedded Systems</p>
 
-<p><img src="/assets/gifs/terraflight_1.gif" alt="terraflight1" /></p>
+<p><img src="/assets/gifs/terraflight_1.gif" alt="terraflight1" /><br />
+First differential-driving test.</p>
 
 <h2 id="overview-in-progress">Overview [In Progress]</h2>
 
-<p>I am in the process of building a mobile exploration robot from the ground up. The robot is designed to stream live video to a base station (a laptop) and deploy an auxiliary drone from its top platform. Upon the drone’s deployment, the live video feed switches to the drone’s camera.</p>
+<p><u>This post will be completed on March 16, 2024.</u></p>
+
+<p>I am in the process of building a <strong>mobile exploration robot</strong> from the ground up. The robot has a variety of sensing capabilities, including an IntelRealsense Depth camera and a LiDAR module, which, together, allow it to live stream video and build a map of its environment with slam_toolbox.</p>
+
+<p>In addition, the robot carries a drone on its top platform, which it is able to deploy from the field. The drone, which also live streams video, is controlled via teleoperation, but is able to autonomously land itself on the mobile chassis which it localizes using AprilTags.</p>
 
 <p><strong>GitHub</strong>: <a href="https://github.com/henryburon/terra-flight">https://github.com/henryburon/terra-flight</a></p>
 
 <div style="background-color: white; height: 1px;"></div>
 
-<p>The robot is currently operated via teleoperation. However, plans are underway to incorporate a LiDAR module, which will enable the robot to have autonomous path planning capabilities. The drone is able to localize itself and autonomously re-land on the rover.</p>
+<p>The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.</p>
 
-<p>The robot is operated with a Raspberry Pi 4 and is fully controlled using ROS2.</p>
+<p><img src="/assets/images/terraflight_slam_1.png" alt="terraflight1" />
+Preliminary image from the base station. View a frame from the rover’s live stream and the map it has started to build. The top “No Image” is the drone’s feed, which was not flying at the time. Note: this was in a room with many chairs and table legs.</p>
 
-<p><img src="/assets/images/terraflight_2.jpg" alt="terraflight2" /></p>
+<p><img src="/assets/images/terraflight_2.jpg" alt="terraflight2" />
+Wiring and electronics.</p>
 
             </div>
 

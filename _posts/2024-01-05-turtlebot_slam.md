@@ -13,6 +13,9 @@ C++, ROS2, Unit Testing, CMake
 
 # Overview [In Progress]
 
+<u>This post will be completed on March 18, 2024.</u>
+
+
 I am currently implementing an Extended Kalman filter SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.
 
 **GitHub**: [https://github.com/henryburon/ekf-slam-turtlebot](https://github.com/henryburon/ekf-slam-turtlebot)
