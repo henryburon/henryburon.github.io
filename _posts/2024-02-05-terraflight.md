@@ -28,7 +28,7 @@ In addition, the robot carries a drone on its top platform, which it is able to 
 The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.
 
 ![terraflight1](/assets/images/terraflight_slam_1.png)
-Preliminary image from the base station. View a frame from the rover's live stream and the map it has started to build. The top "No Image" is the drone's feed, which was not flying at the time. Note: this was in a room with many chairs and table legs.  
+Preliminary image from the base station: a frame from the rover's live stream and the map it has started to build. The top "No Image" is the drone's feed, which was not flying at the time. Note: this was in a room with many chairs and table legs.  
   
 
 ![terraflight2](/assets/images/terraflight_2.jpg)
