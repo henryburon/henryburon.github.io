@@ -9,12 +9,9 @@ hidden: true
 
 Python, ROS2, Embedded Systems
 
-![terraflight1](/assets/gifs/terraflight_1.gif)  
-First differential-driving test.
+<iframe width="90%" height="441" src="https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Overview [In Progress]
-
-<u>This post will be completed on March 16, 2024.</u>
+## Overview
 
 I am in the process of building a **mobile exploration robot** from the ground up. The robot has a variety of sensing capabilities, including an IntelRealsense Depth camera and a LiDAR module, which, together, allow it to live stream video and build a map of its environment with slam_toolbox.
 
