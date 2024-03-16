@@ -13,7 +13,7 @@ Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight
 
 ## Overview
 
-Terraflight is a ROS2-controlled **mobile exploration robot** build from the ground up. The custom-built rover carries a drone that can be deployed from the field during operation.  
+Terraflight is a ROS2-controlled **mobile exploration robot** built from the ground up. The custom-built rover carries a drone that can be deployed from the field during operation.  
 
 The robot **live streams video** from both the rover and drone and also uses a LiDAR module to **perform SLAM and map its environment**. The entire system is controlled and monitored from a base station. 
 
@@ -43,12 +43,12 @@ Due to the computational constraints of the onboard Raspberry Pi 4, which functi
 The rover carries a Tello drone as it explores and is capable of deploying it from the field. The drone is controlled via a joystick controller attached to the base station, but is capable of autonomously re-landing on the rover's roof.
 
 <p float="left">
-  <img src="/assets/images/not_located1.png" width="275" />
-  <img src="/assets/images/located1.png" width="275" /> 
-  <img src="/assets/images/not_located2.png" width="275" />
+  <img src="/assets/images/not_located1.png" width="235" />
+  <img src="/assets/images/located1.png" width="235" /> 
+  <img src="/assets/images/not_located2.png" width="235" />
 </p>
 
-The drone uses AprilTags to locate the rover. The drone also displays the time since the last reading. The update status bar trends towards red as the drone goes longer without an update.
+The drone uses AprilTags to locate the rover. When the autonomous landing service is triggered, the drone follows the transform between itself and the AprilTag, adjusting for its position on the chassis. The drone also displays the time since the last reading. The update status bar trends towards red as the drone goes longer without an update.
 
 <p align="center">
   <img src="/assets/images/located2.png" width="475" />
@@ -62,8 +62,22 @@ The robot uses a LiDAR module mounted on the rover to perform SLAM and estimate 
 
 <img src="/assets/images/slam_map_hallway.png" width="975" />
 
-Map created in a hallway at Northwestern's Technological Institute.
-
-
+The robot uses SLAM Toolbox. This map was created in a hallway at Northwestern's Technological Institute.
 
 #### Base Station
+
+The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data.
+
+<p align="center">
+   <img src="/assets/images/base_station1.jpg" width="645" />
+</p>
+
+As long as the base station is connected to both the Tello drone's WiFi network and a network configured to facilitate ROS2 discovery, it can be operated anywhere--inside or outside.
+
+<p align="center">
+   <img src="/assets/images/base_station2.png" width="945" />
+</p>
+
+The base station node provides a helpful interface to monitor the live video feed from the rover and drone, and the map being concurrently created by the rover as it explores the environment.
+
+The base station node provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously presenting a live map that builds as the rover navigates and explores its environment.
