@@ -40,7 +40,7 @@ Due to the computational constraints of the onboard Raspberry Pi 4, which functi
 ## Features
 
 #### Drone
-The rover carries a Tello drone as it explores and is capable of deploying it from the field. The drone is controlled via a joystick controller attached to the base station, but is capable of autonomously re-landing on the rover's roof.
+The rover carries a Tello drone as it explores and is capable of deploying it from the field. The drone is controlled via a joystick controller attached to the base station, but is capable of autonomously re-landing on top of the rover's chassis.
 
 <p float="left">
   <img src="/assets/images/not_located1.png" width="235" />
@@ -78,6 +78,14 @@ As long as the base station is connected to both the Tello drone's WiFi network 
    <img src="/assets/images/base_station2.png" width="945" />
 </p>
 
-The base station node provides a helpful interface to monitor the live video feed from the rover and drone, and the map being concurrently created by the rover as it explores the environment.
+The base station node provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously building a map as the rover navigates and explores its environment.
 
-The base station node provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously presenting a live map that builds as the rover navigates and explores its environment.
+## Design
+
+This robot was built and programmed completely from scratch.
+
+#### Electrical
+
+<p align="center">
+   <img src="/assets/images/electrical_diagram1.png" width="545" />
+</p>
