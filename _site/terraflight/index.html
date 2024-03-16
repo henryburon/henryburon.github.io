@@ -6,12 +6,12 @@
 
 <link rel="icon" href="/assets/images/logo.png">
 
-<title>Mobile Exploration Robot with Auxiliary Drone [In Progress] | Henry Buron</title>
+<title>Mobile Exploration Robot with Auxiliary Drone | Henry Buron</title>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Mobile Exploration Robot with Auxiliary Drone [In Progress] | Henry’s Portfolio</title>
+<title>Mobile Exploration Robot with Auxiliary Drone | Henry’s Portfolio</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Mobile Exploration Robot with Auxiliary Drone [In Progress]" />
+<meta property="og:title" content="Mobile Exploration Robot with Auxiliary Drone" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Python, ROS2, Embedded Systems" />
 <meta property="og:description" content="Python, ROS2, Embedded Systems" />
@@ -23,9 +23,9 @@
 <meta property="article:published_time" content="2024-02-05T00:00:00-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="henryburon.github.io/assets/images/terraflight_1.png" />
-<meta property="twitter:title" content="Mobile Exploration Robot with Auxiliary Drone [In Progress]" />
+<meta property="twitter:title" content="Mobile Exploration Robot with Auxiliary Drone" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-05T00:00:00-06:00","datePublished":"2024-02-05T00:00:00-06:00","description":"Python, ROS2, Embedded Systems","headline":"Mobile Exploration Robot with Auxiliary Drone [In Progress]","image":"henryburon.github.io/assets/images/terraflight_1.png","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/terraflight/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-05T00:00:00-06:00","datePublished":"2024-02-05T00:00:00-06:00","description":"Python, ROS2, Embedded Systems","headline":"Mobile Exploration Robot with Auxiliary Drone","image":"henryburon.github.io/assets/images/terraflight_1.png","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/terraflight/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -140,7 +140,7 @@
                 
 
                 <!-- Post Title -->
-                <h1 class="posttitle">Mobile Exploration Robot with Auxiliary Drone [In Progress]</h1>
+                <h1 class="posttitle">Mobile Exploration Robot with Auxiliary Drone</h1>
 
             </div>
 
@@ -159,21 +159,38 @@
 
 <h2 id="overview">Overview</h2>
 
-<p>I am in the process of building a <strong>mobile exploration robot</strong> from the ground up. The robot has a variety of sensing capabilities, including an IntelRealsense Depth camera and a LiDAR module, which, together, allow it to live stream video and build a map of its environment with slam_toolbox.</p>
+<p>Terraflight is a ROS2-controlled <strong>mobile exploration robot</strong> build from the ground up. The custom-built rover carries a drone that can be deployed from the field during operation.</p>
 
-<p>In addition, the robot carries a drone on its top platform, which it is able to deploy from the field. The drone, which also live streams video, is controlled via teleoperation, but is able to autonomously land itself on the mobile chassis which it localizes using AprilTags.</p>
+<p>The robot <strong>live streams video</strong> from both the rover and drone and also uses a LiDAR module to <strong>perform SLAM and map its environment</strong>. The entire system is controlled and monitored from a base station.</p>
+
+<p>The drone is controlled via teleoperation, but is able to autonomously re-land on the rover. The drone localizes the rover with AprilTags, after which the user can trigger the autonomous landing service.</p>
+
+<p>The robot uses SLAM Toolbox to build a map of its environment.</p>
 
 <p><strong>GitHub</strong>: <a href="https://github.com/henryburon/terra-flight">https://github.com/henryburon/terra-flight</a></p>
 
 <div style="background-color: white; height: 1px;"></div>
 
+<h2 id="structure">Structure</h2>
+
 <p>The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.</p>
 
-<p><img src="/assets/images/terraflight_slam_1.png" alt="terraflight1" />
-Preliminary image from the base station: a frame from the rover’s live stream and the map it has started to build. The top “No Image” is the drone’s feed, which was not flying at the time. Note: this was in a room with many chairs and table legs.</p>
+<p><img src="/assets/images/terraflight_control_architecture.png" alt="control_architecture" /></p>
 
-<p><img src="/assets/images/terraflight_2.jpg" alt="terraflight2" />
-Wiring and electronics.</p>
+<p>This block diagram represents a simplified view of the robot’s control and communication architecture within the ROS2 framework. It illustrates the flow of data between various components and nodes, including the base station, on-robot components, and visualization tools.</p>
+
+<p>Due to the computational constraints of the onboard Raspberry Pi 4, which functions as the robot’s central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the processing responsibilities when not possible. This necessity accounts for the relatively low frequency of the robot’s camera feed.</p>
+
+<div style="background-color: white; height: 1px;"></div>
+
+<h2 id="features">Features</h2>
+
+<h4 id="drone">Drone</h4>
+<p>The rover carries a Tello drone as it explores and is capable of deploying it from the field. The drone is controlled via a joystick controller attached to the base station, but is capable of autonomously re-landing on the rover’s roof.</p>
+
+<h4 id="slam">SLAM</h4>
+
+<h4 id="base-station">Base Station</h4>
 
             </div>
 

@@ -9,7 +9,7 @@ hidden: true
 
 ROS2, Python, MoveIt2, Motion Planning
 
-<iframe width="100%" height="441" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="90%" height="441" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 
