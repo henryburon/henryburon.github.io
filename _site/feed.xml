@@ -5,13 +5,13 @@
     <description>Master&apos;s in Robotics at Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Mar 2024 07:09:14 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Mar 2024 07:09:14 -0500</lastBuildDate>
+    <pubDate>Sat, 16 Mar 2024 07:57:32 -0500</pubDate>
+    <lastBuildDate>Sat, 16 Mar 2024 07:57:32 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Mobile Exploration Robot with Auxiliary Drone</title>
-        <description>&lt;p&gt;Python, ROS2, Embedded Systems&lt;/p&gt;
+        <description>&lt;p&gt;Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight&lt;/p&gt;
 
 &lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -37,7 +37,7 @@
 
 &lt;p&gt;This block diagram represents a simplified view of the robot’s control and communication architecture within the ROS2 framework. It illustrates the flow of data between various components and nodes, including the base station, on-robot components, and visualization tools.&lt;/p&gt;
 
-&lt;p&gt;Due to the computational constraints of the onboard Raspberry Pi 4, which functions as the robot’s central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the processing responsibilities when not possible. This necessity accounts for the relatively low frequency of the robot’s camera feed.&lt;/p&gt;
+&lt;p&gt;Due to the computational constraints of the onboard Raspberry Pi 4, which functions as the robot’s central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the processing responsibilities when that is not possible. This necessity accounts for the relatively low frequency of the robot’s camera feed.&lt;/p&gt;
 
 &lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
@@ -46,7 +46,27 @@
 &lt;h4 id=&quot;drone&quot;&gt;Drone&lt;/h4&gt;
 &lt;p&gt;The rover carries a Tello drone as it explores and is capable of deploying it from the field. The drone is controlled via a joystick controller attached to the base station, but is capable of autonomously re-landing on the rover’s roof.&lt;/p&gt;
 
+&lt;p float=&quot;left&quot;&gt;
+  &lt;img src=&quot;/assets/images/not_located1.png&quot; width=&quot;275&quot; /&gt;
+  &lt;img src=&quot;/assets/images/located1.png&quot; width=&quot;275&quot; /&gt; 
+  &lt;img src=&quot;/assets/images/not_located2.png&quot; width=&quot;275&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The drone uses AprilTags to locate the rover. The drone also displays the time since the last reading. The update status bar trends towards red as the drone goes longer without an update.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/located2.png&quot; width=&quot;475&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The rover can be located from any of its three AprilTags, and the drone adjusts its autonomous re-landing flight plan to ensure it lands on the rover facing forward.&lt;/p&gt;
+
 &lt;h4 id=&quot;slam&quot;&gt;SLAM&lt;/h4&gt;
+
+&lt;p&gt;The robot uses a LiDAR module mounted on the rover to perform SLAM and estimate its pose as it creates a map of its environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/slam_map_hallway.png&quot; width=&quot;975&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Map created in a hallway at Northwestern’s Technological Institute.&lt;/p&gt;
 
 &lt;h4 id=&quot;base-station&quot;&gt;Base Station&lt;/h4&gt;
 </description>
@@ -60,6 +80,10 @@
         <category>ROS2</category>
         
         <category>Embedded Systems</category>
+        
+        <category>Multi-Robot System</category>
+        
+        <category>Autonomous Flight</category>
         
       </item>
     
