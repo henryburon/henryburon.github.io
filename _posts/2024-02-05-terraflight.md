@@ -58,7 +58,7 @@ The rover can be located from any of its three AprilTags, and the drone adjusts 
 
 #### SLAM
 
-The robot uses a LiDAR module mounted on the rover to perform SLAM and estimate its pose as it creates a map of its environment.
+The robot uses a LiDAR module mounted on the rover to perform 2D SLAM and estimate its pose as it creates a map of its environment.
 
 <img src="/assets/images/slam_map_hallway.png" width="975" />
 

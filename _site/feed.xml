@@ -5,8 +5,8 @@
     <description>Master&apos;s in Robotics at Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Mar 2024 09:08:13 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Mar 2024 09:08:13 -0500</lastBuildDate>
+    <pubDate>Sat, 16 Mar 2024 15:39:03 -0500</pubDate>
+    <lastBuildDate>Sat, 16 Mar 2024 15:39:03 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -62,7 +62,7 @@
 
 &lt;h4 id=&quot;slam&quot;&gt;SLAM&lt;/h4&gt;
 
-&lt;p&gt;The robot uses a LiDAR module mounted on the rover to perform SLAM and estimate its pose as it creates a map of its environment.&lt;/p&gt;
+&lt;p&gt;The robot uses a LiDAR module mounted on the rover to perform 2D SLAM and estimate its pose as it creates a map of its environment.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/slam_map_hallway.png&quot; width=&quot;975&quot; /&gt;&lt;/p&gt;
 
