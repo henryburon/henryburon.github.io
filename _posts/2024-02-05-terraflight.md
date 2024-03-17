@@ -13,7 +13,7 @@ Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight
 
 ## Overview
 
-Terraflight is a ROS2-controlled **mobile exploration robot** built from the ground up. The custom-built rover carries a drone that can be deployed from the field during operation.  
+*Terraflight* is a ROS2-controlled **mobile exploration robot** built from the ground up. The custom-built rover carries a drone that can be deployed from the field during operation.  
 
 The robot **live streams video** from both the rover and drone and also uses a LiDAR module to **perform SLAM and map its environment**. The entire system is controlled and monitored from a base station. 
 
