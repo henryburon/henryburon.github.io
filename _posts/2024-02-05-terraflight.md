@@ -48,7 +48,7 @@ The rover carries a Tello drone as it explores and is capable of deploying it fr
   <img src="/assets/images/not_located2.png" width="235" />
 </p>
 
-The drone uses AprilTags to locate the rover. When the autonomous landing service is triggered, the drone follows the transform between itself and the AprilTag, adjusting for its position on the chassis. The drone also displays the time since the last reading. The update status bar trends towards red as the drone goes longer without an update.
+The drone uses AprilTags to locate the rover. When the autonomous landing service is triggered, the drone follows the most updated transform between itself and the AprilTag, adjusting for the location of the most recent tag on the chassis (left, right, or back). The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.
 
 <p align="center">
   <img src="/assets/images/located2.png" width="475" />
@@ -58,7 +58,7 @@ The rover can be located from any of its three AprilTags, and the drone adjusts 
 
 #### SLAM
 
-The robot uses a LiDAR module mounted on the rover to perform 2D SLAM and estimate its pose as it creates a map of its environment.
+The robot uses a LiDAR module mounted on the top of the rover to perform 2D SLAM and estimate its pose as it creates a map of the environment.
 
 <img src="/assets/images/slam_map_hallway.png" width="975" />
 
@@ -72,7 +72,7 @@ The base station, operated via joystick inputs, is the primary control hub issui
    <img src="/assets/images/base_station1.jpg" width="645" />
 </p>
 
-As long as the base station is connected to both the Tello drone's WiFi network and a network configured to facilitate ROS2 discovery, it can be operated anywhere--inside or outside.
+As long as the base station is connected to both the Tello drone's WiFi network and a network configured to facilitate ROS2 discovery, it can be operated anywhere.
 
 <p align="center">
    <img src="/assets/images/base_station2.png" width="945" />
