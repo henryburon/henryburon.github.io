@@ -13,46 +13,58 @@ Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight
 
 ## Overview
 
-*Terraflight* is a ROS2-controlled **mobile exploration robot** built from the ground up. The custom-built rover carries a drone that can be deployed from the field during operation.  
+*Terraflight* is a ROS2-controlled mobile exploration robot built from the ground up. The custom-built rover carries a drone that can be deployed from the field during operation.  
 
-The robot **live streams video** from both the rover and drone and also uses a LiDAR module to **perform SLAM and map its environment**. The entire system is controlled and monitored from a base station. 
+The robot streams live video from both the rover and drone, and also uses a LiDAR module to perform SLAM and map its environment. The entire system is controlled and monitored from a base station. 
 
-The drone is controlled via teleoperation, but is able to autonomously re-land on the rover. The drone localizes the rover with AprilTags, after which the user can trigger the autonomous landing service.
+The drone is primarily teleoperated, but is able to autonomously re-land on the rover. The drone localizes the rover with AprilTags, after which the user is able to call the autonomous landing service with the joystick controller.
 
-The robot uses SLAM Toolbox to build a map of its environment.
-
-**GitHub**: [https://github.com/henryburon/terra-flight](https://github.com/henryburon/terra-flight)
+**GitHub Source Code**: [https://github.com/henryburon/terra-flight](https://github.com/henryburon/terra-flight)
 
 <div style="background-color: white; height: 1px;"></div>
+
+## Contents
+
+1. [Structure](#structure)
+2. [Features](#features)
+   - [Drone](#drone)
+   - [SLAM](#slam)
+   - [Base Station](#base-station)
+3. [Design](#design)
+   - [Electrical](#electrical)
 
 ## Structure
 
 The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.
 
 ![control_architecture](/assets/images/terraflight_control_architecture.png)
+<small>Figure 1. Block diagram representing a simplified view of the robot's control and communication architecture within the ROS2 framework.</small>
 
-This block diagram represents a simplified view of the robot's control and communication architecture within the ROS2 framework. It illustrates the flow of data between various components and nodes, including the base station, on-robot components, and visualization tools.
+Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot's central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the Pi's overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot's camera feed (2 Hz).
 
-Due to the computational constraints of the onboard Raspberry Pi 4, which functions as the robot's central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the processing responsibilities when that is not possible. This necessity accounts for the relatively low frequency of the robot's camera feed.
+View the [source code](https://github.com/henryburon/terra-flight) for more information on the ROS2 packages that make up this project.
 
 <div style="background-color: white; height: 1px;"></div>
 
 ## Features
 
 #### Drone
-The rover carries a Tello drone as it explores and is capable of deploying it from the field. The drone is controlled via a joystick controller attached to the base station, but is capable of autonomously re-landing on top of the rover's chassis.
+The rover carries a [DJI Tello drone](https://store.dji.com/product/tello?vid=38421) on its top platform throughout operation, and is capable of remotely deploying it from the field. The drone is teleoperated via joystick commands from the user, but is capable of autonomously re-landing on the rover after it locates the rover during flight.
 
-<p float="left">
-  <img src="/assets/images/not_located1.png" width="235" />
-  <img src="/assets/images/located1.png" width="235" /> 
-  <img src="/assets/images/not_located2.png" width="235" />
+<p align="center">
+  <img src="/assets/images/not_located1.png" width="255" />
+  <img src="/assets/images/located1.png" width="255" /> 
+  <img src="/assets/images/not_located2.png" width="255" />
 </p>
+<small>  Figure 2. Drone camera feed before and after it locates the rover.</small>
 
-The drone uses AprilTags to locate the rover. When the autonomous landing service is triggered, the drone follows the most updated transform between itself and the AprilTag, adjusting for the location of the most recent tag on the chassis (left, right, or back). The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.
+The drone uses AprilTags on the left, right, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.
 
 <p align="center">
   <img src="/assets/images/located2.png" width="475" />
 </p>
+
+<small>  Figure 3. Drone locating the rover via the right tag.</small>
 
 The rover can be located from any of its three AprilTags, and the drone adjusts its autonomous re-landing flight plan to ensure it lands on the rover facing forward.
 
@@ -60,9 +72,12 @@ The rover can be located from any of its three AprilTags, and the drone adjusts 
 
 The robot uses a LiDAR module mounted on the top of the rover to perform 2D SLAM and estimate its pose as it creates a map of the environment.
 
-<img src="/assets/images/slam_map_hallway.png" width="975" />
+<p align="center">
+<img src="/assets/images/slam_hallway2.png" width="675" />
+</p>
+<small>Figure 4. Map created in a hallway at Northwestern's Tech Institute.</small>
 
-The robot uses SLAM Toolbox. This map was created in a hallway at Northwestern's Technological Institute.
+The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel velocities.
 
 #### Base Station
 
@@ -82,7 +97,7 @@ The base station node provides a dynamic interface that offers real-time video s
 
 ## Design
 
-This robot was built and programmed completely from scratch.
+*Terraflight* was built and programmed completely from scratch.
 
 #### Electrical
 
