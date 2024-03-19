@@ -34,6 +34,8 @@ The drone is primarily teleoperated, but is able to autonomously re-land on the 
    - [Electrical](#electrical)
    - [Mechanical](#mechanical)
 
+<div style="background-color: white; height: 1px;"></div>
+
 ## Structure
 
 The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.
@@ -97,6 +99,7 @@ As long as the base station is connected to both the Tello drone's WiFi network 
 </p>
 <small> Figure 6. Screenshot from the base station's interface. Top left: Drone camera. Bottom left: Rover camera. Right: SLAM.</small>
 
+<div style="background-color: white; height: 1px;"></div>
 
 ## Design
 
