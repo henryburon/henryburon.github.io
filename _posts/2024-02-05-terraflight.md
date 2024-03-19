@@ -32,15 +32,16 @@ The drone is primarily teleoperated, but is able to autonomously re-land on the 
    - [Base Station](#base-station)
 3. [Design](#design)
    - [Electrical](#electrical)
+   - [Mechanical](#mechanical)
 
 ## Structure
 
 The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.
 
 ![control_architecture](/assets/images/terraflight_control_architecture.png)
-<small>Figure 1. Block diagram representing a simplified view of the robot's control and communication architecture within the ROS2 framework.</small>
+<small> Figure 1. Block diagram representing a simplified view of the robot's control and communication architecture within the ROS2 framework.</small>
 
-Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot's central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the Pi's overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot's camera feed (2 Hz).
+Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot's central processing unit, the architecture is designed to delegate computation and data processing to the base station, or reduce the Pi's overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot's camera feed (2 Hz).
 
 View the [source code](https://github.com/henryburon/terra-flight) for more information on the ROS2 packages that make up this project.
 
@@ -58,7 +59,7 @@ The rover carries a [DJI Tello drone](https://store.dji.com/product/tello?vid=38
 </p>
 <small>  Figure 2. Drone camera feed before and after it locates the rover.</small>
 
-The drone uses AprilTags on the left, right, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.
+The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.
 
 <p align="center">
   <img src="/assets/images/located2.png" width="475" />
@@ -75,32 +76,46 @@ The robot uses a LiDAR module mounted on the top of the rover to perform 2D SLAM
 <p align="center">
 <img src="/assets/images/slam_hallway2.png" width="675" />
 </p>
-<small>Figure 4. Map created in a hallway at Northwestern's Tech Institute.</small>
+<small> Figure 4. Map created in a hallway at Northwestern's Tech Institute.</small>
 
 The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel velocities.
 
 #### Base Station
 
-The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data.
+The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data. It provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously showing the map being built as the robot navigates and explores its environment.
 
 <p align="center">
    <img src="/assets/images/base_station1.jpg" width="645" />
 </p>
+<small> Figure 5. The base station during operation. Hardware includes a laptop, USB WiFi adapter, and joystick controller.</small>
 
-As long as the base station is connected to both the Tello drone's WiFi network and a network configured to facilitate ROS2 discovery, it can be operated anywhere.
+
+As long as the base station is connected to both the Tello drone's WiFi network and a network configured to facilitate ROS2 discovery, the robot can be operated anywhere.
 
 <p align="center">
    <img src="/assets/images/base_station2.png" width="945" />
 </p>
+<small> Figure 6. Screenshot from the base station's interface. Top left: Drone camera. Bottom left: Rover camera. Right: SLAM.</small>
 
-The base station node provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously building a map as the rover navigates and explores its environment.
 
 ## Design
 
-*Terraflight* was built and programmed completely from scratch.
+*Terraflight* was built from scratch.
 
 #### Electrical
 
 <p align="center">
    <img src="/assets/images/electrical_diagram1.png" width="545" />
 </p>
+<small> Figure 7. Electrical block diagram.</small>
+
+14.8V main bus. The power system allows the user to power the Raspberry Pi 4 individually when providing software updates.
+
+#### Mechanical
+
+<p align="center">
+   <img src="/assets/images/mechanical_terraflight.png" width="750" />
+</p>
+<small> Figure 8. Labeled image of *Terraflight*. </small>
+
+The rover's drive train was inspired by [NASA's Open Source JPL Rover](https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical).

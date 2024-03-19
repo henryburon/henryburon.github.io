@@ -15,17 +15,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight" />
 <meta property="og:description" content="Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight" />
-<link rel="canonical" href="henryburon.github.io/terraflight/" />
-<meta property="og:url" content="henryburon.github.io/terraflight/" />
+<link rel="canonical" href="http://localhost:4000/terraflight/" />
+<meta property="og:url" content="http://localhost:4000/terraflight/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="henryburon.github.io/assets/gifs/terraflight.gif" />
+<meta property="og:image" content="http://localhost:4000/assets/gifs/terraflight.gif" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-02-05T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="henryburon.github.io/assets/gifs/terraflight.gif" />
+<meta property="twitter:image" content="http://localhost:4000/assets/gifs/terraflight.gif" />
 <meta property="twitter:title" content="Mobile Exploration Robot with Auxiliary Drone" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-05T00:00:00-05:00","datePublished":"2024-02-05T00:00:00-05:00","description":"Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight","headline":"Mobile Exploration Robot with Auxiliary Drone","image":"henryburon.github.io/assets/gifs/terraflight.gif","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/terraflight/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-05T00:00:00-05:00","datePublished":"2024-02-05T00:00:00-05:00","description":"Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight","headline":"Mobile Exploration Robot with Auxiliary Drone","image":"http://localhost:4000/assets/gifs/terraflight.gif","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/terraflight/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -183,6 +183,7 @@
   <li><a href="#design">Design</a>
     <ul>
       <li><a href="#electrical">Electrical</a></li>
+      <li><a href="#mechanical">Mechanical</a></li>
     </ul>
   </li>
 </ol>
@@ -192,9 +193,9 @@
 <p>The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.</p>
 
 <p><img src="/assets/images/terraflight_control_architecture.png" alt="control_architecture" />
-<small>Figure 1. Block diagram representing a simplified view of the robot’s control and communication architecture within the ROS2 framework.</small></p>
+<small> Figure 1. Block diagram representing a simplified view of the robot’s control and communication architecture within the ROS2 framework.</small></p>
 
-<p>Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot’s central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the Pi’s overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot’s camera feed (2 Hz).</p>
+<p>Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot’s central processing unit, the architecture is designed to delegate computation and data processing to the base station, or reduce the Pi’s overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot’s camera feed (2 Hz).</p>
 
 <p>View the <a href="https://github.com/henryburon/terra-flight">source code</a> for more information on the ROS2 packages that make up this project.</p>
 
@@ -212,7 +213,7 @@
 </p>
 <p><small>  Figure 2. Drone camera feed before and after it locates the rover.</small></p>
 
-<p>The drone uses AprilTags on the left, right, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.</p>
+<p>The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.</p>
 
 <p align="center">
   <img src="/assets/images/located2.png" width="475" />
@@ -229,35 +230,47 @@
 <p align="center">
 <img src="/assets/images/slam_hallway2.png" width="675" />
 </p>
-<p><small>Figure 4. Map created in a hallway at Northwestern’s Tech Institute.</small></p>
+<p><small> Figure 4. Map created in a hallway at Northwestern’s Tech Institute.</small></p>
 
 <p>The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel velocities.</p>
 
 <h4 id="base-station">Base Station</h4>
 
-<p>The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data.</p>
+<p>The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data. It provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously showing the map being built as the robot navigates and explores its environment.</p>
 
 <p align="center">
    <img src="/assets/images/base_station1.jpg" width="645" />
 </p>
+<p><small> Figure 5. The base station during operation. Hardware includes a laptop, USB WiFi adapter, and joystick controller.</small></p>
 
-<p>As long as the base station is connected to both the Tello drone’s WiFi network and a network configured to facilitate ROS2 discovery, it can be operated anywhere.</p>
+<p>As long as the base station is connected to both the Tello drone’s WiFi network and a network configured to facilitate ROS2 discovery, the robot can be operated anywhere.</p>
 
 <p align="center">
    <img src="/assets/images/base_station2.png" width="945" />
 </p>
-
-<p>The base station node provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously building a map as the rover navigates and explores its environment.</p>
+<p><small> Figure 6. Screenshot from the base station’s interface. Top left: Drone camera. Bottom left: Rover camera. Right: SLAM.</small></p>
 
 <h2 id="design">Design</h2>
 
-<p><em>Terraflight</em> was built and programmed completely from scratch.</p>
+<p><em>Terraflight</em> was built from scratch.</p>
 
 <h4 id="electrical">Electrical</h4>
 
 <p align="center">
    <img src="/assets/images/electrical_diagram1.png" width="545" />
 </p>
+<p><small> Figure 7. Electrical block diagram.</small></p>
+
+<p>14.8V main bus. The power system allows the user to power the Raspberry Pi 4 individually when providing software updates.</p>
+
+<h4 id="mechanical">Mechanical</h4>
+
+<p align="center">
+   <img src="/assets/images/mechanical_terraflight.png" width="750" />
+</p>
+<p><small> Figure 8. Labeled image of <em>Terraflight</em>. </small></p>
+
+<p>The rover’s drive train was inspired by <a href="https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical">NASA’s Open Source JPL Rover</a>.</p>
 
             </div>
 

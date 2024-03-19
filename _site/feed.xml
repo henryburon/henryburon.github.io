@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>Master&apos;s in Robotics at Northwestern University</description>
-    <link>henryburon.github.io/</link>
-    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Mar 2024 15:11:50 -0400</pubDate>
-    <lastBuildDate>Mon, 18 Mar 2024 15:11:50 -0400</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 19 Mar 2024 01:08:56 -0400</pubDate>
+    <lastBuildDate>Tue, 19 Mar 2024 01:08:56 -0400</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -41,6 +41,7 @@
   &lt;li&gt;&lt;a href=&quot;#design&quot;&gt;Design&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#electrical&quot;&gt;Electrical&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#mechanical&quot;&gt;Mechanical&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -50,9 +51,9 @@
 &lt;p&gt;The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in Python.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/terraflight_control_architecture.png&quot; alt=&quot;control_architecture&quot; /&gt;
-&lt;small&gt;Figure 1. Block diagram representing a simplified view of the robot’s control and communication architecture within the ROS2 framework.&lt;/small&gt;&lt;/p&gt;
+&lt;small&gt; Figure 1. Block diagram representing a simplified view of the robot’s control and communication architecture within the ROS2 framework.&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot’s central processing unit, the architecture is designed to delegate computation and data processing to the base station, and reduce the Pi’s overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot’s camera feed (2 Hz).&lt;/p&gt;
+&lt;p&gt;Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot’s central processing unit, the architecture is designed to delegate computation and data processing to the base station, or reduce the Pi’s overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot’s camera feed (2 Hz).&lt;/p&gt;
 
 &lt;p&gt;View the &lt;a href=&quot;https://github.com/henryburon/terra-flight&quot;&gt;source code&lt;/a&gt; for more information on the ROS2 packages that make up this project.&lt;/p&gt;
 
@@ -70,7 +71,7 @@
 &lt;/p&gt;
 &lt;p&gt;&lt;small&gt;  Figure 2. Drone camera feed before and after it locates the rover.&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;The drone uses AprilTags on the left, right, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.&lt;/p&gt;
+&lt;p&gt;The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/assets/images/located2.png&quot; width=&quot;475&quot; /&gt;
@@ -87,39 +88,51 @@
 &lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/slam_hallway2.png&quot; width=&quot;675&quot; /&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;small&gt;Figure 4. Map created in a hallway at Northwestern’s Tech Institute.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt; Figure 4. Map created in a hallway at Northwestern’s Tech Institute.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel velocities.&lt;/p&gt;
 
 &lt;h4 id=&quot;base-station&quot;&gt;Base Station&lt;/h4&gt;
 
-&lt;p&gt;The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data.&lt;/p&gt;
+&lt;p&gt;The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data. It provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously showing the map being built as the robot navigates and explores its environment.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;/assets/images/base_station1.jpg&quot; width=&quot;645&quot; /&gt;
 &lt;/p&gt;
+&lt;p&gt;&lt;small&gt; Figure 5. The base station during operation. Hardware includes a laptop, USB WiFi adapter, and joystick controller.&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;As long as the base station is connected to both the Tello drone’s WiFi network and a network configured to facilitate ROS2 discovery, it can be operated anywhere.&lt;/p&gt;
+&lt;p&gt;As long as the base station is connected to both the Tello drone’s WiFi network and a network configured to facilitate ROS2 discovery, the robot can be operated anywhere.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;/assets/images/base_station2.png&quot; width=&quot;945&quot; /&gt;
 &lt;/p&gt;
-
-&lt;p&gt;The base station node provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously building a map as the rover navigates and explores its environment.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt; Figure 6. Screenshot from the base station’s interface. Top left: Drone camera. Bottom left: Rover camera. Right: SLAM.&lt;/small&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Terraflight&lt;/em&gt; was built and programmed completely from scratch.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Terraflight&lt;/em&gt; was built from scratch.&lt;/p&gt;
 
 &lt;h4 id=&quot;electrical&quot;&gt;Electrical&lt;/h4&gt;
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;/assets/images/electrical_diagram1.png&quot; width=&quot;545&quot; /&gt;
 &lt;/p&gt;
+&lt;p&gt;&lt;small&gt; Figure 7. Electrical block diagram.&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;14.8V main bus. The power system allows the user to power the Raspberry Pi 4 individually when providing software updates.&lt;/p&gt;
+
+&lt;h4 id=&quot;mechanical&quot;&gt;Mechanical&lt;/h4&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/mechanical_terraflight.png&quot; width=&quot;750&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;small&gt; Figure 8. Labeled image of &lt;em&gt;Terraflight&lt;/em&gt;. &lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 05 Feb 2024 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/terraflight/</link>
-        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
+        <link>http://localhost:4000/terraflight/</link>
+        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
         
         
         <category>Python</category>
@@ -192,8 +205,8 @@
 &lt;p&gt;This project is currently in progress. I will soon be finishing the EKF SLAM algorithm and implementing it on a robot in the physical world.&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/turtlebot_slam/</link>
-        <guid isPermaLink="true">henryburon.github.io/turtlebot_slam/</guid>
+        <link>http://localhost:4000/turtlebot_slam/</link>
+        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -335,8 +348,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/polyglotbot/</link>
-        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
+        <link>http://localhost:4000/polyglotbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -423,8 +436,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -482,8 +495,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 15 Nov 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/ml_emotion_classification/</link>
-        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
+        <link>http://localhost:4000/ml_emotion_classification/</link>
+        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -537,8 +550,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -577,8 +590,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Sep 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -706,8 +719,8 @@ Testing on the lake.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 01 Sep 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/path_planning/</link>
-        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
+        <link>http://localhost:4000/path_planning/</link>
+        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -765,8 +778,8 @@ I am passionate about autonomous systems, computer vision, and mobile robotics, 
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 14 Mar 2001 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/HenryBuron_About</link>
-        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
+        <link>http://localhost:4000/HenryBuron_About</link>
+        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
         
         
       </item>
