@@ -43,7 +43,7 @@ The robot is built with a Raspberry Pi 4 and is fully controlled using ROS2 in P
 ![control_architecture](/assets/images/terraflight_control_architecture.png)
 <small> Figure 1. Block diagram representing a simplified view of the robot's control and communication architecture within the ROS2 framework.</small>
 
-Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot's central processing unit, the architecture is designed to delegate computation and data processing to the base station, or reduce the Pi's overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot's camera feed (2 Hz).
+Due to the computational limitations of the onboard Raspberry Pi 4, which functions as the robot's central processing unit, the architecture is designed to delegate computation and data processing to the base station and reduce the Pi's overall processing responsibilities when that is not possible. This necessity accounts for the low frequency of the robot's camera feed (2 Hz).
 
 View the [source code](https://github.com/henryburon/terra-flight) for more information on the ROS2 packages that make up this project.
 
