@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>Master&apos;s in Robotics at Northwestern University</description>
-    <link>henryburon.github.io/</link>
-    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Mar 2024 01:44:06 -0400</pubDate>
-    <lastBuildDate>Tue, 19 Mar 2024 01:44:06 -0400</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 27 Mar 2024 03:16:09 -0500</pubDate>
+    <lastBuildDate>Wed, 27 Mar 2024 03:16:09 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -66,12 +66,16 @@
 &lt;h4 id=&quot;drone&quot;&gt;Drone&lt;/h4&gt;
 &lt;p&gt;The rover carries a &lt;a href=&quot;https://store.dji.com/product/tello?vid=38421&quot;&gt;DJI Tello drone&lt;/a&gt; on its top platform throughout operation, and is capable of remotely deploying it from the field. The drone is teleoperated via joystick commands from the user, but is capable of autonomously re-landing on the rover after it locates the rover during flight.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
+&lt;!-- &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/assets/images/not_located1.png&quot; width=&quot;255&quot; /&gt;
   &lt;img src=&quot;/assets/images/located1.png&quot; width=&quot;255&quot; /&gt; 
   &lt;img src=&quot;/assets/images/not_located2.png&quot; width=&quot;255&quot; /&gt;
+&lt;/p&gt; --&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/three_images.png&quot; width=&quot;1000&quot; /&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;small&gt;  Figure 2. Drone camera feed before and after it locates the rover.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;  Figure 2. Drone camera feed as it locates the rover.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.&lt;/p&gt;
 
@@ -134,9 +138,9 @@
 
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 05 Feb 2024 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/terraflight/</link>
-        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
+        <pubDate>Mon, 05 Feb 2024 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/terraflight/</link>
+        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
         
         
         <category>Python</category>
@@ -208,9 +212,9 @@
 
 &lt;p&gt;This project is currently in progress. I will soon be finishing the EKF SLAM algorithm and implementing it on a robot in the physical world.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 05 Jan 2024 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/turtlebot_slam/</link>
-        <guid isPermaLink="true">henryburon.github.io/turtlebot_slam/</guid>
+        <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/turtlebot_slam/</link>
+        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -351,9 +355,9 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Dec 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/polyglotbot/</link>
-        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
+        <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/polyglotbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -439,9 +443,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Sat, 25 Nov 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -498,9 +502,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Wed, 15 Nov 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/ml_emotion_classification/</link>
-        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
+        <pubDate>Wed, 15 Nov 2023 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/ml_emotion_classification/</link>
+        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -553,9 +557,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Fri, 15 Sep 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
+        <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -593,9 +597,9 @@ Final touches before the competition.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/lake_test.jpg&quot; alt=&quot;Lake Test&quot; /&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Sep 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
+        <pubDate>Tue, 05 Sep 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -722,9 +726,9 @@ Testing on the lake.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/rrt1.png&quot; style=&quot;width: 750px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 01 Sep 2023 00:00:00 -0400</pubDate>
-        <link>henryburon.github.io/path_planning/</link>
-        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
+        <pubDate>Fri, 01 Sep 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/path_planning/</link>
+        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -781,9 +785,9 @@ I am passionate about autonomous systems, computer vision, and mobile robotics, 
     &lt;iframe src=&quot;_pages/HenryBuronResume.pdf&quot; width=&quot;100%&quot; height=&quot;1200px&quot; style=&quot;display: inline-block;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 14 Mar 2001 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/HenryBuron_About</link>
-        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
+        <pubDate>Wed, 14 Mar 2001 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/HenryBuron_About</link>
+        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
         
         
       </item>
