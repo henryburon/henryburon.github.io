@@ -2,7 +2,7 @@
 layout: post
 title:  "Mobile Exploration Robot with Auxiliary Drone"
 categories: [Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight]
-image: assets/gifs/terraflight.gif
+image: assets/gifs/rover_roaming.gif
 featured: true
 hidden: true
 ---
