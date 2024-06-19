@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "EKF SLAM from Scratch (C++)"
+title:  "Extended Kalman Filter SLAM from Scratch"
 categories: [C++, ROS2, Unit Testing, CMake]
 image: assets/gifs/red_slam.gif
 featured: true
