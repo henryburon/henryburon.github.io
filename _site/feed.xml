@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>Master&apos;s in Robotics at Northwestern University</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Apr 2024 12:06:55 -0500</pubDate>
-    <lastBuildDate>Fri, 05 Apr 2024 12:06:55 -0500</lastBuildDate>
+    <link>henryburon.github.io/</link>
+    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 19 Jun 2024 14:43:29 -0700</pubDate>
+    <lastBuildDate>Wed, 19 Jun 2024 14:43:29 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -138,9 +138,9 @@
 
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 05 Feb 2024 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/terraflight/</link>
-        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
+        <pubDate>Mon, 05 Feb 2024 00:00:00 -0800</pubDate>
+        <link>henryburon.github.io/terraflight/</link>
+        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
         
         
         <category>Python</category>
@@ -156,18 +156,20 @@
       </item>
     
       <item>
-        <title>EKF SLAM from Scratch (C++) [In Progress]</title>
+        <title>EKF SLAM from Scratch (C++)</title>
         <description>&lt;p&gt;C++, ROS2, Unit Testing, CMake&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/slam_env.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
+&lt;!-- ![SLAM](/assets/images/slam_env.png) --&gt;
 
-&lt;h1 id=&quot;overview-in-progress&quot;&gt;Overview [In Progress]&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/slam_img.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;u&gt;This post will be completed soon.&lt;/u&gt;&lt;/p&gt;
+&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
 
-&lt;p&gt;I am currently implementing an Extended Kalman filter SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.&lt;/p&gt;
+&lt;p&gt;I implemented an Extended Kalman filter (EKF) SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/ekf-slam-turtlebot&quot;&gt;https://github.com/henryburon/ekf-slam-turtlebot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the above image, there are three simulated turtlebots. The &lt;strong&gt;red&lt;/strong&gt; turtlebot represents the ground truth, the &lt;strong&gt;blue&lt;/strong&gt; is the odometry estimate, and the &lt;strong&gt;green&lt;/strong&gt; is the estimate with SLAM. As can be seen, the estimate with SLAM performs much better than the estimate with just odometry.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/ME495-Navigation/slam-project-henryburon&quot;&gt;https://github.com/ME495-Navigation/slam-project-henryburon&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlelib&lt;/code&gt;&lt;/strong&gt; is a C++ library for handling SE(2) math and other turtlebot-related calculations.&lt;br /&gt;
 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nusim&lt;/code&gt;&lt;/strong&gt; is a ROS2 package that provides a simulated environment for the robots.&lt;br /&gt;
@@ -175,7 +177,13 @@
 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_control&lt;/code&gt;&lt;/strong&gt; controls the robot in simulation and the physical world.&lt;br /&gt;
 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuslam&lt;/code&gt;&lt;/strong&gt; implements EKF SLAM to estimate the robot’s pose.&lt;/p&gt;
 
-&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+&lt;!-- ## Extended Kalman Filter SLAM
+
+EKF SLAM estimates the robot&apos;s pose (position and orientation) as it constructs a map of its environment.
+
+The algorithm works by --&gt;
+
+&lt;h2 id=&quot;implementation-details&quot;&gt;Implementation Details&lt;/h2&gt;
 
 &lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
@@ -202,19 +210,23 @@
 
 &lt;p&gt;Builds turtlebot models with imported meshes in URDF; displays in RViz. Option to display all four models, or just one.&lt;/p&gt;
 
-&lt;p&gt;Launch with:&lt;/p&gt;
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;ros2 launch nuturtle_description load_one.launch.py
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_control&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;future-work&quot;&gt;Future Work&lt;/h2&gt;
+&lt;p&gt;Computes and publishes the odometry the turtlebot based on the joint states of its wheels. Controls movement of the turtlebot robot based on velocity commands and sensor data from the robot’s wheel encoders.&lt;/p&gt;
 
-&lt;p&gt;This project is currently in progress. I will soon be finishing the EKF SLAM algorithm and implementing it on a robot in the physical world.&lt;/p&gt;
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuslam&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Implements EKF SLAM for the turtlebot, a differential-drive robot. The node estimates the robot’s pose and the positions of obstacles in the environment by combining odometry data from the robot’s wheel encoders with simulated sensor data from obstacles in the environment.&lt;/p&gt;
+
+&lt;p&gt;The estimates odometry, path, and obstacles are published for visualization.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/turtlebot_slam/</link>
-        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
+        <pubDate>Fri, 05 Jan 2024 00:00:00 -0800</pubDate>
+        <link>henryburon.github.io/turtlebot_slam/</link>
+        <guid isPermaLink="true">henryburon.github.io/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -355,9 +367,9 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/polyglotbot/</link>
-        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
+        <pubDate>Tue, 05 Dec 2023 00:00:00 -0800</pubDate>
+        <link>henryburon.github.io/polyglotbot/</link>
+        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -443,9 +455,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <pubDate>Sat, 25 Nov 2023 00:00:00 -0800</pubDate>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -502,9 +514,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Wed, 15 Nov 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/ml_emotion_classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
+        <pubDate>Wed, 15 Nov 2023 00:00:00 -0800</pubDate>
+        <link>henryburon.github.io/ml_emotion_classification/</link>
+        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -557,9 +569,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
+        <link>henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -597,9 +609,9 @@ Final touches before the competition.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/lake_test.jpg&quot; alt=&quot;Lake Test&quot; /&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <pubDate>Tue, 05 Sep 2023 00:00:00 -0700</pubDate>
+        <link>henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -726,9 +738,9 @@ Testing on the lake.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/rrt1.png&quot; style=&quot;width: 750px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 01 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/path_planning/</link>
-        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
+        <pubDate>Fri, 01 Sep 2023 00:00:00 -0700</pubDate>
+        <link>henryburon.github.io/path_planning/</link>
+        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -785,9 +797,9 @@ I am passionate about autonomous systems, computer vision, and mobile robotics, 
     &lt;iframe src=&quot;_pages/HenryBuronResume.pdf&quot; width=&quot;100%&quot; height=&quot;1200px&quot; style=&quot;display: inline-block;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 14 Mar 2001 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/HenryBuron_About</link>
-        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
+        <pubDate>Wed, 14 Mar 2001 00:00:00 -0800</pubDate>
+        <link>henryburon.github.io/HenryBuron_About</link>
+        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
         
         
       </item>
