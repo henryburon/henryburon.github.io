@@ -5,8 +5,8 @@
     <description>Master&apos;s in Robotics at Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Jun 2024 14:54:46 -0700</pubDate>
-    <lastBuildDate>Wed, 19 Jun 2024 14:54:46 -0700</lastBuildDate>
+    <pubDate>Wed, 19 Jun 2024 15:00:36 -0700</pubDate>
+    <lastBuildDate>Wed, 19 Jun 2024 15:00:36 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -758,13 +758,13 @@ Testing on the lake.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 &lt;img src=&quot;/assets/images/headshot.jpeg&quot; style=&quot;width: 350px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University in Evanston, IL. I have practical experience developing ROS2 packages, writing code for robotic manipulation and navigation, processing images and extracting features for machine learning, and a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code in Python, C++, and C.
+&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University in Evanston, IL. I have practical experience developing ROS2 packages, writing code for robotic manipulation and navigation, processing images and extracting features for machine learning, and a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code in C++, Python, and C.
 &lt;br /&gt;
 &lt;br /&gt;
 Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo, writing software to plan a trajectory for a mobile robot’s end-effector, building a quadcopter from scratch, and using computer vision to control a robot arm as it identifies and grasps objects.
 &lt;br /&gt;
 &lt;br /&gt;
-I am passionate about autonomous systems, computer vision, and mobile robotics, and I am currently seeking an internship in robotics and software engineering.&lt;/p&gt;
+&lt;!-- I am passionate about autonomous systems, computer vision, and mobile robotics, and I am currently seeking an internship in robotics and software engineering. --&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;education&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Education&lt;/a&gt;&lt;/h3&gt;
 
