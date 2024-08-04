@@ -3,8 +3,8 @@ layout: post
 title:  "Rapidly-Exploring Random Tree (RRT)"
 categories: [Path Planning, Python, RRT]
 image: assets/gifs/RRT.GIF
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 Path Planning, Python, RRT

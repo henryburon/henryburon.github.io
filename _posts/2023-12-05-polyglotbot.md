@@ -13,7 +13,7 @@ ROS2, Python, MoveIt2, Motion Planning
 
 ## Overview
 
-**Goal**: Develop a ROS2 package that allows a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.
+**Goal**: Develop a ROS2 package that allows a 7 DoF Franka Emika Panda robotic arm to write translated text and speech on a whiteboard.
 
 **Team**: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh
 

@@ -3,8 +3,8 @@ layout: post
 title:  "KUKA youBot Mobile Manipulation"
 categories: [Python, Robotic Manipulation, CoppeliaSim]
 image: assets/gifs/kuka.GIF
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 Python, Robotic Manipulation, CoppeliaSim

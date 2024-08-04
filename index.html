@@ -9,7 +9,7 @@ title: Home
 ================================================== -->
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Projects</span></h2>
+        <h2><span>Featured</span></h2>
     </div>
     <div class="row listrecent">
     <!-- <div class="row"> -->
@@ -31,7 +31,12 @@ title: Home
 
 <!-- Posts Index
 ================================================== -->
-<!-- <section class="recent-posts">
+
+<!-- to change back to all posts on one page (and all under same section...)
+comment out the below code and change to featured=true, hidden=true for all posts -->
+
+
+<section class="recent-posts">
 
     <div class="section-title">
 
@@ -43,13 +48,13 @@ title: Home
 
         {% for post in paginator.posts %}
 
-        {% include postbox.html %}
+            {% include postbox.html %}
 
         {% endfor %}
 
     </div>
 
-</section> -->
+</section>
 
 <!-- Pagination
 ================================================== -->

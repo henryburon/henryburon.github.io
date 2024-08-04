@@ -3,8 +3,8 @@ layout: post
 title:  "Unmanned Electric Race Boat"
 categories: [ArduPilot, Electronics, Autonomous Systems]
 image: assets/gifs/boat_small.GIF
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 ArduPilot, Electronics, Autonomous Systems

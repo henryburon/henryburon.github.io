@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Henry&apos;s Portfolio</title>
-    <description>Master&apos;s in Robotics at Northwestern University</description>
+    <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Jun 2024 15:00:36 -0700</pubDate>
-    <lastBuildDate>Wed, 19 Jun 2024 15:00:36 -0700</lastBuildDate>
+    <pubDate>Sun, 04 Aug 2024 13:44:05 -0700</pubDate>
+    <lastBuildDate>Sun, 04 Aug 2024 13:44:05 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -138,7 +138,7 @@
 
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 05 Feb 2024 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/terraflight/</link>
         <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
         
@@ -247,7 +247,7 @@ The algorithm works by --&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Develop a ROS2 package that allows a 7 DoF Framka Emika Panda robotic arm to write translated text and speech on a whiteboard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Develop a ROS2 package that allows a 7 DoF Franka Emika Panda robotic arm to write translated text and speech on a whiteboard.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;: Allen Liu, Kassidy Shedd, Megan Black, Damien Koh&lt;/p&gt;
 
@@ -469,61 +469,42 @@ The algorithm works by --&gt;
       </item>
     
       <item>
-        <title>Machine Learning Emotion Classification</title>
-        <description>&lt;p&gt;Machine Learning, Python, Image Processing&lt;/p&gt;
+        <title>Unmanned Electric Race Boat</title>
+        <description>&lt;p&gt;ArduPilot, Electronics, Autonomous Systems&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?height=314&amp;amp;href=https%3A%2F%2Fwww.facebook.com%2Fnavalengineers%2Fvideos%2F256584973783468%2F&amp;amp;show_text=false&amp;amp;width=560&amp;amp;t=0&quot; width=&quot;100%&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Video provided by the American Society of Naval Engineers.&lt;/p&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Create a robust emotion classification pipeline by developing a machine learning algorithm capable of classifying facial images based on their depicted emotion.&lt;/p&gt;
+&lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I led a team in building a boat from scratch to compete in the Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition, a 5-mile endurance race. Our fully electric boat placed 3rd against universities from across the country.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/ml-emotion-classification&quot;&gt;https://github.com/henryburon/ml-emotion-classification&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our catamaran-style differential-drive boat, fondly named the &lt;em&gt;Colonial Cruiser&lt;/em&gt;, ran ArduPilot Rover on a Pixhawk Cube Orange and was controlled via radio during the competition, though it was capable of autonomous navigation during controlled tests.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Load, Process, and Store Images&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;I loaded several thousand 48x48 grayscale training and testing images from seven different emotion categories, converted them to numpy arrays, and normalized the pixel values.&lt;/li&gt;
-      &lt;li&gt;Kaggle Dataset: &lt;a href=&quot;https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer&quot;&gt;https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Apply Histogram of Oriented Gradients (HOG) Feature Extraction&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Facial images are heavily influenced by subtle changes in facial shape and the presence of edges (e.g. raised eyebrows, open mouth). HOG excels at capturing these features by computing the oriented gradients within localized regions of the image. In addition, HOG is known for its robustness in variations in lighting and contrast, which are common challenges in image processing. Finally, implementing HOG is relatively efficient compared to other sophisticated feature extraction methods, which was important in my project, considering the number of images I needed to process.
- &lt;img src=&quot;/assets/images/hog_image_example.png&quot; alt=&quot;HOG Image Example&quot; /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Assign Labels to Data:&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;I assigned seven labels to the data, corresponding to seven different emotion classes:
- [0] angry, [1] happy, [2] neutral, [3] sad, [4] disgusted, [5] fearful, [6] surprised&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Train Model&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;I trained the linear regression model, made predictions, obtained the classification report, and saved the trained model for further use, achieving an accuracy of up to 77%.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Improving Model Accuracy&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;I took several steps to increase the accuracy of the model by improving the feature extraction process. For example, through experimentation, I optimized the number of orientations, block size, and cell size, all with the goal of enhancing the granularity and thereby descriptive power of the extracted features. I also investigated different normalization techniques, such as min-max scaling, although this did not discernably affect the results.&lt;/li&gt;
-      &lt;li&gt;Looking ahead, instead of engineering the features myself (i.e. HOG), I intend to try more feature learning techniques–automatic feature engineering–as this would empower the machine to autonomously learn more effective representations from the raw data.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai&lt;br /&gt;
+&lt;strong&gt;Advisor&lt;/strong&gt;: Jonathan Frey&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/ardupilot.jpg&quot; alt=&quot;ArduPilot&quot; /&gt;
+ArduPilot Ground Station setup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/final_touches.jpg&quot; alt=&quot;Final Touches&quot; /&gt;
+Final touches before the competition.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/lake_test.jpg&quot; alt=&quot;Lake Test&quot; /&gt;
+Testing on the lake.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 15 Nov 2023 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/ml_emotion_classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
+        <pubDate>Sun, 15 Oct 2023 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
-        <category>Machine Learning</category>
+        <category>ArduPilot</category>
         
-        <category>Python</category>
+        <category>Electronics</category>
         
-        <category>Image Processing</category>
+        <category>Autonomous Systems</category>
         
       </item>
     
@@ -583,42 +564,61 @@ The algorithm works by --&gt;
       </item>
     
       <item>
-        <title>Unmanned Electric Race Boat</title>
-        <description>&lt;p&gt;ArduPilot, Electronics, Autonomous Systems&lt;/p&gt;
+        <title>Machine Learning Emotion Classification</title>
+        <description>&lt;p&gt;Machine Learning, Python, Image Processing&lt;/p&gt;
 
-&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?height=314&amp;amp;href=https%3A%2F%2Fwww.facebook.com%2Fnavalengineers%2Fvideos%2F256584973783468%2F&amp;amp;show_text=false&amp;amp;width=560&amp;amp;t=0&quot; width=&quot;100%&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;Video provided by the American Society of Naval Engineers.&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;For my undergraduate Capstone project at William &amp;amp; Mary, I led a team in building a boat from scratch to compete in the Unmanned Division of the 2023 Promoting Electric Propulsion for Small Craft (PEP) competition, a 5-mile endurance race. Our fully electric boat placed 3rd against universities from across the country.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Create a robust emotion classification pipeline by developing a machine learning algorithm capable of classifying facial images based on their depicted emotion.&lt;/p&gt;
 
-&lt;p&gt;Our catamaran-style differential-drive boat, fondly named the &lt;em&gt;Colonial Cruiser&lt;/em&gt;, ran ArduPilot Rover on a Pixhawk Cube Orange and was controlled via radio during the competition, though it was capable of autonomous navigation during controlled tests.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/ml-emotion-classification&quot;&gt;https://github.com/henryburon/ml-emotion-classification&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;As the Team and Electrical Lead, I focused on the autonomous navigation and electric propulsion systems of the boat, though I had a hand in everything from hull design to the power distribution systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Process&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;: Owen Darcy, Ethan Chang, Shamsullah Ahmadzai&lt;br /&gt;
-&lt;strong&gt;Advisor&lt;/strong&gt;: Jonathan Frey&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/ardupilot.jpg&quot; alt=&quot;ArduPilot&quot; /&gt;
-ArduPilot Ground Station setup.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/final_touches.jpg&quot; alt=&quot;Final Touches&quot; /&gt;
-Final touches before the competition.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/lake_test.jpg&quot; alt=&quot;Lake Test&quot; /&gt;
-Testing on the lake.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Load, Process, and Store Images&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;I loaded several thousand 48x48 grayscale training and testing images from seven different emotion categories, converted them to numpy arrays, and normalized the pixel values.&lt;/li&gt;
+      &lt;li&gt;Kaggle Dataset: &lt;a href=&quot;https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer&quot;&gt;https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Apply Histogram of Oriented Gradients (HOG) Feature Extraction&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Facial images are heavily influenced by subtle changes in facial shape and the presence of edges (e.g. raised eyebrows, open mouth). HOG excels at capturing these features by computing the oriented gradients within localized regions of the image. In addition, HOG is known for its robustness in variations in lighting and contrast, which are common challenges in image processing. Finally, implementing HOG is relatively efficient compared to other sophisticated feature extraction methods, which was important in my project, considering the number of images I needed to process.
+ &lt;img src=&quot;/assets/images/hog_image_example.png&quot; alt=&quot;HOG Image Example&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Assign Labels to Data:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;I assigned seven labels to the data, corresponding to seven different emotion classes:
+ [0] angry, [1] happy, [2] neutral, [3] sad, [4] disgusted, [5] fearful, [6] surprised&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Train Model&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;I trained the linear regression model, made predictions, obtained the classification report, and saved the trained model for further use, achieving an accuracy of up to 77%.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Improving Model Accuracy&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;I took several steps to increase the accuracy of the model by improving the feature extraction process. For example, through experimentation, I optimized the number of orientations, block size, and cell size, all with the goal of enhancing the granularity and thereby descriptive power of the extracted features. I also investigated different normalization techniques, such as min-max scaling, although this did not discernably affect the results.&lt;/li&gt;
+      &lt;li&gt;Looking ahead, instead of engineering the features myself (i.e. HOG), I intend to try more feature learning techniques–automatic feature engineering–as this would empower the machine to autonomously learn more effective representations from the raw data.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>Tue, 05 Sep 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/ml_emotion_classification/</link>
+        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
         
-        <category>ArduPilot</category>
+        <category>Machine Learning</category>
         
-        <category>Electronics</category>
+        <category>Python</category>
         
-        <category>Autonomous Systems</category>
+        <category>Image Processing</category>
         
       </item>
     
