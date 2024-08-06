@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Computer-Vision Based Basketball Coach"
+title:  "Computer Vision-Based Basketball Coach"
 categories: [OpenCV, Computer Vision, Object Tracking]
 image: assets/gifs/basketball_shot.gif
 featured: false
