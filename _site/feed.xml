@@ -5,9 +5,32 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Aug 2024 13:44:05 -0700</pubDate>
-    <lastBuildDate>Sun, 04 Aug 2024 13:44:05 -0700</lastBuildDate>
+    <pubDate>Mon, 05 Aug 2024 19:53:45 -0700</pubDate>
+    <lastBuildDate>Mon, 05 Aug 2024 19:53:45 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Computer-Vision Based Basketball Coach</title>
+        <description>&lt;p&gt;OpenCV, Computer Vision, Object Tracking&lt;/p&gt;
+
+&lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/BmOKpM328VM?si=dukGuZQLScfjRu7a&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;This post is under construction. Please check back soon.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Apr 2024 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/virtual_bball_trainer/</link>
+        <guid isPermaLink="true">http://localhost:4000/virtual_bball_trainer/</guid>
+        
+        
+        <category>OpenCV</category>
+        
+        <category>Computer Vision</category>
+        
+        <category>Object Tracking</category>
+        
+      </item>
     
       <item>
         <title>Mobile Exploration Robot with Auxiliary Drone</title>
