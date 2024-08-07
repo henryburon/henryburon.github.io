@@ -13,4 +13,12 @@ OpenCV, Computer Vision, Object Tracking
 
 ## Overview
 
+This project uses computer vision to analyze, score, and provide feedback on your basketball shot, effectively functioning as a virtual coach. 
+
+The program tracks the ball's trajectory and your body's movement, comparing these to a ground truth (a "perfect" shot). It then calculates a performance score and generates a PDF report with specific feedback.
+
+Teammate: Srikanth Schelbert
+
+GitHub: [https://github.com/henryburon/cv_basketball_trainer](https://github.com/henryburon/cv_basketball_trainer)
+
 This post is under construction. Please check back soon.
