@@ -97,7 +97,7 @@ The result is that these methods allow us to compare the general shape of the tr
 
 ## Results
 
-The result of the program is an automatically generated PDF report with specific feedback.
+The result of the program is an automatically generated PDF report with personalized feedback.
 
 <p align="center">
    <img src="/assets/images/cv_bball_report.png" width="600" />
