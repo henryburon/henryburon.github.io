@@ -3,8 +3,8 @@ layout: post
 title:  "Extended Kalman Filter SLAM from Scratch"
 categories: [C++, ROS2, Unit Testing, CMake]
 image: assets/gifs/red_slam.gif
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 C++, ROS2, Unit Testing, CMake

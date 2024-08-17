@@ -15,17 +15,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="OpenCV, Computer Vision, Object Tracking" />
 <meta property="og:description" content="OpenCV, Computer Vision, Object Tracking" />
-<link rel="canonical" href="http://localhost:4000/virtual_bball_trainer/" />
-<meta property="og:url" content="http://localhost:4000/virtual_bball_trainer/" />
+<link rel="canonical" href="henryburon.github.io/virtual_bball_trainer/" />
+<meta property="og:url" content="henryburon.github.io/virtual_bball_trainer/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="http://localhost:4000/assets/gifs/basketball_shot.gif" />
+<meta property="og:image" content="henryburon.github.io/assets/gifs/basketball_shot.gif" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-04-10T00:00:00-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/gifs/basketball_shot.gif" />
+<meta property="twitter:image" content="henryburon.github.io/assets/gifs/basketball_shot.gif" />
 <meta property="twitter:title" content="Computer Vision-Based Basketball Coach" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-10T00:00:00-07:00","datePublished":"2024-04-10T00:00:00-07:00","description":"OpenCV, Computer Vision, Object Tracking","headline":"Computer Vision-Based Basketball Coach","image":"http://localhost:4000/assets/gifs/basketball_shot.gif","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/virtual_bball_trainer/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/virtual_bball_trainer/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-10T00:00:00-07:00","datePublished":"2024-04-10T00:00:00-07:00","description":"OpenCV, Computer Vision, Object Tracking","headline":"Computer Vision-Based Basketball Coach","image":"henryburon.github.io/assets/gifs/basketball_shot.gif","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/virtual_bball_trainer/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/virtual_bball_trainer/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -163,9 +163,81 @@
 
 <p>The program tracks the ball’s trajectory and your body’s movement, comparing these to a ground truth (a “perfect” shot). It then calculates a performance score and generates a PDF report with specific feedback.</p>
 
-<p>Teammate: Srikanth Schelbert</p>
+<p><strong>Teammate</strong>: Srikanth Schelbert</p>
 
-<p>GitHub: <a href="https://github.com/henryburon/cv_basketball_trainer">https://github.com/henryburon/cv_basketball_trainer</a></p>
+<p><strong>GitHub</strong>: <a href="https://github.com/henryburon/cv_basketball_trainer">https://github.com/henryburon/cv_basketball_trainer</a></p>
+
+<div style="background-color: white; height: 1px;"></div>
+
+<h2 id="contents">Contents</h2>
+
+<ol>
+  <li><a href="#motion-tracking">Motion Tracking</a>
+    <ul>
+      <li><a href="#basketball-tracking-algorithm">Basketball Tracking Algorithm</a></li>
+      <li><a href="#body-movement-tracking">Body Movement Tracking</a></li>
+    </ul>
+  </li>
+  <li><a href="#data-analysis-and-scoring">Data Analysis and Scoring</a></li>
+  <li><a href="#results">Results</a></li>
+</ol>
+
+<div style="background-color: white; height: 1px;"></div>
+
+<h2 id="motion-tracking">Motion Tracking</h2>
+
+<p>The first step is to collect the data that would later be analyzed, compared, and scored.</p>
+
+<h4 id="basketball-tracking-algorithm">Basketball Tracking Algorithm</h4>
+
+<p>I was primarily responsible for developing the algorithm that identifies and tracks the basketball throughout the video.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Algorithm:</code> apply color mask <strong>»</strong> find contours <strong>»</strong> score contours <strong>»</strong> identify basketball</p>
+
+<p>Applying the color mask and identifying the contours is a straightforward process. The objective is simply to reduce the amount of <em>potential basketballs</em> in the frame and therefore make the scoring process easier.</p>
+
+<p>Each contour in the frame is graded on a series of factors, and each of of those grades are weighted and summed up to create a final score for the contour. The contour with the highest score is assumed to be the basketball, and its coordinates are saved into the trajectory array.</p>
+
+<p>The contours are scored on:</p>
+<ul>
+  <li>Size</li>
+  <li>Squareness</li>
+  <li>Distance to previous frame’s “basketball”</li>
+</ul>
+
+<p>Each score is then normalized and multiplied by a weight parameter, which can be tuned to give certain factors more or less importance.</p>
+
+<div style="display: flex; justify-content: space-around;">
+    <div>
+        <img src="/assets/images/cv_bball_contours.png" width="500" />
+        <small>Figure 1. Scored contour rectangles. Green outline indicates basketball. Red circle is location in previous frame.</small>
+    </div>
+    <div>
+        <img src="/assets/images/cv_bball_traj.png" width="500" />
+        <small>Figure 2. Sample collected basketball trajectory data.</small>
+    </div>
+</div>
+
+<h4 id="body-movement-tracking">Body Movement Tracking</h4>
+
+<p>We used MediaPipe to track the body during the shot.</p>
+
+<p>Specifically, we tracked the motion of the wrist and elbow, as their movement has a high importance in shooting a basketball.</p>
+
+<p>We combined this data with the basketball’s motion and were then able to identify the moment the ball was released from the player’s hands.</p>
+
+<p align="center">
+   <img src="/assets/images/cv_every_traj.png" width="600" />
+</p>
+<center><small>Figure 3. All trajectories plotted.</small></center>
+
+<div style="background-color: white; height: 1px;"></div>
+
+<h2 id="data-analysis-and-scoring">Data Analysis and Scoring</h2>
+
+<div style="background-color: white; height: 1px;"></div>
+
+<h2 id="results">Results</h2>
 
 <p>This post is under construction. Please check back soon.</p>
 
