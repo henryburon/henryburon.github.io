@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>henryburon.github.io/</link>
-    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Aug 2024 13:47:55 -0700</pubDate>
-    <lastBuildDate>Sat, 17 Aug 2024 13:47:55 -0700</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 17 Aug 2024 15:29:42 -0700</pubDate>
+    <lastBuildDate>Sat, 17 Aug 2024 15:29:42 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -44,26 +44,24 @@
 
 &lt;h2 id=&quot;motion-tracking&quot;&gt;Motion Tracking&lt;/h2&gt;
 
-&lt;p&gt;The first step is to collect the data that would later be analyzed, compared, and scored.&lt;/p&gt;
+&lt;p&gt;The first step is to collect the data that is to be analyzed, compared, and scored.&lt;/p&gt;
 
 &lt;h4 id=&quot;basketball-tracking-algorithm&quot;&gt;Basketball Tracking Algorithm&lt;/h4&gt;
 
-&lt;p&gt;I was primarily responsible for developing the algorithm that identifies and tracks the basketball throughout the video.&lt;/p&gt;
+&lt;p&gt;I was primarily responsible for developing the algorithm that identifies and tracks the basketball through the video.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Algorithm:&lt;/code&gt; apply color mask &lt;strong&gt;»&lt;/strong&gt; find contours &lt;strong&gt;»&lt;/strong&gt; score contours &lt;strong&gt;»&lt;/strong&gt; identify basketball&lt;/p&gt;
 
-&lt;p&gt;Applying the color mask and identifying the contours is a straightforward process. The objective is simply to reduce the amount of &lt;em&gt;potential basketballs&lt;/em&gt; in the frame and therefore make the scoring process easier.&lt;/p&gt;
-
-&lt;p&gt;Each contour in the frame is graded on a series of factors, and each of of those grades are weighted and summed up to create a final score for the contour. The contour with the highest score is assumed to be the basketball, and its coordinates are saved into the trajectory array.&lt;/p&gt;
+&lt;p&gt;Applying the HSV color mask and identifying the contours with OpenCV is a straightforward process. The objective is simply to reduce the amount of &lt;em&gt;potential basketball contours&lt;/em&gt; in the frame and therefore make the scoring process easier.&lt;/p&gt;
 
 &lt;p&gt;The contours are scored on:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Size&lt;/li&gt;
   &lt;li&gt;Squareness&lt;/li&gt;
-  &lt;li&gt;Distance to previous frame’s “basketball”&lt;/li&gt;
+  &lt;li&gt;Distance to the basketball’s location in the previous frame&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Each score is then normalized and multiplied by a weight parameter, which can be tuned to give certain factors more or less importance.&lt;/p&gt;
+&lt;p&gt;Each contour in the frame is graded on the above three characteristics, and each of those grades are weighted and summed up to create a single score for the contour. The contour with the highest score is assumed to be the basketball, and its coordinates are saved into the trajectory array.&lt;/p&gt;
 
 &lt;div style=&quot;display: flex; justify-content: space-around;&quot;&gt;
     &lt;div&gt;
@@ -80,7 +78,7 @@
 
 &lt;p&gt;We used MediaPipe to track the body during the shot.&lt;/p&gt;
 
-&lt;p&gt;Specifically, we tracked the motion of the wrist and elbow, as their movement has a high importance in shooting a basketball.&lt;/p&gt;
+&lt;p&gt;Specifically, we tracked the motion of the wrist and elbow, as their movement greatly influences a shot’s success.&lt;/p&gt;
 
 &lt;p&gt;We combined this data with the basketball’s motion and were then able to identify the moment the ball was released from the player’s hands.&lt;/p&gt;
 
@@ -115,8 +113,8 @@
 &lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
         <pubDate>Wed, 10 Apr 2024 00:00:00 -0700</pubDate>
-        <link>henryburon.github.io/virtual_bball_trainer/</link>
-        <guid isPermaLink="true">henryburon.github.io/virtual_bball_trainer/</guid>
+        <link>http://localhost:4000/virtual_bball_trainer/</link>
+        <guid isPermaLink="true">http://localhost:4000/virtual_bball_trainer/</guid>
         
         
         <category>OpenCV</category>
@@ -257,8 +255,8 @@
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Mar 2024 00:00:00 -0700</pubDate>
-        <link>henryburon.github.io/terraflight/</link>
-        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
+        <link>http://localhost:4000/terraflight/</link>
+        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
         
         
         <category>Python</category>
@@ -343,8 +341,8 @@ The algorithm works by --&gt;
 &lt;p&gt;The estimates odometry, path, and obstacles are published for visualization.&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0800</pubDate>
-        <link>henryburon.github.io/turtlebot_slam/</link>
-        <guid isPermaLink="true">henryburon.github.io/turtlebot_slam/</guid>
+        <link>http://localhost:4000/turtlebot_slam/</link>
+        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -486,8 +484,8 @@ The algorithm works by --&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0800</pubDate>
-        <link>henryburon.github.io/polyglotbot/</link>
-        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
+        <link>http://localhost:4000/polyglotbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -574,8 +572,8 @@ The algorithm works by --&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0800</pubDate>
-        <link>henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -614,8 +612,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0700</pubDate>
-        <link>henryburon.github.io/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -669,8 +667,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
-        <link>henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -728,8 +726,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
-        <link>henryburon.github.io/ml_emotion_classification/</link>
-        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
+        <link>http://localhost:4000/ml_emotion_classification/</link>
+        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -857,8 +855,8 @@ Testing on the lake.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 01 Sep 2023 00:00:00 -0700</pubDate>
-        <link>henryburon.github.io/path_planning/</link>
-        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
+        <link>http://localhost:4000/path_planning/</link>
+        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -916,8 +914,8 @@ Some of my notable work includes co-developing a ROS2 package for motion plannin
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 14 Mar 2001 00:00:00 -0800</pubDate>
-        <link>henryburon.github.io/HenryBuron_About</link>
-        <guid isPermaLink="true">henryburon.github.io/HenryBuron_About</guid>
+        <link>http://localhost:4000/HenryBuron_About</link>
+        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
         
         
       </item>

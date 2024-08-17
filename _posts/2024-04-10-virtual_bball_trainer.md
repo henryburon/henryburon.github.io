@@ -35,24 +35,22 @@ The program tracks the ball's trajectory and your body's movement, comparing the
 
 ## Motion Tracking
 
-The first step is to collect the data that would later be analyzed, compared, and scored.
+The first step is to collect the data that is to be analyzed, compared, and scored.
 
 #### Basketball Tracking Algorithm
 
-I was primarily responsible for developing the algorithm that identifies and tracks the basketball throughout the video.
+I was primarily responsible for developing the algorithm that identifies and tracks the basketball through the video.
 
 ```Algorithm:``` apply color mask **>>** find contours **>>** score contours **>>** identify basketball
 
-Applying the color mask and identifying the contours is a straightforward process. The objective is simply to reduce the amount of *potential basketballs* in the frame and therefore make the scoring process easier.
-
-Each contour in the frame is graded on a series of factors, and each of of those grades are weighted and summed up to create a final score for the contour. The contour with the highest score is assumed to be the basketball, and its coordinates are saved into the trajectory array.
+Applying the HSV color mask and identifying the contours with OpenCV is a straightforward process. The objective is simply to reduce the amount of *potential basketball contours* in the frame and therefore make the scoring process easier. 
 
 The contours are scored on:
 * Size
 * Squareness
-* Distance to previous frame's "basketball"
+* Distance to the basketball's location in the previous frame
 
-Each score is then normalized and multiplied by a weight parameter, which can be tuned to give certain factors more or less importance.
+Each contour in the frame is graded on the above three characteristics, and each of those grades are weighted and summed up to create a single score for the contour. The contour with the highest score is assumed to be the basketball, and its coordinates are saved into the trajectory array.
 
 <div style="display: flex; justify-content: space-around;">
     <div>
@@ -70,7 +68,7 @@ Each score is then normalized and multiplied by a weight parameter, which can be
 
 We used MediaPipe to track the body during the shot. 
 
-Specifically, we tracked the motion of the wrist and elbow, as their movement has a high importance in shooting a basketball.
+Specifically, we tracked the motion of the wrist and elbow, as their movement greatly influences a shot's success.
 
 We combined this data with the basketball's motion and were then able to identify the moment the ball was released from the player's hands.
 
