@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Aug 2024 13:07:06 -0700</pubDate>
-    <lastBuildDate>Sat, 17 Aug 2024 13:07:06 -0700</lastBuildDate>
+    <pubDate>Sat, 17 Aug 2024 13:40:59 -0700</pubDate>
+    <lastBuildDate>Sat, 17 Aug 2024 13:40:59 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -93,11 +93,26 @@
 
 &lt;h2 id=&quot;data-analysis-and-scoring&quot;&gt;Data Analysis and Scoring&lt;/h2&gt;
 
+&lt;p&gt;In order to score the shot, we compared its similarity to a ground truth/perfect shot. If you’re curious, we compared it to &lt;a href=&quot;https://180shooter.com/why-everyone-should-shoot-like-steve-nash&quot;&gt;Steve Nash’s&lt;/a&gt; shot, a former professional NBA player.&lt;/p&gt;
+
+&lt;p&gt;To evaluate the trajectory similarity between the user’s shot and Nash’s shot, we used Fast Dynamic Time Warping (FastDTW) and Procrustes analysis.&lt;/p&gt;
+
+&lt;p&gt;FastDTW aligns two time-series data, even if they are not perfectly synchronized in time. This allowed us to compare the similarity of the two shots, regardless of how fast or slow they were taken.&lt;/p&gt;
+
+&lt;p&gt;Procrustes analysis focuses on comparing the shape of the trajectories themselves, not how they were executed in time. It removes the differences in position, scale, and rotation, which is useful given that the videos are often taken with different frame sizes.&lt;/p&gt;
+
+&lt;p&gt;The result is that these methods allow us to compare the general shape of the trajectory and not worry about differences in timing or video quality.&lt;/p&gt;
+
 &lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
 
-&lt;p&gt;This post is under construction. Please check back soon.&lt;/p&gt;
+&lt;p&gt;The result of the program is an automatically generated PDF report with specific feedback.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/cv_bball_report.png&quot; width=&quot;600&quot; /&gt;
+&lt;/p&gt;
+&lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
         <pubDate>Wed, 10 Apr 2024 00:00:00 -0700</pubDate>
         <link>henryburon.github.io/virtual_bball_trainer/</link>

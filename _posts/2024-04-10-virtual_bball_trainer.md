@@ -83,10 +83,23 @@ We combined this data with the basketball's motion and were then able to identif
 
 ## Data Analysis and Scoring
 
+In order to score the shot, we compared its similarity to a ground truth/perfect shot. If you're curious, we compared it to [Steve Nash's](https://180shooter.com/why-everyone-should-shoot-like-steve-nash) shot, a former professional NBA player.
+
+To evaluate the trajectory similarity between the user's shot and Nash's shot, we used Fast Dynamic Time Warping (FastDTW) and Procrustes analysis.
+
+FastDTW aligns two time-series data, even if they are not perfectly synchronized in time. This allowed us to compare the similarity of the two shots, regardless of how fast or slow they were taken.
+
+Procrustes analysis focuses on comparing the shape of the trajectories themselves, not how they were executed in time. It removes the differences in position, scale, and rotation, which is useful given that the videos are often taken with different frame sizes.
+
+The result is that these methods allow us to compare the general shape of the trajectory and not worry about differences in timing or video quality.
+
 <div style="background-color: white; height: 1px;"></div>
 
 ## Results
 
+The result of the program is an automatically generated PDF report with specific feedback.
 
-
-This post is under construction. Please check back soon.
+<p align="center">
+   <img src="/assets/images/cv_bball_report.png" width="600" />
+</p>
+<center><small>Figure 4. Sample PDF report.</small></center>
