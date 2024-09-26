@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Aug 2024 15:29:42 -0700</pubDate>
-    <lastBuildDate>Sat, 17 Aug 2024 15:29:42 -0700</lastBuildDate>
+    <pubDate>Thu, 26 Sep 2024 14:21:58 -0500</pubDate>
+    <lastBuildDate>Thu, 26 Sep 2024 14:21:58 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -112,7 +112,7 @@
 &lt;/p&gt;
 &lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
-        <pubDate>Wed, 10 Apr 2024 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 10 Apr 2024 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/virtual_bball_trainer/</link>
         <guid isPermaLink="true">http://localhost:4000/virtual_bball_trainer/</guid>
         
@@ -254,7 +254,7 @@
 
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 20 Mar 2024 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/terraflight/</link>
         <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
         
@@ -340,7 +340,7 @@ The algorithm works by --&gt;
 
 &lt;p&gt;The estimates odometry, path, and obstacles are published for visualization.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 05 Jan 2024 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/turtlebot_slam/</link>
         <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
         
@@ -483,7 +483,7 @@ The algorithm works by --&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Dec 2023 00:00:00 -0800</pubDate>
+        <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/polyglotbot/</link>
         <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
         
@@ -571,7 +571,7 @@ The algorithm works by --&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Sat, 25 Nov 2023 00:00:00 -0800</pubDate>
+        <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/mobile-manipulation/</link>
         <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
@@ -611,7 +611,7 @@ Final touches before the competition.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/lake_test.jpg&quot; alt=&quot;Lake Test&quot; /&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Oct 2023 00:00:00 -0700</pubDate>
+        <pubDate>Sun, 15 Oct 2023 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/unmanned_electric_boat/</link>
         <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
@@ -666,7 +666,7 @@ Testing on the lake.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/pen_thief/</link>
         <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
@@ -725,7 +725,7 @@ Testing on the lake.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/ml_emotion_classification/</link>
         <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
@@ -854,7 +854,7 @@ Testing on the lake.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/rrt1.png&quot; style=&quot;width: 750px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 01 Sep 2023 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 01 Sep 2023 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/path_planning/</link>
         <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
         
@@ -874,13 +874,16 @@ Testing on the lake.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 &lt;img src=&quot;/assets/images/headshot.jpeg&quot; style=&quot;width: 350px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University in Evanston, IL. I have practical experience developing ROS2 packages, writing code for robotic manipulation and navigation, processing images and extracting features for machine learning, and a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code in C++, Python, and C.
+&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University in Evanston, IL. I recently worked as a Robotics Software Intern at NASA’s Jet Propulsion Laboratory (JPL) where I developed ROS C++ packages to support the control of a mobile robot in hazardous terrain.&lt;/p&gt;
+
+&lt;p&gt;I have practical experience writing code for robotic manipulation and navigation, using libraries like OpenCV and Eigen, and a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code in C++ and Python.
 &lt;br /&gt;
 &lt;br /&gt;
-Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo, writing software to plan a trajectory for a mobile robot’s end-effector, building a quadcopter from scratch, and using computer vision to control a robot arm as it identifies and grasps objects.
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;!-- I am passionate about autonomous systems, computer vision, and mobile robotics, and I am currently seeking an internship in robotics and software engineering. --&gt;&lt;/p&gt;
+I am passionate about autonomous systems, computer vision, and mobile robotics, and I am currently seeking a full-time role in robotics and software engineering.&lt;/p&gt;
+
+&lt;!-- Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo, writing software to plan a trajectory for a mobile robot&apos;s end-effector, building a quadcopter from scratch, and using computer vision to control a robot arm as it identifies and grasps objects. --&gt;
+&lt;!-- &lt;br&gt; --&gt;
+&lt;!-- &lt;br&gt; --&gt;
 
 &lt;h3 id=&quot;education&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Education&lt;/a&gt;&lt;/h3&gt;
 
@@ -899,6 +902,16 @@ Some of my notable work includes co-developing a ROS2 package for motion plannin
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h3 id=&quot;experience&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Experience&lt;/a&gt;&lt;/h3&gt;
+&lt;div style=&quot;display: flex; align-items: center; color: white;&quot;&gt;
+    &lt;img src=&quot;/assets/images/nasa_jpl.jpeg&quot; style=&quot;width: 75px; height: auto; margin-right: 10px;&quot; /&gt;
+    &lt;div&gt;
+        &lt;i&gt;Jun. 2023 - Sep. 2024&lt;/i&gt; &lt;br /&gt;
+        &lt;b&gt;NASA JPL | Robotics Software Intern&lt;/b&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;contact&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Contact&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;To contact me, please email: &lt;a href=&quot;mailto:henryburon2024@u.northwestern.edu&quot;&gt;henryburon2024@u.northwestern.edu&lt;/a&gt;&lt;/p&gt;
@@ -913,7 +926,7 @@ Some of my notable work includes co-developing a ROS2 package for motion plannin
     &lt;iframe src=&quot;_pages/HenryBuronResume.pdf&quot; width=&quot;100%&quot; height=&quot;1200px&quot; style=&quot;display: inline-block;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 14 Mar 2001 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 14 Mar 2001 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/HenryBuron_About</link>
         <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
         
