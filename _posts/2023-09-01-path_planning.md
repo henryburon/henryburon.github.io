@@ -6,8 +6,7 @@ image: assets/gifs/RRT.GIF
 featured: false
 hidden: false
 ---
-
-Path Planning, Python, RRT
+**<span style="color:rgb(0, 30, 80)">Path Planning, Python, RRT</span>**
 
 
 <iframe width="100%" height="441" src="https://www.youtube.com/embed/x5AmgLBkSXQ?si=LW6sG8rTdrXVrDQt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

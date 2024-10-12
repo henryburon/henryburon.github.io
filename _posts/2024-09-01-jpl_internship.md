@@ -21,6 +21,8 @@ I primarily developed ROS C++ packages to support the control of the NIOSH robot
 
 The robot itself is rather unique--it's made up of two rigid bodies that are joined by a single linkage. The connection points are actuated, meaning the robot can change its kinematic configuration in response to its environment or a specific task. This enables the robot to operate in configurations like side-by-side or leader-follower, each of which has different advantages such as increased stability or a slimmer profile.
 
+<div style="background-color: white; height: 1px;"></div>
+
 # Projects
 
 #### IMU-Based Rollover-Risk Detection

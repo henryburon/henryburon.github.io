@@ -7,7 +7,8 @@ featured: true
 hidden: true
 ---
 
-ROS2, Python, Motion Planning
+**<span style="color:rgb(0, 30, 80)">ROS2, Python, Motion Planning</span>**
+
 
 <iframe width="90%" height="441" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -7,9 +7,8 @@ featured: false
 hidden: false
 ---
 
-C++, ROS2, Unit Testing, CMake
+**<span style="color:rgb(0, 30, 80)">C++, ROS2, Unit Testing, CMake</span>**
 
-<!-- ![SLAM](/assets/images/slam_env.png) -->
 
 ![SLAM](/assets/images/slam_img.png)
 

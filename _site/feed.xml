@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>henryburon.github.io/</link>
     <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Oct 2024 21:44:26 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Oct 2024 21:44:26 -0500</lastBuildDate>
+    <pubDate>Fri, 11 Oct 2024 21:50:51 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Oct 2024 21:50:51 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -24,6 +24,8 @@
 &lt;p&gt;I primarily developed ROS C++ packages to support the control of the NIOSH robot, a mobile robot designed to operate in the hazardous terrain of coal mines.&lt;/p&gt;
 
 &lt;p&gt;The robot itself is rather unique–it’s made up of two rigid bodies that are joined by a single linkage. The connection points are actuated, meaning the robot can change its kinematic configuration in response to its environment or a specific task. This enables the robot to operate in configurations like side-by-side or leader-follower, each of which has different advantages such as increased stability or a slimmer profile.&lt;/p&gt;
+
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;projects&quot;&gt;Projects&lt;/h1&gt;
 
@@ -75,7 +77,7 @@
     
       <item>
         <title>Computer Vision-Based Basketball Coach</title>
-        <description>&lt;p&gt;OpenCV, Computer Vision, Object Tracking&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;OpenCV, Computer Vision, Object Tracking&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/MW7uQ3kL7gM?si=L13EQ9G4aMUwJl2X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -191,7 +193,7 @@
     
       <item>
         <title>Mobile Exploration Robot with Auxiliary Drone</title>
-        <description>&lt;p&gt;ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -337,9 +339,7 @@
     
       <item>
         <title>Extended Kalman Filter SLAM from Scratch</title>
-        <description>&lt;p&gt;C++, ROS2, Unit Testing, CMake&lt;/p&gt;
-
-&lt;!-- ![SLAM](/assets/images/slam_env.png) --&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;C++, ROS2, Unit Testing, CMake&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/slam_img.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
 
@@ -421,7 +421,7 @@ The algorithm works by --&gt;
     
       <item>
         <title>Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech</title>
-        <description>&lt;p&gt;ROS2, Python, Motion Planning&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, Python, Motion Planning&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -564,7 +564,7 @@ The algorithm works by --&gt;
     
       <item>
         <title>KUKA youBot Mobile Manipulation</title>
-        <description>&lt;p&gt;Python, Robotic Manipulation, CoppeliaSim&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Python, Robotic Manipulation, CoppeliaSim&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -650,7 +650,7 @@ The algorithm works by --&gt;
     
       <item>
         <title>Unmanned Electric Race Boat</title>
-        <description>&lt;p&gt;ArduPilot, Electronics, Autonomous Systems&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ArduPilot, Electronics, Autonomous Systems&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?height=314&amp;amp;href=https%3A%2F%2Fwww.facebook.com%2Fnavalengineers%2Fvideos%2F256584973783468%2F&amp;amp;show_text=false&amp;amp;width=560&amp;amp;t=0&quot; width=&quot;100%&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;Video provided by the American Society of Naval Engineers.&lt;/p&gt;
@@ -690,7 +690,7 @@ Testing on the lake.&lt;/p&gt;
     
       <item>
         <title>Computer Vision-Controlled Robot Arm</title>
-        <description>&lt;p&gt;Python, OpenCV, Transforms&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Python, OpenCV, Transforms&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/pturk2xscaA?si=CLWhMrOFVhrZ33sk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -745,7 +745,7 @@ Testing on the lake.&lt;/p&gt;
     
       <item>
         <title>Machine Learning Emotion Classification</title>
-        <description>&lt;p&gt;Machine Learning, Python, Image Processing&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Machine Learning, Python, Image Processing&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -804,7 +804,7 @@ Testing on the lake.&lt;/p&gt;
     
       <item>
         <title>Rapidly-Exploring Random Tree (RRT)</title>
-        <description>&lt;p&gt;Path Planning, Python, RRT&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Path Planning, Python, RRT&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/x5AmgLBkSXQ?si=LW6sG8rTdrXVrDQt&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
