@@ -53,6 +53,6 @@ Path projection lines that generate based on the camera's intrinsic parameters a
    <img src="/assets/images/niosh_kinematics.png" alt="Robot Path Projection Lines" width="29.2%" />
 </p>
 
-I developed a configuration manager that allows the robot to efficiently change its configuration during operation.
+I developed a configuration manager that allows the robot to efficiently change its kinematic configuration during operation.
 
-The algorithm abstracts the non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.
+The algorithm abstracts the robot's non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.
