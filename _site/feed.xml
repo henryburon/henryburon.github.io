@@ -3,11 +3,75 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Sep 2024 14:21:58 -0500</pubDate>
-    <lastBuildDate>Thu, 26 Sep 2024 14:21:58 -0500</lastBuildDate>
+    <link>henryburon.github.io/</link>
+    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 11 Oct 2024 21:44:26 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Oct 2024 21:44:26 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Internship at NASA Jet Propulsion Laboratory (JPL)</title>
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;C++, ROS Noetic, OpenCV, Eigen&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/niosh_terrain.png&quot; alt=&quot;SLAM&quot; width=&quot;80%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;I worked as a Robotics Software Intern at NASA’s Jet Propulsion Laboratory in the Robotic Mobility group (347F) during Summer 2024.&lt;/p&gt;
+
+&lt;p&gt;I primarily developed ROS C++ packages to support the control of the NIOSH robot, a mobile robot designed to operate in the hazardous terrain of coal mines.&lt;/p&gt;
+
+&lt;p&gt;The robot itself is rather unique–it’s made up of two rigid bodies that are joined by a single linkage. The connection points are actuated, meaning the robot can change its kinematic configuration in response to its environment or a specific task. This enables the robot to operate in configurations like side-by-side or leader-follower, each of which has different advantages such as increased stability or a slimmer profile.&lt;/p&gt;
+
+&lt;h1 id=&quot;projects&quot;&gt;Projects&lt;/h1&gt;
+
+&lt;h4 id=&quot;imu-based-rollover-risk-detection&quot;&gt;IMU-Based Rollover-Risk Detection&lt;/h4&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/gifs/rollover_risk.gif&quot; alt=&quot;Rollover Risk Detection&quot; width=&quot;40%&quot; /&gt;
+   &lt;img src=&quot;/assets/images/rollover_risk.png&quot; alt=&quot;Rollover Risk Detection&quot; width=&quot;40%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I developed a simulation-based, empirical calculation to asses the robot’s risk of tipping at any given state, where state is defined by the robot’s kinematic configuration and tilt.&lt;/p&gt;
+
+&lt;p&gt;The algorithm models the support polygon of the bodies, along with the ground-plane projection of the robot’s Center of Mass (yellow circle). As the CoM’s projection approaches the edge of the support polygon, the robot’s stability decreases.&lt;/p&gt;
+
+&lt;h4 id=&quot;robot-path-projection-lines&quot;&gt;Robot Path Projection Lines&lt;/h4&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/gifs/proj_lines.gif&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;49%&quot; /&gt;
+   &lt;img src=&quot;/assets/images/proj_lines.png&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;45%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Path projection lines that generate based on the camera’s intrinsic parameters along with the robot’s configuration. The lines represent the robot’s width. The robot used a two-camera setup and stitched video image. The yaw and pitch of each camera is taken into consideration during the calculation.&lt;/p&gt;
+
+&lt;h4 id=&quot;configuration-manager&quot;&gt;Configuration Manager&lt;/h4&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/gifs/config_manager.gif&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;60%&quot; /&gt;
+   &lt;img src=&quot;/assets/images/niosh_kinematics.png&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;29.2%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I developed a configuration manager that allows the robot to efficiently change its configuration during operation.&lt;/p&gt;
+
+&lt;p&gt;The algorithm abstracts the non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Sep 2024 00:00:00 -0500</pubDate>
+        <link>henryburon.github.io/jpl_internship/</link>
+        <guid isPermaLink="true">henryburon.github.io/jpl_internship/</guid>
+        
+        
+        <category>C++</category>
+        
+        <category>ROS Noetic</category>
+        
+        <category>OpenCV</category>
+        
+        <category>Eigen</category>
+        
+      </item>
     
       <item>
         <title>Computer Vision-Based Basketball Coach</title>
@@ -113,8 +177,8 @@
 &lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
         <pubDate>Wed, 10 Apr 2024 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/virtual_bball_trainer/</link>
-        <guid isPermaLink="true">http://localhost:4000/virtual_bball_trainer/</guid>
+        <link>henryburon.github.io/virtual_bball_trainer/</link>
+        <guid isPermaLink="true">henryburon.github.io/virtual_bball_trainer/</guid>
         
         
         <category>OpenCV</category>
@@ -255,8 +319,8 @@
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/terraflight/</link>
-        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
+        <link>henryburon.github.io/terraflight/</link>
+        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
         
         
         <category>Python</category>
@@ -341,8 +405,8 @@ The algorithm works by --&gt;
 &lt;p&gt;The estimates odometry, path, and obstacles are published for visualization.&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/turtlebot_slam/</link>
-        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
+        <link>henryburon.github.io/turtlebot_slam/</link>
+        <guid isPermaLink="true">henryburon.github.io/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -484,8 +548,8 @@ The algorithm works by --&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/polyglotbot/</link>
-        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
+        <link>henryburon.github.io/polyglotbot/</link>
+        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -572,8 +636,8 @@ The algorithm works by --&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <link>henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -612,8 +676,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <link>henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -667,8 +731,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <link>henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -726,8 +790,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/ml_emotion_classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
+        <link>henryburon.github.io/ml_emotion_classification/</link>
+        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -855,8 +919,8 @@ Testing on the lake.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 01 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/path_planning/</link>
-        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
+        <link>henryburon.github.io/path_planning/</link>
+        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
         
         
         <category>Path Planning</category>
@@ -864,72 +928,6 @@ Testing on the lake.&lt;/p&gt;
         <category>Python</category>
         
         <category>RRT</category>
-        
-      </item>
-    
-      <item>
-        <title>About Me</title>
-        <description>&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;img src=&quot;/assets/images/headshot.jpeg&quot; style=&quot;width: 350px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hello! I am a current Master’s in Robotics student at Northwestern University in Evanston, IL. I recently worked as a Robotics Software Intern at NASA’s Jet Propulsion Laboratory (JPL) where I developed ROS C++ packages to support the control of a mobile robot in hazardous terrain.&lt;/p&gt;
-
-&lt;p&gt;I have practical experience writing code for robotic manipulation and navigation, using libraries like OpenCV and Eigen, and a variety of other software engineering work in a Linux environment. I take pride in my ability to write robust and reliable code in C++ and Python.
-&lt;br /&gt;
-&lt;br /&gt;
-I am passionate about autonomous systems, computer vision, and mobile robotics, and I am currently seeking a full-time role in robotics and software engineering.&lt;/p&gt;
-
-&lt;!-- Some of my notable work includes co-developing a ROS2 package for motion planning on a 7-DoF robot arm, programming a robot to autonomously explore a simulated environment in Gazebo, writing software to plan a trajectory for a mobile robot&apos;s end-effector, building a quadcopter from scratch, and using computer vision to control a robot arm as it identifies and grasps objects. --&gt;
-&lt;!-- &lt;br&gt; --&gt;
-&lt;!-- &lt;br&gt; --&gt;
-
-&lt;h3 id=&quot;education&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Education&lt;/a&gt;&lt;/h3&gt;
-
-&lt;div style=&quot;display: flex; align-items: center; color: white;&quot;&gt;
-    &lt;img src=&quot;/assets/images/nu.jpeg&quot; style=&quot;width: 75px; height: auto; margin-right: 10px;&quot; /&gt;
-    &lt;div&gt;
-        &lt;i&gt;Sep. 2023 - Dec. 2024&lt;/i&gt; &lt;br /&gt;
-        &lt;b&gt;NU | M.S. in Robotics&lt;/b&gt;
-    &lt;/div&gt;
-    &lt;!-- Additional image placed here --&gt;
-    &lt;img src=&quot;/assets/images/wm.jpeg&quot; style=&quot;width: 75px; height: auto; margin-left: 20px;&quot; /&gt;
-    &lt;div style=&quot;margin-left: 10px;&quot;&gt; &lt;!-- Adjusted margin-left for the text div --&gt;
-        &lt;i&gt;Sep. 2019 - May 2023&lt;/i&gt; &lt;br /&gt;
-        &lt;b&gt;W&amp;amp;M | B.S. in Engineering Physics&lt;/b&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;experience&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Experience&lt;/a&gt;&lt;/h3&gt;
-&lt;div style=&quot;display: flex; align-items: center; color: white;&quot;&gt;
-    &lt;img src=&quot;/assets/images/nasa_jpl.jpeg&quot; style=&quot;width: 75px; height: auto; margin-right: 10px;&quot; /&gt;
-    &lt;div&gt;
-        &lt;i&gt;Jun. 2023 - Sep. 2024&lt;/i&gt; &lt;br /&gt;
-        &lt;b&gt;NASA JPL | Robotics Software Intern&lt;/b&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;contact&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Contact&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;To contact me, please email: &lt;a href=&quot;mailto:henryburon2024@u.northwestern.edu&quot;&gt;henryburon2024@u.northwestern.edu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Linkedin: &lt;a href=&quot;https://www.linkedin.com/in/henryburon/&quot;&gt;https://www.linkedin.com/in/henryburon/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/henryburon&quot;&gt;https://github.com/henryburon&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;resume&quot;&gt;&lt;a style=&quot;color: white; font-size:40px; font-family: &apos;Times New Roman&apos;, Times, serif;&quot;&gt;Resume&lt;/a&gt;&lt;/h3&gt;
-
-&lt;div style=&quot;text-align: center;&quot;&gt;
-    &lt;iframe src=&quot;_pages/HenryBuronResume.pdf&quot; width=&quot;100%&quot; height=&quot;1200px&quot; style=&quot;display: inline-block;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 14 Mar 2001 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/HenryBuron_About</link>
-        <guid isPermaLink="true">http://localhost:4000/HenryBuron_About</guid>
-        
         
       </item>
     
