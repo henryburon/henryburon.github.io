@@ -3,8 +3,8 @@ layout: post
 title:  "Computer Vision-Based Basketball Coach"
 categories: [OpenCV, Computer Vision, Object Tracking]
 image: assets/gifs/basketball_shot.gif
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 **<span style="color:rgb(0, 30, 80)">OpenCV, Computer Vision, Object Tracking</span>**
