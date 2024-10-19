@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Oct 2024 14:11:24 -0500</pubDate>
-    <lastBuildDate>Sat, 19 Oct 2024 14:11:24 -0500</lastBuildDate>
+    <pubDate>Sat, 19 Oct 2024 14:25:54 -0500</pubDate>
+    <lastBuildDate>Sat, 19 Oct 2024 14:25:54 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -51,7 +51,7 @@
    &lt;img src=&quot;/assets/images/proj_lines.png&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;45%&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;I developed an algorithm that generates path projection lines based on the camera’s intrinsic parameters and the robot’s configuration. The lines represent the robot’s width on the ground plane. The robot used a two-camera setup and stitched video image, and the yaw and pitch of each camera is taken into consideration during the calculation.&lt;/p&gt;
+&lt;p&gt;I developed an algorithm that generates path projection lines based on the camera’s intrinsic parameters and the robot’s configuration, with the lines representing the robot’s width on the ground plane. The system used a two-camera setup with a stitched video feed, and factors such as each camera’s yaw, pitch, field of view (FOV), and height are parameterized in the calculation.&lt;/p&gt;
 
 &lt;h4 id=&quot;configuration-manager&quot;&gt;Configuration Manager&lt;/h4&gt;
 

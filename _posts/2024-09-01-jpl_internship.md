@@ -47,7 +47,7 @@ The algorithm models the [support polygon](https://en.wikipedia.org/wiki/Support
    <img src="/assets/images/proj_lines.png" alt="Robot Path Projection Lines" width="45%" />
 </p>
 
-I developed an algorithm that generates path projection lines based on the camera's intrinsic parameters and the robot's configuration. The lines represent the robot's width on the ground plane. The robot used a two-camera setup and stitched video image, and the yaw and pitch of each camera is taken into consideration during the calculation.
+I developed an algorithm that generates path projection lines based on the camera's intrinsic parameters and the robot's configuration, with the lines representing the robot's width on the ground plane. The system used a two-camera setup with a stitched video feed, and factors such as each camera's yaw, pitch, field of view (FOV), and height are parameterized in the calculation.
 
 #### Configuration Manager
 
