@@ -10,8 +10,12 @@ hidden: false
 **<span style="color:rgb(0, 30, 80)">C++, ROS Noetic, OpenCV, Eigen</span>**
 
 <p align="center">
-   <img src="/assets/images/niosh_terrain.png" alt="SLAM" width="80%" />
+   <img src="/assets/gifs/niosh.gif" alt="NIOSH Robot" width="90%" />
+   <br>
+   <em>NIOSH robot in the Mars Yard at JPL</em>
 </p>
+
+*Note: this content has been cleared for public release.*
 
 # Overview
 
@@ -32,9 +36,9 @@ The robot itself is rather unique--it's made up of two rigid bodies that are joi
    <img src="/assets/images/rollover_risk.png" alt="Rollover Risk Detection" width="40%" />
 </p>
 
-I developed a simulation-based, empirical calculation to asses the robot's risk of tipping at any given state, where state is defined by the robot's kinematic configuration and tilt.
+I developed a simulation-based empirical method to asses the robot's risk of tipping in any given state, where the state is defined by its kinematic configuration and the tilt of each body.  
 
-The algorithm models the support polygon of the bodies, along with the ground-plane projection of the robot's Center of Mass (yellow circle). As the CoM's projection approaches the edge of the support polygon, the robot's stability decreases. 
+The algorithm models the [support polygon](https://en.wikipedia.org/wiki/Support_polygon){:target="_blank"} of the robot, along with the ground-plane projection of the its center of mass (yellow circle). As the center of mass projection approaches the edge of the support polygon, it indicates a decrease in the robot's stability.
 
 #### Robot Path Projection Lines
 
@@ -43,7 +47,7 @@ The algorithm models the support polygon of the bodies, along with the ground-pl
    <img src="/assets/images/proj_lines.png" alt="Robot Path Projection Lines" width="45%" />
 </p>
 
-Path projection lines that generate based on the camera's intrinsic parameters along with the robot's configuration. The lines represent the robot's width. The robot used a two-camera setup and stitched video image. The yaw and pitch of each camera is taken into consideration during the calculation.
+I developed an algorithm that generates path projection lines based on the camera's intrinsic parameters and the robot's configuration. The lines represent the robot's width on the ground plane. The robot used a two-camera setup and stitched video image, and the yaw and pitch of each camera is taken into consideration during the calculation.
 
 #### Configuration Manager
 
@@ -56,3 +60,7 @@ Path projection lines that generate based on the camera's intrinsic parameters a
 I developed a configuration manager that allows the robot to efficiently change its kinematic configuration during operation.
 
 The algorithm abstracts the robot's non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.
+
+<p align="center">
+   <img src="/assets/images/niosh_terrain.png" alt="SLAM" width="80%" />
+</p>

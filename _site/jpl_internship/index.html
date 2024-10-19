@@ -15,17 +15,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="C++, ROS Noetic, OpenCV, Eigen" />
 <meta property="og:description" content="C++, ROS Noetic, OpenCV, Eigen" />
-<link rel="canonical" href="henryburon.github.io/jpl_internship/" />
-<meta property="og:url" content="henryburon.github.io/jpl_internship/" />
+<link rel="canonical" href="http://localhost:4000/jpl_internship/" />
+<meta property="og:url" content="http://localhost:4000/jpl_internship/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="henryburon.github.io/assets/gifs/niosh_robot.gif" />
+<meta property="og:image" content="http://localhost:4000/assets/gifs/niosh_robot.gif" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-09-01T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="henryburon.github.io/assets/gifs/niosh_robot.gif" />
+<meta property="twitter:image" content="http://localhost:4000/assets/gifs/niosh_robot.gif" />
 <meta property="twitter:title" content="Internship at NASA Jet Propulsion Laboratory (JPL)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-01T00:00:00-05:00","datePublished":"2024-09-01T00:00:00-05:00","description":"C++, ROS Noetic, OpenCV, Eigen","headline":"Internship at NASA Jet Propulsion Laboratory (JPL)","image":"henryburon.github.io/assets/gifs/niosh_robot.gif","mainEntityOfPage":{"@type":"WebPage","@id":"henryburon.github.io/jpl_internship/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"henryburon.github.io/assets/images/logo.png"}},"url":"henryburon.github.io/jpl_internship/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-01T00:00:00-05:00","datePublished":"2024-09-01T00:00:00-05:00","description":"C++, ROS Noetic, OpenCV, Eigen","headline":"Internship at NASA Jet Propulsion Laboratory (JPL)","image":"http://localhost:4000/assets/gifs/niosh_robot.gif","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jpl_internship/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/jpl_internship/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -156,8 +156,12 @@
                 <p><strong><span style="color:rgb(0, 30, 80)">C++, ROS Noetic, OpenCV, Eigen</span></strong></p>
 
 <p align="center">
-   <img src="/assets/images/niosh_terrain.png" alt="SLAM" width="80%" />
+   <img src="/assets/gifs/niosh.gif" alt="NIOSH Robot" width="90%" />
+   <br />
+   <em>NIOSH robot in the Mars Yard at JPL</em>
 </p>
+
+<p><em>Note: this content has been cleared for public release.</em></p>
 
 <h1 id="overview">Overview</h1>
 
@@ -178,9 +182,9 @@
    <img src="/assets/images/rollover_risk.png" alt="Rollover Risk Detection" width="40%" />
 </p>
 
-<p>I developed a simulation-based, empirical calculation to asses the robot’s risk of tipping at any given state, where state is defined by the robot’s kinematic configuration and tilt.</p>
+<p>I developed a simulation-based empirical method to asses the robot’s risk of tipping in any given state, where the state is defined by its kinematic configuration and the tilt of each body.</p>
 
-<p>The algorithm models the support polygon of the bodies, along with the ground-plane projection of the robot’s Center of Mass (yellow circle). As the CoM’s projection approaches the edge of the support polygon, the robot’s stability decreases.</p>
+<p>The algorithm models the <a href="https://en.wikipedia.org/wiki/Support_polygon" target="_blank">support polygon</a> of the robot, along with the ground-plane projection of the its center of mass (yellow circle). As the center of mass projection approaches the edge of the support polygon, it indicates a decrease in the robot’s stability.</p>
 
 <h4 id="robot-path-projection-lines">Robot Path Projection Lines</h4>
 
@@ -189,7 +193,7 @@
    <img src="/assets/images/proj_lines.png" alt="Robot Path Projection Lines" width="45%" />
 </p>
 
-<p>Path projection lines that generate based on the camera’s intrinsic parameters along with the robot’s configuration. The lines represent the robot’s width. The robot used a two-camera setup and stitched video image. The yaw and pitch of each camera is taken into consideration during the calculation.</p>
+<p>I developed an algorithm that generates path projection lines based on the camera’s intrinsic parameters and the robot’s configuration. The lines represent the robot’s width on the ground plane. The robot used a two-camera setup and stitched video image, and the yaw and pitch of each camera is taken into consideration during the calculation.</p>
 
 <h4 id="configuration-manager">Configuration Manager</h4>
 
@@ -198,9 +202,13 @@
    <img src="/assets/images/niosh_kinematics.png" alt="Robot Path Projection Lines" width="29.2%" />
 </p>
 
-<p>I developed a configuration manager that allows the robot to efficiently change its configuration during operation.</p>
+<p>I developed a configuration manager that allows the robot to efficiently change its kinematic configuration during operation.</p>
 
-<p>The algorithm abstracts the non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.</p>
+<p>The algorithm abstracts the robot’s non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.</p>
+
+<p align="center">
+   <img src="/assets/images/niosh_terrain.png" alt="SLAM" width="80%" />
+</p>
 
             </div>
 

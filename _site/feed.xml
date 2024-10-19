@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>M.S. in Robotics @ Northwestern University</description>
-    <link>henryburon.github.io/</link>
-    <atom:link href="henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Oct 2024 21:50:51 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Oct 2024 21:50:51 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 19 Oct 2024 14:11:24 -0500</pubDate>
+    <lastBuildDate>Sat, 19 Oct 2024 14:11:24 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -14,8 +14,12 @@
         <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;C++, ROS Noetic, OpenCV, Eigen&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/niosh_terrain.png&quot; alt=&quot;SLAM&quot; width=&quot;80%&quot; /&gt;
+   &lt;img src=&quot;/assets/gifs/niosh.gif&quot; alt=&quot;NIOSH Robot&quot; width=&quot;90%&quot; /&gt;
+   &lt;br /&gt;
+   &lt;em&gt;NIOSH robot in the Mars Yard at JPL&lt;/em&gt;
 &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: this content has been cleared for public release.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
 
@@ -36,9 +40,9 @@
    &lt;img src=&quot;/assets/images/rollover_risk.png&quot; alt=&quot;Rollover Risk Detection&quot; width=&quot;40%&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;I developed a simulation-based, empirical calculation to asses the robot’s risk of tipping at any given state, where state is defined by the robot’s kinematic configuration and tilt.&lt;/p&gt;
+&lt;p&gt;I developed a simulation-based empirical method to asses the robot’s risk of tipping in any given state, where the state is defined by its kinematic configuration and the tilt of each body.&lt;/p&gt;
 
-&lt;p&gt;The algorithm models the support polygon of the bodies, along with the ground-plane projection of the robot’s Center of Mass (yellow circle). As the CoM’s projection approaches the edge of the support polygon, the robot’s stability decreases.&lt;/p&gt;
+&lt;p&gt;The algorithm models the &lt;a href=&quot;https://en.wikipedia.org/wiki/Support_polygon&quot; target=&quot;_blank&quot;&gt;support polygon&lt;/a&gt; of the robot, along with the ground-plane projection of the its center of mass (yellow circle). As the center of mass projection approaches the edge of the support polygon, it indicates a decrease in the robot’s stability.&lt;/p&gt;
 
 &lt;h4 id=&quot;robot-path-projection-lines&quot;&gt;Robot Path Projection Lines&lt;/h4&gt;
 
@@ -47,7 +51,7 @@
    &lt;img src=&quot;/assets/images/proj_lines.png&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;45%&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Path projection lines that generate based on the camera’s intrinsic parameters along with the robot’s configuration. The lines represent the robot’s width. The robot used a two-camera setup and stitched video image. The yaw and pitch of each camera is taken into consideration during the calculation.&lt;/p&gt;
+&lt;p&gt;I developed an algorithm that generates path projection lines based on the camera’s intrinsic parameters and the robot’s configuration. The lines represent the robot’s width on the ground plane. The robot used a two-camera setup and stitched video image, and the yaw and pitch of each camera is taken into consideration during the calculation.&lt;/p&gt;
 
 &lt;h4 id=&quot;configuration-manager&quot;&gt;Configuration Manager&lt;/h4&gt;
 
@@ -56,13 +60,17 @@
    &lt;img src=&quot;/assets/images/niosh_kinematics.png&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;29.2%&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;I developed a configuration manager that allows the robot to efficiently change its configuration during operation.&lt;/p&gt;
+&lt;p&gt;I developed a configuration manager that allows the robot to efficiently change its kinematic configuration during operation.&lt;/p&gt;
 
-&lt;p&gt;The algorithm abstracts the non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.&lt;/p&gt;
+&lt;p&gt;The algorithm abstracts the robot’s non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/niosh_terrain.png&quot; alt=&quot;SLAM&quot; width=&quot;80%&quot; /&gt;
+&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Sep 2024 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/jpl_internship/</link>
-        <guid isPermaLink="true">henryburon.github.io/jpl_internship/</guid>
+        <link>http://localhost:4000/jpl_internship/</link>
+        <guid isPermaLink="true">http://localhost:4000/jpl_internship/</guid>
         
         
         <category>C++</category>
@@ -179,8 +187,8 @@
 &lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
         <pubDate>Wed, 10 Apr 2024 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/virtual_bball_trainer/</link>
-        <guid isPermaLink="true">henryburon.github.io/virtual_bball_trainer/</guid>
+        <link>http://localhost:4000/virtual_bball_trainer/</link>
+        <guid isPermaLink="true">http://localhost:4000/virtual_bball_trainer/</guid>
         
         
         <category>OpenCV</category>
@@ -321,8 +329,8 @@
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/terraflight/</link>
-        <guid isPermaLink="true">henryburon.github.io/terraflight/</guid>
+        <link>http://localhost:4000/terraflight/</link>
+        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
         
         
         <category>Python</category>
@@ -405,8 +413,8 @@ The algorithm works by --&gt;
 &lt;p&gt;The estimates odometry, path, and obstacles are published for visualization.&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
-        <link>henryburon.github.io/turtlebot_slam/</link>
-        <guid isPermaLink="true">henryburon.github.io/turtlebot_slam/</guid>
+        <link>http://localhost:4000/turtlebot_slam/</link>
+        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -548,8 +556,8 @@ The algorithm works by --&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0600</pubDate>
-        <link>henryburon.github.io/polyglotbot/</link>
-        <guid isPermaLink="true">henryburon.github.io/polyglotbot/</guid>
+        <link>http://localhost:4000/polyglotbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -636,8 +644,8 @@ The algorithm works by --&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0600</pubDate>
-        <link>henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">henryburon.github.io/mobile-manipulation/</guid>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -676,8 +684,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">henryburon.github.io/unmanned_electric_boat/</guid>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -731,8 +739,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">henryburon.github.io/pen_thief/</guid>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -790,8 +798,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/ml_emotion_classification/</link>
-        <guid isPermaLink="true">henryburon.github.io/ml_emotion_classification/</guid>
+        <link>http://localhost:4000/ml_emotion_classification/</link>
+        <guid isPermaLink="true">http://localhost:4000/ml_emotion_classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -919,8 +927,8 @@ Testing on the lake.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 01 Sep 2023 00:00:00 -0500</pubDate>
-        <link>henryburon.github.io/path_planning/</link>
-        <guid isPermaLink="true">henryburon.github.io/path_planning/</guid>
+        <link>http://localhost:4000/path_planning/</link>
+        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
         
         
         <category>Path Planning</category>
