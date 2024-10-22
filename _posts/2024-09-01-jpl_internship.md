@@ -12,10 +12,10 @@ hidden: true
 <p align="center">
    <img src="/assets/gifs/niosh.gif" alt="NIOSH Robot" width="90%" />
    <br>
-   <em>NIOSH robot in the Mars Yard at JPL</em>
+   <em>Testing the robot in the Mars Yard.</em>
 </p>
 
-*Note: this content has been cleared for public release.*
+*Note: JPL cleared this content for public release.*
 
 # Overview
 
