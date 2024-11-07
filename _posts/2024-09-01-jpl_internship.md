@@ -3,8 +3,8 @@ layout: post
 title:  "Internship at NASA Jet Propulsion Laboratory (JPL)"
 categories: [C++, ROS Noetic, OpenCV, Eigen]
 image: assets/gifs/niosh_robot.gif
-featured: yes
-hidden: true
+featured: false
+hidden: false
 ---
 
 **<span style="color:rgb(0, 30, 80)">C++, ROS Noetic, OpenCV, Eigen</span>**

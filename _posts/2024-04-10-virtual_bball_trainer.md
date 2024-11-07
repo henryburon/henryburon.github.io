@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Computer Vision-Based Basketball Coach"
-categories: [OpenCV, Computer Vision, Object Tracking]
+categories: [OpenCV, Python, Computer Vision, Object Tracking]
 image: assets/gifs/basketball_shot.gif
-featured: false
-hidden: false
+featured: true
+hidden: true
 ---
 
-**<span style="color:rgb(0, 30, 80)">OpenCV, Computer Vision, Object Tracking</span>**
+**<span style="color:rgb(0, 30, 80)">OpenCV, Python, Computer Vision, Object Tracking</span>**
 
 
 <iframe width="90%" height="441" src="https://www.youtube.com/embed/MW7uQ3kL7gM?si=L13EQ9G4aMUwJl2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
