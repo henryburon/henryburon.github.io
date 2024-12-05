@@ -6,26 +6,24 @@
 
 <link rel="icon" href="/assets/images/logo.png">
 
-<title>Machine Learning Emotion Classification | Henry Buron</title>
+<title>Home | Henry Buron</title>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Machine Learning Emotion Classification | Henry’s Portfolio</title>
+<title>Page 2 of 2 for Home | Henry’s Portfolio</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Machine Learning Emotion Classification" />
+<meta property="og:title" content="Home" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Machine Learning, Python, Image Processing" />
-<meta property="og:description" content="Machine Learning, Python, Image Processing" />
-<link rel="canonical" href="http://localhost:4000/ml_emotion_classification/" />
-<meta property="og:url" content="http://localhost:4000/ml_emotion_classification/" />
+<meta name="description" content="M.S. in Robotics @ Northwestern University" />
+<meta property="og:description" content="M.S. in Robotics @ Northwestern University" />
+<link rel="canonical" href="http://localhost:4000/page2/" />
+<meta property="og:url" content="http://localhost:4000/page2/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="http://localhost:4000/assets/images/ml_emotion_classification.png" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-15T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/images/ml_emotion_classification.png" />
-<meta property="twitter:title" content="Machine Learning Emotion Classification" />
+<meta property="og:type" content="website" />
+<link rel="prev" href="http://localhost:4000/" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-15T00:00:00-05:00","datePublished":"2023-09-15T00:00:00-05:00","description":"Machine Learning, Python, Image Processing","headline":"Machine Learning Emotion Classification","image":"http://localhost:4000/assets/images/ml_emotion_classification.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ml_emotion_classification/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/ml_emotion_classification/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"M.S. in Robotics @ Northwestern University","headline":"Home","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/page2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -42,7 +40,7 @@
 
 
 
-<body class="layout-post">
+<body class="layout-default">
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -125,144 +123,100 @@
 <!-- Content
 ================================================== -->
 <div class="main-content">
-    <!-- Begin Article
+    
+
+<!-- Posts Index
 ================================================== -->
-<div class="container">
-    <div class="row">
 
-        <!-- Post -->
-        
+<!-- to change back to all posts on one page (and all under same section...)
+comment out the below code and change to featured=true, hidden=true for all posts -->
 
-        <div class="col-md-9 flex-first flex-md-unordered">
-            <div class="mainheading">
 
-                <!-- Author Box -->
-                
+<section class="recent-posts">
 
-                <!-- Post Title -->
-                <h1 class="posttitle">Machine Learning Emotion Classification</h1>
+    <div class="section-title">
 
-            </div>
-
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-            
-            <!-- End Adsense -->
-
-            <!-- Post Content -->
-            <div class="article-post" style="color: white; font-size: 22px;">
-                <!-- Toc if any -->
-                
-                <!-- End Toc -->
-                <p><strong><span style="color:rgb(0, 30, 80)">Machine Learning, Python, Image Processing</span></strong></p>
-
-<iframe width="100%" height="441" src="https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-
-<h2 id="overview">Overview</h2>
-
-<p><strong>Goal</strong>: Create a robust emotion classification pipeline by developing a machine learning algorithm capable of classifying facial images based on their depicted emotion.</p>
-
-<p><strong>GitHub</strong>: <a href="https://github.com/henryburon/ml-emotion-classification">https://github.com/henryburon/ml-emotion-classification</a></p>
-
-<p><strong>Process</strong>:</p>
-
-<ol>
-  <li><strong>Load, Process, and Store Images</strong>:
-    <ul>
-      <li>I loaded several thousand 48x48 grayscale training and testing images from seven different emotion categories, converted them to numpy arrays, and normalized the pixel values.</li>
-      <li>Kaggle Dataset: <a href="https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer">https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer</a></li>
-    </ul>
-  </li>
-  <li><strong>Apply Histogram of Oriented Gradients (HOG) Feature Extraction</strong>:
-    <ul>
-      <li>Facial images are heavily influenced by subtle changes in facial shape and the presence of edges (e.g. raised eyebrows, open mouth). HOG excels at capturing these features by computing the oriented gradients within localized regions of the image. In addition, HOG is known for its robustness in variations in lighting and contrast, which are common challenges in image processing. Finally, implementing HOG is relatively efficient compared to other sophisticated feature extraction methods, which was important in my project, considering the number of images I needed to process.
- <img src="/assets/images/hog_image_example.png" alt="HOG Image Example" /></li>
-    </ul>
-  </li>
-  <li><strong>Assign Labels to Data:</strong>
-    <ul>
-      <li>I assigned seven labels to the data, corresponding to seven different emotion classes:
- [0] angry, [1] happy, [2] neutral, [3] sad, [4] disgusted, [5] fearful, [6] surprised</li>
-    </ul>
-  </li>
-  <li><strong>Train Model</strong>:
-    <ul>
-      <li>I trained the linear regression model, made predictions, obtained the classification report, and saved the trained model for further use, achieving an accuracy of up to 77%.</li>
-    </ul>
-  </li>
-  <li><strong>Improving Model Accuracy</strong>:
-    <ul>
-      <li>I took several steps to increase the accuracy of the model by improving the feature extraction process. For example, through experimentation, I optimized the number of orientations, block size, and cell size, all with the goal of enhancing the granularity and thereby descriptive power of the extracted features. I also investigated different normalization techniques, such as min-max scaling, although this did not discernably affect the results.</li>
-      <li>Looking ahead, instead of engineering the features myself (i.e. HOG), I intend to try more feature learning techniques–automatic feature engineering–as this would empower the machine to autonomously learn more effective representations from the raw data.</li>
-    </ul>
-  </li>
-</ol>
-
-            </div>
-
-            <!-- Rating -->
-            
-
-            <!-- Post Date -->
-            <p>
-            <small>
-                <span class="post-date"><time class="post-date" datetime="2023-09-15">15 Sep 2023</time></span>           
-                
-                </small>
-            </p>
-
-            <!-- Post Categories -->
-            <div class="after-post-cats">
-                <ul class="tags mb-4">
-                    
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#Image-Processing">Image Processing</a>
-                    </li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#Machine-Learning">Machine Learning</a>
-                    </li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#Python">Python</a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <!-- End Categories -->
-
-            <!-- Post Tags -->
-            <div class="after-post-tags">
-                <ul class="tags">
-                    
-                    
-                </ul>
-            </div>
-            <!-- End Tags -->
-
-            <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            
-            <a class="prev d-block col-md-6" href="/path_planning/"> &laquo; Rapidly-Exploring Random Tree (RRT)</a>
-            
-            
-            <a class="next d-block col-md-6 text-lg-right" href="/pen_thief/">Computer Vision-Controlled Robot Arm &raquo; </a>
-            
-            <div class="clearfix"></div>
-            </div>
-            <!-- End Categories -->
-
-        </div>
-        <!-- End Post -->
+        <h2><span>All Projects</span></h2>
 
     </div>
-</div>
-<!-- End Article
-================================================== -->
 
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
-https://search.google.com/structured-data/testing-tool/u/0/
+    <div class="row listrecent">
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/drone-delivery/">
+                
+
+                    
+                        <img class="img-fluid" src="/assets/images/ugv1.png" alt="Drone-Based Delivery System [In Progress]"> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/drone-delivery/">Drone-Based Delivery System [In Progress]</a>
+                
+            </h2>
+            <h4 class="card-text">ROS2, LoRa, Embedded Systems
+
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="post-date">01 Aug 2023</span>
+                </span>
+                <span class="post-read-more"><a href="/drone-delivery/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+        
+
+    </div>
+
+</section>
+
+<!-- Pagination
 ================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    
+<div class="pagination">
+  
+    <a class="ml-1 mr-1" href="/">&laquo; Prev</a>
+  
+
+  
+    
+      <a class="ml-1 mr-1" href="/">1</a>
+    
+  
+    
+      <span class="ml-1 mr-1">2</span>
+    
+  
+
+  
+    <span>Next &raquo;</span>
+  
+</div>
+
+</span>
+</div>
+
 
 </div>
 
@@ -369,8 +323,6 @@ https://search.google.com/structured-data/testing-tool/u/0/
 
 <script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
-
-<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
 
 
 </body>

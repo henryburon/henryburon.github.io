@@ -6,26 +6,26 @@
 
 <link rel="icon" href="/assets/images/logo.png">
 
-<title>Machine Learning Emotion Classification | Henry Buron</title>
+<title>Drone-Based Delivery System [In Progress] | Henry Buron</title>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Machine Learning Emotion Classification | Henry’s Portfolio</title>
+<title>Drone-Based Delivery System [In Progress] | Henry’s Portfolio</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Machine Learning Emotion Classification" />
+<meta property="og:title" content="Drone-Based Delivery System [In Progress]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Machine Learning, Python, Image Processing" />
-<meta property="og:description" content="Machine Learning, Python, Image Processing" />
-<link rel="canonical" href="http://localhost:4000/ml_emotion_classification/" />
-<meta property="og:url" content="http://localhost:4000/ml_emotion_classification/" />
+<meta name="description" content="ROS2, LoRa, Embedded Systems" />
+<meta property="og:description" content="ROS2, LoRa, Embedded Systems" />
+<link rel="canonical" href="http://localhost:4000/drone-delivery/" />
+<meta property="og:url" content="http://localhost:4000/drone-delivery/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="http://localhost:4000/assets/images/ml_emotion_classification.png" />
+<meta property="og:image" content="http://localhost:4000/assets/images/ugv1.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-15T00:00:00-05:00" />
+<meta property="article:published_time" content="2023-08-01T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/images/ml_emotion_classification.png" />
-<meta property="twitter:title" content="Machine Learning Emotion Classification" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/ugv1.png" />
+<meta property="twitter:title" content="Drone-Based Delivery System [In Progress]" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-15T00:00:00-05:00","datePublished":"2023-09-15T00:00:00-05:00","description":"Machine Learning, Python, Image Processing","headline":"Machine Learning Emotion Classification","image":"http://localhost:4000/assets/images/ml_emotion_classification.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ml_emotion_classification/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/ml_emotion_classification/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-08-01T00:00:00-05:00","datePublished":"2023-08-01T00:00:00-05:00","description":"ROS2, LoRa, Embedded Systems","headline":"Drone-Based Delivery System [In Progress]","image":"http://localhost:4000/assets/images/ugv1.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/drone-delivery/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/drone-delivery/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -140,7 +140,7 @@
                 
 
                 <!-- Post Title -->
-                <h1 class="posttitle">Machine Learning Emotion Classification</h1>
+                <h1 class="posttitle">Drone-Based Delivery System [In Progress]</h1>
 
             </div>
 
@@ -153,49 +153,91 @@
                 <!-- Toc if any -->
                 
                 <!-- End Toc -->
-                <p><strong><span style="color:rgb(0, 30, 80)">Machine Learning, Python, Image Processing</span></strong></p>
+                <p><strong><span style="color:rgb(0, 30, 80)">ROS2, LoRa, Embedded Systems</span></strong></p>
 
-<iframe width="100%" height="441" src="https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p align="center">
+   <img src="/assets/images/ugv1.png" width="800" />
+</p>
+<center><small>TODO: Video Demonstration</small></center>
 
 <h2 id="overview">Overview</h2>
 
-<p><strong>Goal</strong>: Create a robust emotion classification pipeline by developing a machine learning algorithm capable of classifying facial images based on their depicted emotion.</p>
+<p>I built a drone-based delivery system that delivers a package via tether. The package–in the form of a small mobile robot–stabilizes itself during descent, and has the ability to release itself from the tether and drive along the ground towards its destination.</p>
 
-<p><strong>GitHub</strong>: <a href="https://github.com/henryburon/ml-emotion-classification">https://github.com/henryburon/ml-emotion-classification</a></p>
+<p><strong>GitHub Source Code:</strong> <a href="https://github.com/henryburon/drone-delivery">https://github.com/henryburon/drone-delivery</a></p>
 
-<p><strong>Process</strong>:</p>
+<div style="background-color: white; height: 1px;"></div>
+
+<h2 id="contents">Contents</h2>
 
 <ol>
-  <li><strong>Load, Process, and Store Images</strong>:
+  <li><a href="#system">System</a>
     <ul>
-      <li>I loaded several thousand 48x48 grayscale training and testing images from seven different emotion categories, converted them to numpy arrays, and normalized the pixel values.</li>
-      <li>Kaggle Dataset: <a href="https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer">https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer</a></li>
+      <li><a href="#drone-and-winch">Drone and Winch</a></li>
+      <li><a href="#mobile-package-robot">Mobile Package Robot</a></li>
+      <li><a href="#base-station">Base Station</a></li>
     </ul>
   </li>
-  <li><strong>Apply Histogram of Oriented Gradients (HOG) Feature Extraction</strong>:
+  <li><a href="#communication-architecture">Communication Architecture</a></li>
+  <li><a href="#design">Design</a>
     <ul>
-      <li>Facial images are heavily influenced by subtle changes in facial shape and the presence of edges (e.g. raised eyebrows, open mouth). HOG excels at capturing these features by computing the oriented gradients within localized regions of the image. In addition, HOG is known for its robustness in variations in lighting and contrast, which are common challenges in image processing. Finally, implementing HOG is relatively efficient compared to other sophisticated feature extraction methods, which was important in my project, considering the number of images I needed to process.
- <img src="/assets/images/hog_image_example.png" alt="HOG Image Example" /></li>
+      <li><a href="#electrical">Electrical</a></li>
+      <li><a href="#mechanical">Mechanical</a></li>
     </ul>
   </li>
-  <li><strong>Assign Labels to Data:</strong>
-    <ul>
-      <li>I assigned seven labels to the data, corresponding to seven different emotion classes:
- [0] angry, [1] happy, [2] neutral, [3] sad, [4] disgusted, [5] fearful, [6] surprised</li>
-    </ul>
-  </li>
-  <li><strong>Train Model</strong>:
-    <ul>
-      <li>I trained the linear regression model, made predictions, obtained the classification report, and saved the trained model for further use, achieving an accuracy of up to 77%.</li>
-    </ul>
-  </li>
-  <li><strong>Improving Model Accuracy</strong>:
-    <ul>
-      <li>I took several steps to increase the accuracy of the model by improving the feature extraction process. For example, through experimentation, I optimized the number of orientations, block size, and cell size, all with the goal of enhancing the granularity and thereby descriptive power of the extracted features. I also investigated different normalization techniques, such as min-max scaling, although this did not discernably affect the results.</li>
-      <li>Looking ahead, instead of engineering the features myself (i.e. HOG), I intend to try more feature learning techniques–automatic feature engineering–as this would empower the machine to autonomously learn more effective representations from the raw data.</li>
-    </ul>
-  </li>
+  <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ol>
+
+<h2 id="system">System</h2>
+
+<p>Quickly delivering small quantities of medical or emergency supplies over distance can be the difference between life or death. Drones are uniquely capable of handling this task. However, those with sufficient payload capacity are often large, dangerous in crowded areas, and ill-suited for operation in constrained environments.</p>
+
+<p>My project aims to address these challenges by offering a safer and more adaptable solution.</p>
+
+<p>The system consists of three main parts:</p>
+<ol>
+  <li>Drone with winch</li>
+  <li>Mobile package robot</li>
+  <li>Base station</li>
+</ol>
+
+<h4 id="drone-and-winch">Drone and Winch</h4>
+
+<h4 id="mobile-package-robot">Mobile Package Robot</h4>
+
+<h4 id="base-station">Base Station</h4>
+
+<p>TODO: Describe each part in detail. Include images.</p>
+
+<h2 id="communication-architecture">Communication Architecture</h2>
+
+<p>Reliable communication over distance is critical for this system.</p>
+
+<p align="center">
+   <img src="/assets/images/comm_diag_1.png" width="600" />
+</p>
+
+<p>TODO: Describe LoRa communication and why I chose it for this application.</p>
+
+<h2 id="design">Design</h2>
+
+<p>TODO: Sentence or two about overall design.</p>
+
+<h4 id="electrical">Electrical</h4>
+
+<p align="center">
+   <img src="/assets/images/elec_diag_1.png" width="600" />
+</p>
+
+<p>TODO</p>
+
+<h4 id="mechanical">Mechanical</h4>
+
+<p>TODO</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>TODO: Marno, Davin, Matt</p>
 
             </div>
 
@@ -205,7 +247,7 @@
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="2023-09-15">15 Sep 2023</time></span>           
+                <span class="post-date"><time class="post-date" datetime="2023-08-01">01 Aug 2023</time></span>           
                 
                 </small>
             </p>
@@ -216,15 +258,15 @@
                     
                     
                     <li>
-                        <a class="smoothscroll" href="/categories#Image-Processing">Image Processing</a>
+                        <a class="smoothscroll" href="/categories#Embedded-Systems">Embedded Systems</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="/categories#Machine-Learning">Machine Learning</a>
+                        <a class="smoothscroll" href="/categories#LoRa">LoRa</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="/categories#Python">Python</a>
+                        <a class="smoothscroll" href="/categories#ROS2">ROS2</a>
                     </li>
                     
                 </ul>
@@ -243,10 +285,10 @@
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             
-            <a class="prev d-block col-md-6" href="/path_planning/"> &laquo; Rapidly-Exploring Random Tree (RRT)</a>
+            <a class="prev d-block col-md-6" href="/HenryBuron_About"> &laquo; About Me</a>
             
             
-            <a class="next d-block col-md-6 text-lg-right" href="/pen_thief/">Computer Vision-Controlled Robot Arm &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="/path_planning/">Rapidly-Exploring Random Tree (RRT) &raquo; </a>
             
             <div class="clearfix"></div>
             </div>
