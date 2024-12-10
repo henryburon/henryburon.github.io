@@ -5,9 +5,110 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Dec 2024 14:57:06 -0600</pubDate>
-    <lastBuildDate>Thu, 05 Dec 2024 14:57:06 -0600</lastBuildDate>
+    <pubDate>Mon, 09 Dec 2024 23:57:48 -0600</pubDate>
+    <lastBuildDate>Mon, 09 Dec 2024 23:57:48 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Drone-Based Delivery System [In Progress]</title>
+        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, LoRa, Embedded Systems&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/ugv1.png&quot; width=&quot;800&quot; /&gt;
+&lt;/p&gt;
+&lt;center&gt;&lt;small&gt;TODO: Video Demonstration&lt;/small&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;I built a drone-based delivery system that delivers a package via tether. The package–in the form of a small mobile robot–stabilizes itself during descent, and has the ability to release itself from the tether and drive along the ground towards its destination.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub Source Code:&lt;/strong&gt; &lt;a href=&quot;https://github.com/henryburon/drone-delivery&quot;&gt;https://github.com/henryburon/drone-delivery&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#system&quot;&gt;System&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#drone-and-winch&quot;&gt;Drone and Winch&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#mobile-package-robot&quot;&gt;Mobile Package Robot&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#base-station&quot;&gt;Base Station&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#communication-architecture&quot;&gt;Communication Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#design&quot;&gt;Design&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#electrical&quot;&gt;Electrical&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#mechanical&quot;&gt;Mechanical&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#acknowledgements&quot;&gt;Acknowledgements&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;system&quot;&gt;System&lt;/h2&gt;
+
+&lt;p&gt;Quickly delivering small quantities of medical or emergency supplies over distance can be the difference between life or death. Drones are uniquely capable of handling this task. However, those with sufficient payload capacity are often large, dangerous in crowded areas, and ill-suited for operation in constrained environments.&lt;/p&gt;
+
+&lt;p&gt;My project aims to address these challenges by offering a safer and more adaptable solution.&lt;/p&gt;
+
+&lt;p&gt;The system consists of three main parts:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Drone with winch&lt;/li&gt;
+  &lt;li&gt;Mobile package robot&lt;/li&gt;
+  &lt;li&gt;Base station&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;drone-and-winch&quot;&gt;Drone and Winch&lt;/h4&gt;
+
+&lt;h4 id=&quot;mobile-package-robot&quot;&gt;Mobile Package Robot&lt;/h4&gt;
+
+&lt;h4 id=&quot;base-station&quot;&gt;Base Station&lt;/h4&gt;
+
+&lt;p&gt;TODO: Describe each part in detail. Include images.&lt;/p&gt;
+
+&lt;h2 id=&quot;communication-architecture&quot;&gt;Communication Architecture&lt;/h2&gt;
+
+&lt;p&gt;Reliable communication over distance is critical for this system.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/comm_diag_1.png&quot; width=&quot;600&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;TODO: Describe LoRa communication and why I chose it for this application.&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+
+&lt;p&gt;TODO: Sentence or two about overall design.&lt;/p&gt;
+
+&lt;h4 id=&quot;electrical&quot;&gt;Electrical&lt;/h4&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/elec_diag_1.png&quot; width=&quot;600&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;h4 id=&quot;mechanical&quot;&gt;Mechanical&lt;/h4&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;h2 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;TODO: Marno, Davin, Matt&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Dec 2024 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/drone-delivery/</link>
+        <guid isPermaLink="true">http://localhost:4000/drone-delivery/</guid>
+        
+        
+        <category>ROS2</category>
+        
+        <category>LoRa</category>
+        
+        <category>Embedded Systems</category>
+        
+      </item>
     
       <item>
         <title>Internship at NASA Jet Propulsion Laboratory (JPL)</title>
@@ -809,135 +910,6 @@ Testing on the lake.&lt;/p&gt;
         <category>Python</category>
         
         <category>Image Processing</category>
-        
-      </item>
-    
-      <item>
-        <title>Rapidly-Exploring Random Tree (RRT)</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Path Planning, Python, RRT&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/x5AmgLBkSXQ?si=LW6sG8rTdrXVrDQt&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Implement the RRT path-planning algorithm.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/path-planning/tree/main/path_planning/RRT&quot;&gt;https://github.com/henryburon/path-planning/tree/main/path_planning&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is an implementation of the Rapidly-Exploring Random Tree (RRT), a fundamental path planning algorithm in robotics.&lt;/p&gt;
-
-&lt;p&gt;An RRT consists of a set of vertices, which represent configurations in some domain D and edges, which connect two vertices. The algorithm randomly builds a tree in such a way that, as the number of vertices and &lt;em&gt;n&lt;/em&gt; increases to ∞, the vertices are uniformly distributed across the domain D.&lt;/p&gt;
-
-&lt;p&gt;In this implementation, the RRT algorithm uses two key components:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Tree Data Structure&lt;/strong&gt;: The RRT algorithm maintains a tree data structure to explore and represent the configuration space efficiently. Each node in the tree corresponds to a specific vertex, and edges between nodes represent feasible transitions.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;State Machine&lt;/strong&gt;: To control the decision-making process during tree expansion and exploration, I employed a state machine to guide the algorithm’s behavior.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The inputs are as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;q_init&lt;/strong&gt;: initial configuration&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;K&lt;/strong&gt;: max vertices in the RRT&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;delta&lt;/strong&gt;: incremental distance between vertices&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;domain&lt;/strong&gt;: the planning domain (default 100x100)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The algorithm begins by randomly creating the obstacles, initializing the goal (and checking it’s in an acceptable location), and initializing the matplotlib plot. It then begins the main process, which repeats up to &lt;strong&gt;K&lt;/strong&gt; times.&lt;/p&gt;
-
-&lt;p&gt;A goal is considered acceptable if it is near the edge of the domain and not inside an obstacle:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize_goal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;acceptable_goal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;acceptable_goal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;check1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;check2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_goal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_goal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_goal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_goal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# goal must be near edge of domain (so RRT has to search a little)
-&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;check1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;circle&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;circles_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# goal must not be inside an obstacle
-&lt;/span&gt;                &lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;coordinate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_goal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_goal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;check2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;check1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;check2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;acceptable_goal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# proceed with current goal
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Every iteration, the algorithm:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Finds a random configuration (random coordinate within the domain).&lt;/li&gt;
-  &lt;li&gt;Identifies the closest existing vertex.&lt;/li&gt;
-  &lt;li&gt;Calculates the direction of the random configuration.&lt;/li&gt;
-  &lt;li&gt;Plans a new vertex delta (1) in the direction of the random configuration.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Checks if the planned vertex collides with an obstacle, and either returns to Step 1 if needed, or continues if there will not be a collision.&lt;/p&gt;
-
-    &lt;p&gt;Collision checking is implemented as follows:&lt;/p&gt;
-
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;CHECK_COLLISIONS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-             &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obstacle&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;circles_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# check each obstacle
-&lt;/span&gt;                 &lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obstacle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;coordinate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# get center coordinate of obstacle
-&lt;/span&gt;                 &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q_new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-                 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obstacle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# if new configuration is within obstacle, get new random coordinate
-&lt;/span&gt;                     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;RANDOM_CONFIG&quot;&lt;/span&gt;
-                     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-                    
-                 &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;CHECK_FOR_GOAL&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# continue to next stage if no collision detected
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Checks if the goal can be spotted (straight line, no obstacles) from the newest vertex. If so, a flag is activated and the algorithm ends.&lt;/li&gt;
-  &lt;li&gt;Updates the tree with the newest child vertex.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The RRT is then animated with matplotlib.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/rrt1.png&quot; style=&quot;width: 750px; height: auto; margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 01 Sep 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/path_planning/</link>
-        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
-        
-        
-        <category>Path Planning</category>
-        
-        <category>Python</category>
-        
-        <category>RRT</category>
         
       </item>
     

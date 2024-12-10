@@ -2,7 +2,7 @@
 layout: post
 title:  "Drone-Based Delivery System [In Progress]"
 categories: [ROS2, LoRa, Embedded Systems]
-image: assets/images/ugv1.png
+image: assets/gifs/drone_delivery.gif
 featured: false
 hidden: false
 ---
