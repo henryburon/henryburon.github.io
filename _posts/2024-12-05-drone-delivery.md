@@ -30,8 +30,6 @@ I built a drone-based delivery system that delivers a package via tether. The pa
    - [Base Station](#base-station)
 2. [Communication Architecture](#communication-architecture)
 3. [Design](#design)
-   - [Electrical](#electrical)
-   - [Mechanical](#mechanical)
 4. [Acknowledgements](#acknowledgements)
 
 ## System
@@ -92,28 +90,21 @@ Reliable communication over distance is critical for a drone-based robotic deliv
    <img src="/assets/images/comm_diag_1.png" width="600" />
 </p>
 
-LoRa, short for Long Range, is a low-power, wide-area network communication protocol designed for wireless communication over long distances. 
+LoRa, short for Long Range, is a low-power, wide-area network communication protocol designed for wireless communication over long distances.
+
+It operates in sub-gigahertz radio frequency bands (i.e. 433 MHz, 915 MHz) and is well-suited for low-power, low-throughput applications. LoRa achieves this using chirp spread spectrum (CSS) modulation, a frequency spreading method that allows for better resistance to interference and signal degradation over long distances. For these reasons, I used [LoRa modules](https://www.adafruit.com/product/3072) to facilitate the communication between the different parts of the system.
 
 
 ## Design
 
-TODO: Sentence or two about overall design.
-
-#### Electrical
+I built the mobile package robot, the winch system, and the base station from scratch.
 
 <p align="center">
    <img src="/assets/images/elec_diag_1.png" width="600" />
 </p>
 
-TODO
-
-#### Mechanical
-
-TODO
+The winch system electronics consist of a high-torque servo motor and LoRa module. It is connected to the drone's power supply.
 
 ## Acknowledgements
 
-TODO: Marno, Davin, Matt
-
-
-Mention that drone was built by Marno.
+Thanks to Matt, Davin, Shail, and Marno for your help in this project.

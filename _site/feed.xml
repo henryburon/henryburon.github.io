@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Dec 2024 03:26:33 -0600</pubDate>
-    <lastBuildDate>Thu, 12 Dec 2024 03:26:33 -0600</lastBuildDate>
+    <pubDate>Thu, 12 Dec 2024 03:44:23 -0600</pubDate>
+    <lastBuildDate>Thu, 12 Dec 2024 03:44:23 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -37,12 +37,7 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#communication-architecture&quot;&gt;Communication Architecture&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#design&quot;&gt;Design&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#electrical&quot;&gt;Electrical&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#mechanical&quot;&gt;Mechanical&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#design&quot;&gt;Design&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#acknowledgements&quot;&gt;Acknowledgements&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -106,27 +101,21 @@
 
 &lt;p&gt;LoRa, short for Long Range, is a low-power, wide-area network communication protocol designed for wireless communication over long distances.&lt;/p&gt;
 
+&lt;p&gt;It operates in sub-gigahertz radio frequency bands (i.e. 433 MHz, 915 MHz) and is well-suited for low-power, low-throughput applications. LoRa achieves this using chirp spread spectrum (CSS) modulation, a frequency spreading method that allows for better resistance to interference and signal degradation over long distances. For these reasons, I used &lt;a href=&quot;https://www.adafruit.com/product/3072&quot;&gt;LoRa modules&lt;/a&gt; to facilitate the communication between the different parts of the system.&lt;/p&gt;
+
 &lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
 
-&lt;p&gt;TODO: Sentence or two about overall design.&lt;/p&gt;
-
-&lt;h4 id=&quot;electrical&quot;&gt;Electrical&lt;/h4&gt;
+&lt;p&gt;I built the mobile package robot, the winch system, and the base station from scratch.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;/assets/images/elec_diag_1.png&quot; width=&quot;600&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;TODO&lt;/p&gt;
-
-&lt;h4 id=&quot;mechanical&quot;&gt;Mechanical&lt;/h4&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;The winch system electronics consist of a high-torque servo motor and LoRa module. It is connected to the drone’s power supply.&lt;/p&gt;
 
 &lt;h2 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h2&gt;
 
-&lt;p&gt;TODO: Marno, Davin, Matt&lt;/p&gt;
-
-&lt;p&gt;Mention that drone was built by Marno.&lt;/p&gt;
+&lt;p&gt;Thanks to Matt, Davin, Shail, and Marno for your help in this project.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Dec 2024 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/drone-delivery/</link>

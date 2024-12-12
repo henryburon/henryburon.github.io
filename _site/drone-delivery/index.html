@@ -179,12 +179,7 @@
     </ul>
   </li>
   <li><a href="#communication-architecture">Communication Architecture</a></li>
-  <li><a href="#design">Design</a>
-    <ul>
-      <li><a href="#electrical">Electrical</a></li>
-      <li><a href="#mechanical">Mechanical</a></li>
-    </ul>
-  </li>
+  <li><a href="#design">Design</a></li>
   <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ol>
 
@@ -248,27 +243,21 @@
 
 <p>LoRa, short for Long Range, is a low-power, wide-area network communication protocol designed for wireless communication over long distances.</p>
 
+<p>It operates in sub-gigahertz radio frequency bands (i.e. 433 MHz, 915 MHz) and is well-suited for low-power, low-throughput applications. LoRa achieves this using chirp spread spectrum (CSS) modulation, a frequency spreading method that allows for better resistance to interference and signal degradation over long distances. For these reasons, I used <a href="https://www.adafruit.com/product/3072">LoRa modules</a> to facilitate the communication between the different parts of the system.</p>
+
 <h2 id="design">Design</h2>
 
-<p>TODO: Sentence or two about overall design.</p>
-
-<h4 id="electrical">Electrical</h4>
+<p>I built the mobile package robot, the winch system, and the base station from scratch.</p>
 
 <p align="center">
    <img src="/assets/images/elec_diag_1.png" width="600" />
 </p>
 
-<p>TODO</p>
-
-<h4 id="mechanical">Mechanical</h4>
-
-<p>TODO</p>
+<p>The winch system electronics consist of a high-torque servo motor and LoRa module. It is connected to the drone’s power supply.</p>
 
 <h2 id="acknowledgements">Acknowledgements</h2>
 
-<p>TODO: Marno, Davin, Matt</p>
-
-<p>Mention that drone was built by Marno.</p>
+<p>Thanks to Matt, Davin, Shail, and Marno for your help in this project.</p>
 
             </div>
 
