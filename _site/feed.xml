@@ -5,12 +5,12 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Dec 2024 01:51:11 -0600</pubDate>
-    <lastBuildDate>Thu, 12 Dec 2024 01:51:11 -0600</lastBuildDate>
+    <pubDate>Thu, 12 Dec 2024 02:37:55 -0600</pubDate>
+    <lastBuildDate>Thu, 12 Dec 2024 02:37:55 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
-        <title>Drone-Based Delivery System [In Progress]</title>
+        <title>Drone-Based Delivery System</title>
         <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, LoRa, Embedded Systems&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/1bbPotnd48Q?si=MclOsE42RdgTv6PT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -19,8 +19,9 @@
 
 &lt;p&gt;I built a drone-based delivery system that delivers a package via tether. The package–in the form of a small mobile robot–stabilizes itself during descent, and has the ability to release itself from the tether and drive along the ground towards its destination.&lt;/p&gt;
 
-&lt;p&gt;[Include System Situation Diagram]&lt;/p&gt;
-
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/situational_diagram.png&quot; width=&quot;550&quot; /&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GitHub Source Code:&lt;/strong&gt; &lt;a href=&quot;https://github.com/henryburon/drone-delivery&quot;&gt;https://github.com/henryburon/drone-delivery&lt;/a&gt;&lt;/p&gt;
 
 &lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
@@ -95,6 +96,8 @@
 &lt;h2 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h2&gt;
 
 &lt;p&gt;TODO: Marno, Davin, Matt&lt;/p&gt;
+
+&lt;p&gt;Mention that drone was built by Marno.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Dec 2024 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/drone-delivery/</link>

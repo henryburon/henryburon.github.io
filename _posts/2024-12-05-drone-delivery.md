@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Drone-Based Delivery System [In Progress]"
+title:  "Drone-Based Delivery System"
 categories: [ROS2, LoRa, Embedded Systems]
 image: assets/gifs/drone_delivery.gif
 featured: false
@@ -15,8 +15,9 @@ hidden: false
 
 I built a drone-based delivery system that delivers a package via tether. The package--in the form of a small mobile robot--stabilizes itself during descent, and has the ability to release itself from the tether and drive along the ground towards its destination.
 
-[Include System Situation Diagram]
-
+<p align="center">
+  <img src="/assets/images/situational_diagram.png" width="550" />
+</p>
 **GitHub Source Code:** [https://github.com/henryburon/drone-delivery](https://github.com/henryburon/drone-delivery)
 
 <div style="background-color: white; height: 1px;"></div>
@@ -81,3 +82,6 @@ TODO
 ## Acknowledgements
 
 TODO: Marno, Davin, Matt
+
+
+Mention that drone was built by Marno.
