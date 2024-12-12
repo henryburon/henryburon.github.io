@@ -41,27 +41,59 @@ Quickly delivering small quantities of medical or emergency supplies over distan
 My project aims to address these challenges by offering a safer and more adaptable solution.
 
 The system consists of three main parts:
-1. Drone with winch
+1. Drone and winch
 2. Mobile package robot
 3. Base station
 
 #### Drone and Winch
 
+My system uses a heavy-payload drone, along with a custom-built winch. The drone was built by <a href="https://marnonel6.github.io/projects/0-autonomous-px4-drone" target="_blank">Marno Nel</a>. The drone's size (specifically, the space underneath) and lifting capacity provide the primary constraints for this project.
+
+The winch, fixed to the underbelly of the drone, allows the robot to be deployed--lowered with a tether--from approximately 10m in the air. The winch system is controlled and powered by the drone's existing components, however it communicates with the base station via an added LoRa module.
+
+<p align="center">
+   <img src="/assets/images/winch_cad.png" width="500" />
+</p>
+
 #### Mobile Package Robot
+
+The mobile robot carries the medical supplies. It is lowered from the drone by tether, and can detach itself from this tether without human assistance. Once on the ground, it can drive closer to the target, taking advantage of its small form factor to enter constrained and crowded environments. The laterally-located propellers can be used to stabilize itself during descent, allowing the robot to safely deliver the medical supplies in a range of environments. The robot communicates via LoRa. The robot was built from scratch.
+
+<p align="center">
+   <img src="/assets/images/droid_closed.jpg" width="45%" />
+   <img src="/assets/images/droid_open.jpg" width="45%" />
+   <br>
+   <em>Mobile package robot</em>
+</p>
+
+<p align="center">
+   <img src="/assets/gifs/tether_mechanism.gif" width="500" />
+   <br>
+   <em>Tether mechanism in action</em>
+</p>
+
 
 #### Base Station
 
-TODO: Describe each part in detail. Include images.
+The base station simply consisted of a LoRa module connected to a computer. It allows the operator to receive status updates in real-time and send commands.
+
+<p align="center">
+   <img src="/assets/images/dd_base_station.jpg" width="500" />
+   <br>
+   <em>Base Station (R)</em>
+</p>
+
 
 ## Communication Architecture
 
-Reliable communication over distance is critical for this system.
+Reliable communication over distance is critical for a drone-based robotic delivery system.
 
 <p align="center">
    <img src="/assets/images/comm_diag_1.png" width="600" />
 </p>
 
-TODO: Describe LoRa communication and why I chose it for this application.
+LoRa, short for Long Range, is a low-power, wide-area network communication protocol designed for wireless communication over long distances. 
+
 
 ## Design
 

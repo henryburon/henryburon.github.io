@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Dec 2024 02:37:55 -0600</pubDate>
-    <lastBuildDate>Thu, 12 Dec 2024 02:37:55 -0600</lastBuildDate>
+    <pubDate>Thu, 12 Dec 2024 03:26:33 -0600</pubDate>
+    <lastBuildDate>Thu, 12 Dec 2024 03:26:33 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -54,28 +54,57 @@
 
 &lt;p&gt;The system consists of three main parts:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Drone with winch&lt;/li&gt;
+  &lt;li&gt;Drone and winch&lt;/li&gt;
   &lt;li&gt;Mobile package robot&lt;/li&gt;
   &lt;li&gt;Base station&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4 id=&quot;drone-and-winch&quot;&gt;Drone and Winch&lt;/h4&gt;
 
+&lt;p&gt;My system uses a heavy-payload drone, along with a custom-built winch. The drone was built by &lt;a href=&quot;https://marnonel6.github.io/projects/0-autonomous-px4-drone&quot; target=&quot;_blank&quot;&gt;Marno Nel&lt;/a&gt;. The drone’s size (specifically, the space underneath) and lifting capacity provide the primary constraints for this project.&lt;/p&gt;
+
+&lt;p&gt;The winch, fixed to the underbelly of the drone, allows the robot to be deployed–lowered with a tether–from approximately 10m in the air. The winch system is controlled and powered by the drone’s existing components, however it communicates with the base station via an added LoRa module.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/winch_cad.png&quot; width=&quot;500&quot; /&gt;
+&lt;/p&gt;
+
 &lt;h4 id=&quot;mobile-package-robot&quot;&gt;Mobile Package Robot&lt;/h4&gt;
+
+&lt;p&gt;The mobile robot carries the medical supplies. It is lowered from the drone by tether, and can detach itself from this tether without human assistance. Once on the ground, it can drive closer to the target, taking advantage of its small form factor to enter constrained and crowded environments. The laterally-located propellers can be used to stabilize itself during descent, allowing the robot to safely deliver the medical supplies in a range of environments. The robot communicates via LoRa. The robot was built from scratch.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/droid_closed.jpg&quot; width=&quot;45%&quot; /&gt;
+   &lt;img src=&quot;/assets/images/droid_open.jpg&quot; width=&quot;45%&quot; /&gt;
+   &lt;br /&gt;
+   &lt;em&gt;Mobile package robot&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/gifs/tether_mechanism.gif&quot; width=&quot;500&quot; /&gt;
+   &lt;br /&gt;
+   &lt;em&gt;Tether mechanism in action&lt;/em&gt;
+&lt;/p&gt;
 
 &lt;h4 id=&quot;base-station&quot;&gt;Base Station&lt;/h4&gt;
 
-&lt;p&gt;TODO: Describe each part in detail. Include images.&lt;/p&gt;
+&lt;p&gt;The base station simply consisted of a LoRa module connected to a computer. It allows the operator to receive status updates in real-time and send commands.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/images/dd_base_station.jpg&quot; width=&quot;500&quot; /&gt;
+   &lt;br /&gt;
+   &lt;em&gt;Base Station (R)&lt;/em&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&quot;communication-architecture&quot;&gt;Communication Architecture&lt;/h2&gt;
 
-&lt;p&gt;Reliable communication over distance is critical for this system.&lt;/p&gt;
+&lt;p&gt;Reliable communication over distance is critical for a drone-based robotic delivery system.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;/assets/images/comm_diag_1.png&quot; width=&quot;600&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;TODO: Describe LoRa communication and why I chose it for this application.&lt;/p&gt;
+&lt;p&gt;LoRa, short for Long Range, is a low-power, wide-area network communication protocol designed for wireless communication over long distances.&lt;/p&gt;
 
 &lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
 
