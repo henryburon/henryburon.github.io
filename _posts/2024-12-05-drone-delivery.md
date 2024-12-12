@@ -9,14 +9,13 @@ hidden: false
 
 **<span style="color:rgb(0, 30, 80)">ROS2, LoRa, Embedded Systems</span>**
 
-<p align="center">
-   <img src="/assets/images/ugv1.png" width="800" />
-</p>
-<center><small>TODO: Video Demonstration</small></center>
+<iframe width="90%" height="441" src="https://www.youtube.com/embed/1bbPotnd48Q?si=MclOsE42RdgTv6PT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Overview  
 
 I built a drone-based delivery system that delivers a package via tether. The package--in the form of a small mobile robot--stabilizes itself during descent, and has the ability to release itself from the tether and drive along the ground towards its destination.
+
+[Include System Situation Diagram]
 
 **GitHub Source Code:** [https://github.com/henryburon/drone-delivery](https://github.com/henryburon/drone-delivery)
 

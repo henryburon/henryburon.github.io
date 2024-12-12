@@ -5,22 +5,21 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Dec 2024 23:57:48 -0600</pubDate>
-    <lastBuildDate>Mon, 09 Dec 2024 23:57:48 -0600</lastBuildDate>
+    <pubDate>Thu, 12 Dec 2024 01:51:11 -0600</pubDate>
+    <lastBuildDate>Thu, 12 Dec 2024 01:51:11 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Drone-Based Delivery System [In Progress]</title>
         <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, LoRa, Embedded Systems&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/ugv1.png&quot; width=&quot;800&quot; /&gt;
-&lt;/p&gt;
-&lt;center&gt;&lt;small&gt;TODO: Video Demonstration&lt;/small&gt;&lt;/center&gt;
+&lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/1bbPotnd48Q?si=MclOsE42RdgTv6PT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
 &lt;p&gt;I built a drone-based delivery system that delivers a package via tether. The package–in the form of a small mobile robot–stabilizes itself during descent, and has the ability to release itself from the tether and drive along the ground towards its destination.&lt;/p&gt;
+
+&lt;p&gt;[Include System Situation Diagram]&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GitHub Source Code:&lt;/strong&gt; &lt;a href=&quot;https://github.com/henryburon/drone-delivery&quot;&gt;https://github.com/henryburon/drone-delivery&lt;/a&gt;&lt;/p&gt;
 
@@ -121,6 +120,8 @@
 &lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Note: JPL cleared this content for public release.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;See story on the MSR website: &lt;a href=&quot;https://www.mccormick.northwestern.edu/robotics/inside-our-program/stories/2024/navigating-hazardous-terrain-at-nasas-jet-propulsion-laboratory.html&quot; target=&quot;_blank&quot;&gt;Navigating Hazardous Terrain at NASA’s Jet Propulsion Laboratory&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
 

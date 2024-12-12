@@ -17,6 +17,8 @@ hidden: false
 
 *Note: JPL cleared this content for public release.*
 
+See story on the MSR website: <a href="https://www.mccormick.northwestern.edu/robotics/inside-our-program/stories/2024/navigating-hazardous-terrain-at-nasas-jet-propulsion-laboratory.html" target="_blank">Navigating Hazardous Terrain at NASA's Jet Propulsion Laboratory</a>
+
 # Overview
 
 I worked as a Robotics Software Intern at NASA's Jet Propulsion Laboratory in the Robotic Mobility group (347F) during Summer 2024.
