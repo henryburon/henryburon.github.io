@@ -51,11 +51,13 @@ The winch, fixed to the underbelly of the drone, allows the robot to be deployed
 
 <p align="center">
    <img src="/assets/images/winch_cad.png" width="500" />
+   <br>
+   <em>Custom winch design in CAD</em>
 </p>
 
 #### Mobile Package Robot
 
-The mobile robot carries the medical supplies. It is lowered from the drone by tether, and can detach itself from this tether without human assistance. Once on the ground, it can drive closer to the target, taking advantage of its small form factor to enter constrained and crowded environments. The laterally-located propellers can be used to stabilize itself during descent, allowing the robot to safely deliver the medical supplies in a range of environments. The robot communicates via LoRa. The robot was built from scratch.
+The mobile robot carries a small quantity of medical or emergency supplies. It is lowered from the drone by tether, and can detach itself from this tether without human assistance. Once on the ground, it can drive closer to the target, taking advantage of its small form factor to enter constrained and crowded environments. The side-mounted propellers can be used to stabilize itself during descent, allowing the robot to safely deliver the medical supplies in a range of environments.
 
 <p align="center">
    <img src="/assets/images/droid_closed.jpg" width="45%" />
@@ -70,6 +72,11 @@ The mobile robot carries the medical supplies. It is lowered from the drone by t
    <em>Tether mechanism in action</em>
 </p>
 
+<p align="center">
+   <img src="/assets/gifs/robot_stabilization.gif" width="700" />
+   <br>
+   <em>Active stabilization demo</em>
+</p>
 
 #### Base Station
 

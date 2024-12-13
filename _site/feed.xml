@@ -5,8 +5,8 @@
     <description>M.S. in Robotics @ Northwestern University</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Dec 2024 03:44:23 -0600</pubDate>
-    <lastBuildDate>Thu, 12 Dec 2024 03:44:23 -0600</lastBuildDate>
+    <pubDate>Fri, 13 Dec 2024 17:29:46 -0600</pubDate>
+    <lastBuildDate>Fri, 13 Dec 2024 17:29:46 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -62,11 +62,13 @@
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;/assets/images/winch_cad.png&quot; width=&quot;500&quot; /&gt;
+   &lt;br /&gt;
+   &lt;em&gt;Custom winch design in CAD&lt;/em&gt;
 &lt;/p&gt;
 
 &lt;h4 id=&quot;mobile-package-robot&quot;&gt;Mobile Package Robot&lt;/h4&gt;
 
-&lt;p&gt;The mobile robot carries the medical supplies. It is lowered from the drone by tether, and can detach itself from this tether without human assistance. Once on the ground, it can drive closer to the target, taking advantage of its small form factor to enter constrained and crowded environments. The laterally-located propellers can be used to stabilize itself during descent, allowing the robot to safely deliver the medical supplies in a range of environments. The robot communicates via LoRa. The robot was built from scratch.&lt;/p&gt;
+&lt;p&gt;The mobile robot carries a small quantity of medical or emergency supplies. It is lowered from the drone by tether, and can detach itself from this tether without human assistance. Once on the ground, it can drive closer to the target, taking advantage of its small form factor to enter constrained and crowded environments. The side-mounted propellers can be used to stabilize itself during descent, allowing the robot to safely deliver the medical supplies in a range of environments.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;/assets/images/droid_closed.jpg&quot; width=&quot;45%&quot; /&gt;
@@ -79,6 +81,12 @@
    &lt;img src=&quot;/assets/gifs/tether_mechanism.gif&quot; width=&quot;500&quot; /&gt;
    &lt;br /&gt;
    &lt;em&gt;Tether mechanism in action&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+   &lt;img src=&quot;/assets/gifs/robot_stabilization.gif&quot; width=&quot;700&quot; /&gt;
+   &lt;br /&gt;
+   &lt;em&gt;Active stabilization demo&lt;/em&gt;
 &lt;/p&gt;
 
 &lt;h4 id=&quot;base-station&quot;&gt;Base Station&lt;/h4&gt;
