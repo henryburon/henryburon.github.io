@@ -1,0 +1,14 @@
+# Local working notes for Claude — not part of the published site.
+CLAUDE.md
+
+# Jekyll build caches
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+/vendor/bundle/
+
+# OS noise
+.DS_Store
+Thumbs.db

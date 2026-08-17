@@ -45,4 +45,6 @@ defaults:
     values:
       image: /assets/images/og-image.png
 
-exclude: [post_template.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, docker-compose.yml, tools, vendor/bundle]
+# .gitignore does not stop Jekyll — anything private must be excluded here too.
+exclude: [post_template.md, LICENSE.txt, README.md, CLAUDE.md, justfile, Gemfile,
+          Gemfile.lock, docker-compose.yml, tools, vendor/bundle]

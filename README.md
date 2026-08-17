@@ -5,20 +5,24 @@ Live at [henryburon.github.io](https://henryburon.github.io)
 ## Local development
 
 ```bash
-bundle exec jekyll serve
+just
 ```
 
 Serves at <http://127.0.0.1:4000> and rebuilds automatically when you save a file.
 That's the only command you normally need.
 
 ```bash
-bundle exec jekyll build      # one-off build into _site/
-bundle exec jekyll build --watch   # rebuild on change, but don't serve
+just build          # one-off build into _site/
+just rebuild        # clean rebuild, when something looks stale
+just serve-lan      # reachable from your phone on the same network
+just check-assets   # flag oversized media before committing
+just install        # first run on a new machine
+just --list         # everything available
 ```
 
-If the Ruby toolchain misbehaves, `docker-compose up` runs the same thing in a container.
-
-First time on a new machine: `bundle install` (gems install into `vendor/bundle`).
+All of these just wrap `bundle exec jekyll ...`, so the raw commands still work
+if you'd rather type them. If the Ruby toolchain misbehaves, `docker-compose up`
+runs the same thing in a container.
 
 ## Adding a project
 
