@@ -53,7 +53,7 @@ Each contour in the frame is graded on the above three characteristics, and each
 
 <div class="figure-row">
     <div>
-        <img src="/assets/images/cv_bball_contours.png" width="500" />
+        <img src="/assets/images/cv_bball_contours.jpg" width="500" />
         <small>Figure 1. Scored contour rectangles. Green outline indicates basketball. Red circle is location in previous frame.</small>
     </div>
     <div>

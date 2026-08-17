@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>Robotics Software Engineer — autonomy, SLAM, and computer vision</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Aug 2026 22:24:29 -0700</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2026 22:24:29 -0700</lastBuildDate>
+    <link>https://henryburon.github.io/</link>
+    <atom:link href="https://henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 16 Aug 2026 22:32:29 -0700</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2026 22:32:29 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -124,8 +124,8 @@
 &lt;p&gt;Thanks to Matt, Davin, Shail, and Marno for your help in this project.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Dec 2024 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/drone-delivery/</link>
-        <guid isPermaLink="true">http://localhost:4000/drone-delivery/</guid>
+        <link>https://henryburon.github.io/drone-delivery/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/drone-delivery/</guid>
         
         
         <category>ROS2</category>
@@ -199,12 +199,12 @@
 &lt;p&gt;The algorithm abstracts the robot’s non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;/assets/images/niosh_terrain.png&quot; alt=&quot;SLAM&quot; /&gt;
+  &lt;img src=&quot;/assets/images/niosh_terrain.jpg&quot; alt=&quot;SLAM&quot; /&gt;
 &lt;/figure&gt;
 </description>
         <pubDate>Sun, 01 Sep 2024 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/jpl_internship/</link>
-        <guid isPermaLink="true">http://localhost:4000/jpl_internship/</guid>
+        <link>https://henryburon.github.io/jpl_internship/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/jpl_internship/</guid>
         
         
         <category>C++</category>
@@ -271,7 +271,7 @@
 
 &lt;div class=&quot;figure-row&quot;&gt;
     &lt;div&gt;
-        &lt;img src=&quot;/assets/images/cv_bball_contours.png&quot; width=&quot;500&quot; /&gt;
+        &lt;img src=&quot;/assets/images/cv_bball_contours.jpg&quot; width=&quot;500&quot; /&gt;
         &lt;small&gt;Figure 1. Scored contour rectangles. Green outline indicates basketball. Red circle is location in previous frame.&lt;/small&gt;
     &lt;/div&gt;
     &lt;div&gt;
@@ -319,8 +319,8 @@
 &lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
         <pubDate>Wed, 10 Apr 2024 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/virtual_bball_trainer/</link>
-        <guid isPermaLink="true">http://localhost:4000/virtual_bball_trainer/</guid>
+        <link>https://henryburon.github.io/virtual_bball_trainer/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/virtual_bball_trainer/</guid>
         
         
         <category>OpenCV</category>
@@ -388,21 +388,15 @@
 &lt;h4 id=&quot;drone&quot;&gt;Drone&lt;/h4&gt;
 &lt;p&gt;The rover carries a &lt;a href=&quot;https://store.dji.com/product/tello?vid=38421&quot;&gt;DJI Tello drone&lt;/a&gt; on its top platform throughout operation, and is capable of remotely deploying it from the field. The drone is teleoperated via joystick commands from the user, but is capable of autonomously re-landing on the rover after it locates the rover during flight.&lt;/p&gt;
 
-&lt;!-- &lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/not_located1.png&quot; width=&quot;255&quot; /&gt;
-  &lt;img src=&quot;/assets/images/located1.png&quot; width=&quot;255&quot; /&gt; 
-  &lt;img src=&quot;/assets/images/not_located2.png&quot; width=&quot;255&quot; /&gt;
-&lt;/p&gt; --&gt;
-
 &lt;figure&gt;
-  &lt;img src=&quot;/assets/images/three_images.png&quot; /&gt;
+  &lt;img src=&quot;/assets/images/three_images.jpg&quot; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;small&gt;  Figure 2. Drone camera feed as it locates the rover.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;/assets/images/located2.png&quot; /&gt;
+  &lt;img src=&quot;/assets/images/located2.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;small&gt;  Figure 3. Drone locating the rover via the right tag.&lt;/small&gt;&lt;/p&gt;
@@ -454,15 +448,15 @@
 &lt;h4 id=&quot;mechanical&quot;&gt;Mechanical&lt;/h4&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;/assets/images/mechanical_terraflight.png&quot; /&gt;
+  &lt;img src=&quot;/assets/images/mechanical_terraflight.jpg&quot; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;small&gt; Figure 8. Labeled image of &lt;em&gt;Terraflight&lt;/em&gt;. &lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Mar 2024 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/terraflight/</link>
-        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
+        <link>https://henryburon.github.io/terraflight/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/terraflight/</guid>
         
         
         <category>Python</category>
@@ -543,8 +537,8 @@ The algorithm works by --&gt;
 &lt;p&gt;The estimates odometry, path, and obstacles are published for visualization.&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/turtlebot_slam/</link>
-        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
+        <link>https://henryburon.github.io/turtlebot_slam/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -684,8 +678,8 @@ The algorithm works by --&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/polyglotbot/</link>
-        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
+        <link>https://henryburon.github.io/polyglotbot/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -770,8 +764,8 @@ The algorithm works by --&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/mobile-manipulation/</link>
-        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
+        <link>https://henryburon.github.io/mobile-manipulation/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -808,8 +802,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
+        <link>https://henryburon.github.io/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -861,8 +855,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/pen_thief/</link>
-        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
+        <link>https://henryburon.github.io/pen_thief/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -988,8 +982,8 @@ Testing on the lake.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 01 Sep 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/path_planning/</link>
-        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
+        <link>https://henryburon.github.io/path_planning/</link>
+        <guid isPermaLink="true">https://henryburon.github.io/path_planning/</guid>
         
         
         <category>Path Planning</category>

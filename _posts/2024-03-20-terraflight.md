@@ -54,21 +54,16 @@ View the [source code](https://github.com/henryburon/terra-flight) for more info
 #### Drone
 The rover carries a [DJI Tello drone](https://store.dji.com/product/tello?vid=38421) on its top platform throughout operation, and is capable of remotely deploying it from the field. The drone is teleoperated via joystick commands from the user, but is capable of autonomously re-landing on the rover after it locates the rover during flight.
 
-<!-- <p align="center">
-  <img src="/assets/images/not_located1.png" width="255" />
-  <img src="/assets/images/located1.png" width="255" /> 
-  <img src="/assets/images/not_located2.png" width="255" />
-</p> -->
 
 <figure>
-  <img src="/assets/images/three_images.png" />
+  <img src="/assets/images/three_images.jpg" />
 </figure>
 <small>  Figure 2. Drone camera feed as it locates the rover.</small>
 
 The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.
 
 <figure>
-  <img src="/assets/images/located2.png" />
+  <img src="/assets/images/located2.jpg" />
 </figure>
 
 <small>  Figure 3. Drone locating the rover via the right tag.</small>
@@ -121,7 +116,7 @@ As long as the base station is connected to both the Tello drone's WiFi network 
 #### Mechanical
 
 <figure>
-  <img src="/assets/images/mechanical_terraflight.png" />
+  <img src="/assets/images/mechanical_terraflight.jpg" />
 </figure>
 <small> Figure 8. Labeled image of *Terraflight*. </small>
 

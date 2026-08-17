@@ -71,5 +71,5 @@ I developed a configuration manager that allows the robot to efficiently change 
 The algorithm abstracts the robot's non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.
 
 <figure>
-  <img src="/assets/images/niosh_terrain.png" alt="SLAM" />
+  <img src="/assets/images/niosh_terrain.jpg" alt="SLAM" />
 </figure>

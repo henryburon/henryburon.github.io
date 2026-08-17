@@ -15,17 +15,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags." />
 <meta property="og:description" content="A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags." />
-<link rel="canonical" href="http://localhost:4000/terraflight/" />
-<meta property="og:url" content="http://localhost:4000/terraflight/" />
+<link rel="canonical" href="https://henryburon.github.io/terraflight/" />
+<meta property="og:url" content="https://henryburon.github.io/terraflight/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
-<meta property="og:image" content="http://localhost:4000/assets/gifs/rover_roaming.mp4" />
+<meta property="og:image" content="https://henryburon.github.io/assets/gifs/rover_roaming.mp4" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-20T00:00:00-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/gifs/rover_roaming.mp4" />
+<meta property="twitter:image" content="https://henryburon.github.io/assets/gifs/rover_roaming.mp4" />
 <meta property="twitter:title" content="Mobile Exploration Robot with Auxiliary Drone" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-20T00:00:00-07:00","datePublished":"2024-03-20T00:00:00-07:00","description":"A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags.","headline":"Mobile Exploration Robot with Auxiliary Drone","image":"http://localhost:4000/assets/gifs/rover_roaming.mp4","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/terraflight/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-20T00:00:00-07:00","datePublished":"2024-03-20T00:00:00-07:00","description":"A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags.","headline":"Mobile Exploration Robot with Auxiliary Drone","image":"https://henryburon.github.io/assets/gifs/rover_roaming.mp4","mainEntityOfPage":{"@type":"WebPage","@id":"https://henryburon.github.io/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://henryburon.github.io/assets/images/logo.png"}},"url":"https://henryburon.github.io/terraflight/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -161,21 +161,15 @@
 <h4 id="drone">Drone</h4>
 <p>The rover carries a <a href="https://store.dji.com/product/tello?vid=38421">DJI Tello drone</a> on its top platform throughout operation, and is capable of remotely deploying it from the field. The drone is teleoperated via joystick commands from the user, but is capable of autonomously re-landing on the rover after it locates the rover during flight.</p>
 
-<!-- <p align="center">
-  <img src="/assets/images/not_located1.png" width="255" />
-  <img src="/assets/images/located1.png" width="255" /> 
-  <img src="/assets/images/not_located2.png" width="255" />
-</p> -->
-
 <figure>
-  <img src="/assets/images/three_images.png" />
+  <img src="/assets/images/three_images.jpg" />
 </figure>
 <p><small>  Figure 2. Drone camera feed as it locates the rover.</small></p>
 
 <p>The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.</p>
 
 <figure>
-  <img src="/assets/images/located2.png" />
+  <img src="/assets/images/located2.jpg" />
 </figure>
 
 <p><small>  Figure 3. Drone locating the rover via the right tag.</small></p>
@@ -227,7 +221,7 @@
 <h4 id="mechanical">Mechanical</h4>
 
 <figure>
-  <img src="/assets/images/mechanical_terraflight.png" />
+  <img src="/assets/images/mechanical_terraflight.jpg" />
 </figure>
 <p><small> Figure 8. Labeled image of <em>Terraflight</em>. </small></p>
 
