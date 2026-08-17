@@ -2,7 +2,7 @@
 layout: post
 title:  "Internship at NASA Jet Propulsion Laboratory (JPL)"
 categories: [C++, ROS Noetic, OpenCV, Eigen]
-image: assets/gifs/niosh_robot.gif
+image: assets/gifs/niosh_robot.mp4
 description: "Robotics software for hazardous-terrain navigation in JPL's Robotic Mobility group, cleared for public release."
 featured: true
 featured_order: 4
@@ -10,7 +10,9 @@ featured_order: 4
 
 
 <figure>
-  <img src="/assets/gifs/niosh.gif" alt="NIOSH Robot" />
+  <video poster="/assets/gifs/niosh.jpg" autoplay loop muted playsinline preload="metadata" aria-label="NIOSH Robot">
+    <source src="/assets/gifs/niosh.mp4" type="video/mp4">
+  </video>
   <figcaption>Testing the robot in the Mars Yard.</figcaption>
 </figure>
 
@@ -33,7 +35,9 @@ The robot itself is rather unique--it's made up of two rigid bodies that are joi
 #### IMU-Based Rollover-Risk Detection
 
 <p align="center">
-   <img src="/assets/gifs/rollover_risk.gif" alt="Rollover Risk Detection" />
+   <video poster="/assets/gifs/rollover_risk.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Rollover Risk Detection">
+    <source src="/assets/gifs/rollover_risk.mp4" type="video/mp4">
+  </video>
    <img src="/assets/images/rollover_risk.png" alt="Rollover Risk Detection" />
 </p>
 
@@ -44,7 +48,9 @@ The algorithm models the [support polygon](https://en.wikipedia.org/wiki/Support
 #### Robot Path Projection Lines
 
 <p align="center">
-   <img src="/assets/gifs/proj_lines.gif" alt="Robot Path Projection Lines" />
+   <video poster="/assets/gifs/proj_lines.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Robot Path Projection Lines">
+    <source src="/assets/gifs/proj_lines.mp4" type="video/mp4">
+  </video>
    <img src="/assets/images/proj_lines.png" alt="Robot Path Projection Lines" />
 </p>
 
@@ -54,7 +60,9 @@ I developed an algorithm that generates path projection lines based on the camer
 
 
 <p align="center">
-   <img src="/assets/gifs/config_manager.gif" alt="Robot Path Projection Lines" />
+   <video poster="/assets/gifs/config_manager.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Robot Path Projection Lines">
+    <source src="/assets/gifs/config_manager.mp4" type="video/mp4">
+  </video>
    <img src="/assets/images/niosh_kinematics.png" alt="Robot Path Projection Lines" width="29.2%" />
 </p>
 

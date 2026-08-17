@@ -2,7 +2,7 @@
 layout: post
 title:  "Computer Vision-Based Basketball Coach"
 categories: [OpenCV, Python, Computer Vision, Object Tracking]
-image: assets/gifs/basketball_shot.gif
+image: assets/gifs/basketball_shot.mp4
 description: "Computer vision that tracks your basketball shot, scores it against a reference trajectory, and generates a PDF coaching report."
 featured: false
 ---

@@ -2,10 +2,25 @@
 <article class="card">
 
     {% if post.image %}
+    {% assign media_ext = post.image | split: '.' | last | downcase %}
+    {% if post.image contains '://' %}
+        {% assign media_src = post.image %}
+    {% else %}
+        {% assign media_src = post.image | prepend: '/' | prepend: site.baseurl %}
+    {% endif %}
+
     <div class="card__media">
         <a href="{{ site.baseurl }}{{ post.url }}" tabindex="-1" aria-hidden="true">
-            <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}"
-                 alt="{{ post.title | escape }}" loading="lazy" decoding="async">
+            {% if media_ext == 'mp4' %}
+                {% assign poster_src = media_src | replace: '.mp4', '.jpg' %}
+                <video poster="{{ poster_src }}" autoplay loop muted playsinline
+                       preload="metadata" aria-label="{{ post.title | escape }}">
+                    <source src="{{ media_src }}" type="video/mp4">
+                </video>
+            {% else %}
+                <img src="{{ media_src }}" alt="{{ post.title | escape }}"
+                     loading="lazy" decoding="async">
+            {% endif %}
         </a>
     </div>
     {% endif %}

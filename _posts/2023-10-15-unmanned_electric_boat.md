@@ -2,7 +2,7 @@
 layout: post
 title:  "Unmanned Electric Race Boat"
 categories: [ArduPilot, Electronics, Autonomous Systems]
-image: assets/gifs/boat_small.GIF
+image: assets/gifs/boat_small.mp4
 description: "Led a team building a fully electric autonomous catamaran from scratch; placed 3rd nationally in a 5-mile endurance race."
 featured: false
 ---

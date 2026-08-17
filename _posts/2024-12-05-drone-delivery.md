@@ -2,7 +2,7 @@
 layout: post
 title:  "Drone-Based Delivery System"
 categories: [ROS2, LoRa, Embedded Systems]
-image: assets/gifs/drone_delivery.gif
+image: assets/gifs/drone_delivery.mp4
 description: "A drone that delivers a self-stabilizing mobile robot via tether, which releases itself mid-descent and drives to its destination."
 featured: true
 featured_order: 3
@@ -66,12 +66,16 @@ The mobile robot carries a small quantity of medical or emergency supplies. It i
 </p>
 
 <figure>
-  <img src="/assets/gifs/tether_mechanism.gif" />
+  <video poster="/assets/gifs/tether_mechanism.jpg" autoplay loop muted playsinline preload="metadata">
+    <source src="/assets/gifs/tether_mechanism.mp4" type="video/mp4">
+  </video>
   <figcaption>Tether mechanism in action</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/gifs/robot_stabilization.gif" />
+  <video poster="/assets/gifs/robot_stabilization.jpg" autoplay loop muted playsinline preload="metadata">
+    <source src="/assets/gifs/robot_stabilization.mp4" type="video/mp4">
+  </video>
   <figcaption>Active stabilization demo</figcaption>
 </figure>
 

@@ -4,7 +4,7 @@ title: "Henry's Portfolio"
 description: "Robotics Software Engineer — autonomy, SLAM, and computer vision"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-url: henryburon.github.io
+url: https://henryburon.github.io
 baseurl: 
 google_analytics:
 include: ["_pages"]
@@ -50,4 +50,4 @@ adsense: "disabled"
 adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 
-exclude: [post_template.md, changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile., vendor/bundle]
+exclude: [post_template.md, changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, docker-compose.yml, vendor/bundle]
