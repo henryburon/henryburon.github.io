@@ -3,10 +3,10 @@
   <channel>
     <title>Henry&apos;s Portfolio</title>
     <description>Robotics Software Engineer — autonomy, SLAM, and computer vision</description>
-    <link>https://henryburon.github.io/</link>
-    <atom:link href="https://henryburon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Aug 2026 22:32:29 -0700</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2026 22:32:29 -0700</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 16 Aug 2026 22:33:12 -0700</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2026 22:33:12 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -124,8 +124,8 @@
 &lt;p&gt;Thanks to Matt, Davin, Shail, and Marno for your help in this project.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Dec 2024 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/drone-delivery/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/drone-delivery/</guid>
+        <link>http://localhost:4000/drone-delivery/</link>
+        <guid isPermaLink="true">http://localhost:4000/drone-delivery/</guid>
         
         
         <category>ROS2</category>
@@ -203,8 +203,8 @@
 &lt;/figure&gt;
 </description>
         <pubDate>Sun, 01 Sep 2024 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/jpl_internship/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/jpl_internship/</guid>
+        <link>http://localhost:4000/jpl_internship/</link>
+        <guid isPermaLink="true">http://localhost:4000/jpl_internship/</guid>
         
         
         <category>C++</category>
@@ -319,8 +319,8 @@
 &lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
         <pubDate>Wed, 10 Apr 2024 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/virtual_bball_trainer/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/virtual_bball_trainer/</guid>
+        <link>http://localhost:4000/virtual_bball_trainer/</link>
+        <guid isPermaLink="true">http://localhost:4000/virtual_bball_trainer/</guid>
         
         
         <category>OpenCV</category>
@@ -455,8 +455,8 @@
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Mar 2024 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/terraflight/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/terraflight/</guid>
+        <link>http://localhost:4000/terraflight/</link>
+        <guid isPermaLink="true">http://localhost:4000/terraflight/</guid>
         
         
         <category>Python</category>
@@ -537,8 +537,8 @@ The algorithm works by --&gt;
 &lt;p&gt;The estimates odometry, path, and obstacles are published for visualization.&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Jan 2024 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/turtlebot_slam/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/turtlebot_slam/</guid>
+        <link>http://localhost:4000/turtlebot_slam/</link>
+        <guid isPermaLink="true">http://localhost:4000/turtlebot_slam/</guid>
         
         
         <category>C++</category>
@@ -678,8 +678,8 @@ The algorithm works by --&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/the_robot_is_cool.jpeg&quot; alt=&quot;The Robot Is Cool&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Dec 2023 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/polyglotbot/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/polyglotbot/</guid>
+        <link>http://localhost:4000/polyglotbot/</link>
+        <guid isPermaLink="true">http://localhost:4000/polyglotbot/</guid>
         
         
         <category>ROS2</category>
@@ -764,8 +764,8 @@ The algorithm works by --&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 25 Nov 2023 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/mobile-manipulation/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/mobile-manipulation/</guid>
+        <link>http://localhost:4000/mobile-manipulation/</link>
+        <guid isPermaLink="true">http://localhost:4000/mobile-manipulation/</guid>
         
         
         <category>Python</category>
@@ -802,8 +802,8 @@ Final touches before the competition.&lt;/p&gt;
 Testing on the lake.&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Oct 2023 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/unmanned_electric_boat/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/unmanned_electric_boat/</guid>
+        <link>http://localhost:4000/unmanned_electric_boat/</link>
+        <guid isPermaLink="true">http://localhost:4000/unmanned_electric_boat/</guid>
         
         
         <category>ArduPilot</category>
@@ -855,8 +855,8 @@ Testing on the lake.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 15 Sep 2023 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/pen_thief/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/pen_thief/</guid>
+        <link>http://localhost:4000/pen_thief/</link>
+        <guid isPermaLink="true">http://localhost:4000/pen_thief/</guid>
         
         
         <category>OpenCV</category>
@@ -982,8 +982,8 @@ Testing on the lake.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 01 Sep 2023 00:00:00 -0700</pubDate>
-        <link>https://henryburon.github.io/path_planning/</link>
-        <guid isPermaLink="true">https://henryburon.github.io/path_planning/</guid>
+        <link>http://localhost:4000/path_planning/</link>
+        <guid isPermaLink="true">http://localhost:4000/path_planning/</guid>
         
         
         <category>Path Planning</category>
