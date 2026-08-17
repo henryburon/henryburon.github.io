@@ -7,14 +7,14 @@ description: "Robotics Software Engineer at Swarmbotics AI. Previously NASA JPL.
 ---
 
 <div class="about__intro">
-  <img class="about__photo" src="{{ site.baseurl }}/assets/images/headshot.jpeg" alt="Henry Buron">
+  <img class="about__photo" src="{{ site.baseurl }}/assets/images/henry_pfp.jpg" alt="Henry Buron">
 
   <div class="about__bio">
     <h1 class="article__title">Henry Buron</h1>
 
     <p>I'm a Robotics Software Engineer at <a href="https://www.swarmbotics.ai/" target="_blank" rel="noopener">Swarmbotics AI</a> in Phoenix, AZ. Before that I interned with the Robotic Mobility group at NASA's Jet Propulsion Laboratory.</p>
 
-    <p>My work centers on robotic manipulation and navigation &mdash; writing production C++ and Python against libraries like OpenCV and Eigen, in Linux environments. I care most about code that stays robust when it leaves the lab.</p>
+    <p>My work centers on robotic manipulation and navigation &mdash; writing production C++ and Python against libraries like OpenCV and Eigen, in Linux environments.</p>
 
     <p>I'm interested in autonomous systems, SLAM, path planning, and mobile robots.</p>
   </div>
