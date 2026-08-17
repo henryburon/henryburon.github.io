@@ -768,6 +768,9 @@ a.tag:hover { color: var(--accent); border-color: var(--accent); }
   font-size: var(--step--1);
 }
 
+/* Filled in by script; empty until then, so it takes up no space without JS. */
+.timeline__tenure:not(:empty) { margin-left: var(--space-1); opacity: 0.75; }
+
 .contact-list {
   list-style: none;
   margin: 0 0 var(--space-7);

@@ -95,7 +95,7 @@
     <div>
       <div class="timeline__role">Robotics Software Engineer</div>
       <div class="timeline__org">Swarmbotics AI</div>
-      <div class="timeline__date">Jan 2025 &ndash; Present</div>
+      <div class="timeline__date">Jan 2025 &ndash; Present <span class="timeline__tenure" data-since="2025-01"></span></div>
     </div>
   </li>
   <li>
@@ -103,7 +103,7 @@
     <div>
       <div class="timeline__role">Robotics Software Intern</div>
       <div class="timeline__org">NASA Jet Propulsion Laboratory</div>
-      <div class="timeline__date">Jun 2023 &ndash; Sep 2024</div>
+      <div class="timeline__date">Jun 2024 &ndash; Sep 2024 <span class="timeline__tenure" data-since="2024-06" data-until="2024-09"></span></div>
     </div>
   </li>
 </ul>
@@ -143,6 +143,44 @@
     Download résumé (PDF)
   </a>
 </p>
+
+<script>
+// Fills in "(1 yr 7 mos)" next to each role. Runs in the visitor's browser on
+// every page load, so an ongoing role stays current without a rebuild.
+// Add data-since="YYYY-MM" to a span; add data-until="YYYY-MM" for a past role.
+(function () {
+  function label(months) {
+    var years = Math.floor(months / 12);
+    var rest = months % 12;
+    var parts = [];
+    if (years) { parts.push(years + ' yr' + (years > 1 ? 's' : '')); }
+    if (rest) { parts.push(rest + ' mo' + (rest > 1 ? 's' : '')); }
+    return parts.length ? parts.join(' ') : '< 1 mo';
+  }
+
+  function parse(value) {
+    var bits = value.split('-');
+    return new Date(Number(bits[0]), Number(bits[1]) - 1, 1);
+  }
+
+  var spans = document.querySelectorAll('.timeline__tenure[data-since]');
+  Array.prototype.forEach.call(spans, function (el) {
+    var start = parse(el.getAttribute('data-since'));
+    var until = el.getAttribute('data-until');
+    var end = until ? parse(until) : new Date();
+
+    var months = (end.getFullYear() - start.getFullYear()) * 12
+               + (end.getMonth() - start.getMonth());
+    if (months < 0) { months = 0; }
+
+    // Count the month in progress so a role started this month reads "1 mo".
+    if (!until) { months += 1; }
+
+    el.textContent = '(' + label(months) + ')';
+  });
+})();
+</script>
+
 
         </div>
 

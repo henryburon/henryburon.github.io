@@ -25,16 +25,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-archives
-    
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
-    
+
 # Other
 markdown: kramdown
 
@@ -44,10 +35,5 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: true
-
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
 
 exclude: [post_template.md, changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, docker-compose.yml, vendor/bundle]
