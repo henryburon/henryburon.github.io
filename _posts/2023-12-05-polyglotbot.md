@@ -3,14 +3,12 @@ layout: post
 title:  "Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech"
 categories: [ROS2, MoveIt2, Python, Motion Planning]
 image: assets/gifs/polyglotbot.GIF
+description: "A 7 DoF Franka Emika Panda arm that listens to speech, translates it, and writes the result on a whiteboard."
 featured: true
-hidden: true
 ---
 
-**<span style="color:rgb(0, 30, 80)">ROS2, Python, Motion Planning</span>**
 
-
-<iframe width="90%" height="441" src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 
@@ -24,7 +22,7 @@ My primary responsibilities for this project included:
 * Creating the ```apriltags```  and ```speech``` packages
 * Working with the MoveIt2 package to help convert waypoints to movement
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 
 ```apriltags``` package
@@ -36,7 +34,7 @@ The *GetAprilTags* node in the package creates a static transformation that link
 In the image below, the AprilTags have been localized and transformed into the robot's frame.
 ![Localize Tags](/assets/images/localize_tags.png)
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ```speech``` package
 
@@ -56,7 +54,7 @@ if self.state == State.LISTENING:
             self.state = State.RECOGNIZING
 ```
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 **Waypoints to Movement**
 
@@ -77,7 +75,7 @@ self.robot.find_and_execute(
                     quat=self.ori_list[self.comm_count],)
 ```
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 **How it Works**:
 

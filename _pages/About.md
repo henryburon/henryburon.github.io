@@ -1,66 +1,79 @@
 ---
 layout: page
-# title: About
-# permalink: /HenryBuron_About
-comments: false
+title: About
+permalink: /HenryBuron_About
+hide_title: true
+description: "Robotics Software Engineer at Swarmbotics AI. Previously NASA JPL. M.S. in Robotics from Northwestern."
 ---
 
-<style>
-  /* Add CSS styles for text color and centering */
-  body {
-    color: white; /* Sets the default text color to white */
-    text-align: center; /* Centers the text content */
-  }
-  a {
-    color: white; /* Sets the link color to white */
-  }
-</style>
+<div class="about__intro">
+  <img class="about__photo" src="{{ site.baseurl }}/assets/images/headshot.jpeg" alt="Henry Buron">
 
-<!-- ### <a style="color: white; font-size:40px">About</a> -->
-<!-- ### <a style="color: white;">About</a> -->
+  <div class="about__bio">
+    <h1 class="article__title">Henry Buron</h1>
 
-<img src="/assets/images/headshot.jpeg" style="width: 350px; height: auto; margin: 0 auto; display: block;">
+    <p>I'm a Robotics Software Engineer at <a href="https://www.swarmbotics.ai/" target="_blank" rel="noopener">Swarmbotics AI</a> in Phoenix, AZ. Before that I interned with the Robotic Mobility group at NASA's Jet Propulsion Laboratory.</p>
 
-<!-- <br> -->
+    <p>My work centers on robotic manipulation and navigation &mdash; writing production C++ and Python against libraries like OpenCV and Eigen, in Linux environments. I care most about code that stays robust when it leaves the lab.</p>
 
+    <p>I'm interested in autonomous systems, SLAM, path planning, and mobile robots.</p>
+  </div>
+</div>
 
-<ul style="list-style-type: none; padding: 0; color:white; font-size:22px;">
-    <li>Current M.S. in Robotics student at Northwestern University.</li>
-    <li>Skilled in ROS/ROS2, computer vision, machine learning, and robotic manipulation.</li>
-    <li>Interested in autonomous systems, SLAM, path planning, and mobile robots.</li>
+<h2 class="section__label">Experience</h2>
+
+<ul class="timeline">
+  <li>
+    <img class="timeline__logo" src="{{ site.baseurl }}/assets/images/swarmbotics_ai_logo.jpeg" alt="Swarmbotics AI">
+    <div>
+      <div class="timeline__role">Robotics Software Engineer</div>
+      <div class="timeline__org">Swarmbotics AI</div>
+      <div class="timeline__date">Jan 2025 &ndash; Present</div>
+    </div>
+  </li>
+  <li>
+    <img class="timeline__logo" src="{{ site.baseurl }}/assets/images/nasa_jpl.jpeg" alt="NASA JPL">
+    <div>
+      <div class="timeline__role">Robotics Software Intern</div>
+      <div class="timeline__org">NASA Jet Propulsion Laboratory</div>
+      <div class="timeline__date">Jun 2023 &ndash; Sep 2024</div>
+    </div>
+  </li>
 </ul>
 
+<h2 class="section__label">Education</h2>
 
-<!-- ### <a style="color: white; font-size:40px">Education</a> -->
-### <a style="color: white; font-size:40px; font-family: 'Times New Roman', Times, serif;">Education</a>
-
-
-<div style="display: flex; align-items: center; justify-content: center; color: white;">
-    <img src="/assets/images/nu.jpeg" style="width: 75px; height: auto; margin-right: 10px;">
+<ul class="timeline">
+  <li>
+    <img class="timeline__logo" src="{{ site.baseurl }}/assets/images/nu.jpeg" alt="Northwestern University">
     <div>
-        <i>Sep. 2023 - Dec. 2024</i> <br>
-        <b>M.S. in Robotics</b>
+      <div class="timeline__role">M.S. in Robotics</div>
+      <div class="timeline__org">Northwestern University</div>
+      <div class="timeline__date">Sep 2023 &ndash; Dec 2024</div>
     </div>
-    <!-- Additional image placed here -->
-    <img src="/assets/images/wm.jpeg" style="width: 75px; height: auto; margin-left: 20px;">
-    <div style="margin-left: 10px;"> <!-- Adjusted margin-left for the text div -->
-        <i>Sep. 2019 - May 2023</i> <br>
-        <b>B.S. in Engineering Physics</b>
+  </li>
+  <li>
+    <img class="timeline__logo" src="{{ site.baseurl }}/assets/images/wm.jpeg" alt="William &amp; Mary">
+    <div>
+      <div class="timeline__role">B.S. in Engineering Physics</div>
+      <div class="timeline__org">William &amp; Mary</div>
+      <div class="timeline__date">Sep 2019 &ndash; May 2023</div>
     </div>
-</div>
+  </li>
+</ul>
 
-<br>
+<h2 class="section__label">Contact</h2>
 
-### <a style="color: white; font-size:40px; font-family: 'Times New Roman', Times, serif;">Contact</a>
+<ul class="contact-list">
+  <li><span class="contact-list__key">Email</span> <a href="mailto:{{ site.authors.Henry.email }}">{{ site.authors.Henry.email }}</a></li>
+  <li><span class="contact-list__key">GitHub</span> <a href="https://github.com/henryburon" target="_blank" rel="noopener">github.com/henryburon</a></li>
+  <li><span class="contact-list__key">LinkedIn</span> <a href="{{ site.authors.Henry.LinkedIn }}" target="_blank" rel="noopener">linkedin.com/in/henryburon</a></li>
+</ul>
 
-<div style="text-align: center; color: white; font-size:22px;">
-    <span>henryburon2024@u.northwestern.edu</span><br>
-    <a href="https://github.com/henryburon" style="color: lightblue;">GitHub</a><br>
-    <a href="https://www.linkedin.com/in/henryburon" style="color: lightblue;">LinkedIn</a><br>
-</div>
+<h2 class="section__label">Résumé</h2>
 
-<br>
-
-<div style="text-align: center;">
-    <iframe src="_pages/HenryBuronResume.pdf" width="65%" height="1055px" style="display: inline-block;"></iframe>
-</div>
+<p>
+  <a class="btn btn--primary" href="{{ site.baseurl }}/_pages/HenryBuronResume.pdf" target="_blank" rel="noopener">
+    Download résumé (PDF)
+  </a>
+</p>

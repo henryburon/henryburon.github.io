@@ -1,15 +1,70 @@
 ---
-# Add a comment to make this file sass-y.
-# Change this file for any custom CSS.
+# Front matter tells Jekyll to process this file with Sass.
 ---
 
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
-.post-excerpt p {
-	display:inline;
+/* ==========================================================================
+   Syntax highlighting (Rouge) — dark theme matched to screen.css
+   ========================================================================== */
+
+.highlight,
+.highlighter-rouge .highlight {
+  background: var(--bg-raised);
+  color: #d4d8de;
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"syntax",
-    "starsnonscss"
-;
+/* kramdown's line_numbers: true wraps code in a two-column table. */
+.highlight table {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.highlight table td { padding: 0; border: 0; }
+
+.highlight table td.gutter,
+.highlight .lineno {
+  width: 3.5em;
+  padding-right: var(--space-4);
+  color: var(--text-faint);
+  text-align: right;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.highlight table td.code { width: 100%; }
+.highlight table pre { margin: 0; padding: 0; border: 0; background: none; }
+
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs,
+.highlight .cd, .highlight .cp { color: #6b747f; font-style: italic; }
+
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn,
+.highlight .kp, .highlight .kr, .highlight .kt { color: #c678dd; }
+
+.highlight .o, .highlight .ow { color: #56b6c2; }
+
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb,
+.highlight .sc, .highlight .sd, .highlight .se, .highlight .sh,
+.highlight .si, .highlight .sx, .highlight .sr, .highlight .ss,
+.highlight .dl { color: #98c379; }
+
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi,
+.highlight .mo, .highlight .il { color: #d19a66; }
+
+.highlight .n, .highlight .nv, .highlight .nx { color: #d4d8de; }
+.highlight .nf, .highlight .nd { color: #61afef; }
+.highlight .nc, .highlight .nn { color: #e5c07b; }
+.highlight .nb, .highlight .bp { color: #56b6c2; }
+.highlight .na { color: #d19a66; }
+.highlight .no { color: #e5c07b; }
+.highlight .nt { color: #e06c75; }
+
+.highlight .p, .highlight .pi { color: #abb2bf; }
+
+.highlight .err { color: #e06c75; background: rgba(224, 108, 117, 0.12); }
+.highlight .gd { color: #e06c75; background: rgba(224, 108, 117, 0.1); }
+.highlight .gi { color: #98c379; background: rgba(152, 195, 121, 0.1); }
+.highlight .gh { color: #61afef; font-weight: 600; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: 600; }

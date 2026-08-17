@@ -1,10 +1,17 @@
 ---
 layout: default
-title: 404
+title: Page not found
 permalink: /404.html
 ---
 
-<div class="text-center">
-<h1 class="display-1 mt-5 mb-4"><span class="badge badge-danger">404</span> Page does not exist!</h1>
-<p>Please use the search bar at the top or visit our <a href="{{site.baseurl}}/">homepage</a>!</p>
-</div>
+<section class="hero">
+    <div class="wrap">
+        <p class="hero__eyebrow">Error 404</p>
+        <h1 class="hero__title">Page not found</h1>
+        <p class="hero__lead">That page doesn't exist &mdash; it may have moved or been renamed.</p>
+        <div class="hero__actions">
+            <a class="btn btn--primary" href="{{ site.baseurl }}/">Back to work</a>
+            <a class="btn" href="{{ site.baseurl }}/HenryBuron_About">About</a>
+        </div>
+    </div>
+</section>

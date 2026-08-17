@@ -2,13 +2,18 @@
 layout: default
 ---
 
+<article class="article">
+    <div class="wrap wrap--narrow">
 
-<section>
-    <div class="section-title">
-        <h2><span>{{ page.title }}</span></h2>
-    </div>
+        {% unless page.hide_title %}
+        <header class="article__header">
+            <h1 class="article__title">{{ page.title }}</h1>
+        </header>
+        {% endunless %}
 
-    <div class="article-post">
-    {{content}}
+        <div class="article__body">
+            {{ content }}
+        </div>
+
     </div>
-</section>
+</article>

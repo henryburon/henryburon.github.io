@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0d10">
 
 <link rel="icon" href="/assets/images/logo.png">
 
 <title>Mobile Exploration Robot with Auxiliary Drone | Henry Buron</title>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Mobile Exploration Robot with Auxiliary Drone | Henry’s Portfolio</title>
 <meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Mobile Exploration Robot with Auxiliary Drone" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight" />
-<meta property="og:description" content="ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight" />
+<meta name="description" content="A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags." />
+<meta property="og:description" content="A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags." />
 <link rel="canonical" href="http://localhost:4000/terraflight/" />
 <meta property="og:url" content="http://localhost:4000/terraflight/" />
 <meta property="og:site_name" content="Henry’s Portfolio" />
@@ -25,137 +25,90 @@
 <meta property="twitter:image" content="http://localhost:4000/assets/gifs/rover_roaming.gif" />
 <meta property="twitter:title" content="Mobile Exploration Robot with Auxiliary Drone" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-20T00:00:00-07:00","datePublished":"2024-03-20T00:00:00-07:00","description":"ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight","headline":"Mobile Exploration Robot with Auxiliary Drone","image":"http://localhost:4000/assets/gifs/rover_roaming.gif","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/terraflight/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-20T00:00:00-07:00","datePublished":"2024-03-20T00:00:00-07:00","description":"A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags.","headline":"Mobile Exploration Robot with Auxiliary Drone","image":"http://localhost:4000/assets/gifs/rover_roaming.gif","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/terraflight/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/terraflight/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
 <link href="/assets/css/screen.css" rel="stylesheet">
-
 <link href="/assets/css/main.css" rel="stylesheet">
 
-<script src="/assets/js/jquery.min.js"></script>
+
 
 </head>
 
-
-
-
 <body class="layout-post">
-	<!-- defer loading of font and font awesome -->
-	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	</noscript>
 
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- Begin Menu Navigation
+<!-- Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<header class="nav">
+    <div class="nav__inner">
+        <a class="nav__brand" href="/">
+            <span class="nav__dot" aria-hidden="true"></span>
+            <span>Henry Buron</span>
+        </a>
 
-    <div class="container pr-0">
-
-    <!-- Begin Logo -->
-    <a class="navbar-brand" href="/">
-    <img src="/assets/images/logo.png" alt="Henry Buron">
-    </a>
-    <!-- End Logo -->
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarMediumish">
-
-        <!-- Begin Menu -->
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-                <a class="nav-link" href="/index.html" style="font-size: 24px; font-weight: bold;">Home</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="/HenryBuron_About" style="font-size: 24px; font-weight: bold;">About</a>
-            </li>
-            <!-- Add more nav links here with the same structure for their active state -->
-        </ul>
-        <!-- End Menu -->
-
-        <script src="/assets/js/lunr.js"></script>
-
-
-<style>
-    .lunrsearchresult .title {color: #d9230f;}
-    .lunrsearchresult .url {color: silver;}
-    .lunrsearchresult a {display: block; color: #777;}
-    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-    .lunrsearchresult a:hover .title {text-decoration: underline;}
-</style>
-
-
-<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
-</form>
-
-<div id="lunrsearchresults">
-    <ul></ul>
-</div>
-
-<script src="/assets/js/lunrsearchengine.js"></script>
-
+        <nav aria-label="Main">
+            <ul class="nav__links">
+                <li>
+                    <a class="nav__link" href="/"
+                       >Work</a>
+                </li>
+                <li>
+                    <a class="nav__link" href="/HenryBuron_About"
+                       >About</a>
+                </li>
+                <li>
+                    <a class="nav__link" href="https://github.com/henryburon" target="_blank" rel="noopener">GitHub</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
-    </div>
-</nav>
-<!-- End Navigation
-================================================== -->
-
-<div class="site-content">
-
-<div class="container">
-
-<!-- Site Title
-================================================== -->
-<div class="mainheading">
-    <h1 class="sitetitle">Henry Buron</h1>
-    <p class="lead">
-        M.S. in Robotics @ Northwestern University
-    </p>
-</div>
+</header>
 
 <!-- Content
 ================================================== -->
-<div class="main-content">
-    <!-- Begin Article
-================================================== -->
-<div class="container">
-    <div class="row">
+<main id="main" class="site-main">
+    <article class="article">
+    <div class="wrap wrap--narrow">
 
-        <!-- Post -->
-        
+        <header class="article__header">
+            <a class="article__back" href="/">&larr; All work</a>
 
-        <div class="col-md-9 flex-first flex-md-unordered">
-            <div class="mainheading">
+            <h1 class="article__title">Mobile Exploration Robot with Auxiliary Drone</h1>
 
-                <!-- Author Box -->
-                
-
-                <!-- Post Title -->
-                <h1 class="posttitle">Mobile Exploration Robot with Auxiliary Drone</h1>
-
-            </div>
-
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             
-            <!-- End Adsense -->
+            <p class="hero__lead">A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags.</p>
+            
 
-            <!-- Post Content -->
-            <div class="article-post" style="color: white; font-size: 22px;">
-                <!-- Toc if any -->
+            <div class="article__meta">
                 
-                <!-- End Toc -->
-                <p><strong><span style="color:rgb(0, 30, 80)">ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight</span></strong></p>
+                <ul class="tags">
+                    
+                    <li><span class="tag">Python</span></li>
+                    
+                    <li><span class="tag">ROS2</span></li>
+                    
+                    <li><span class="tag">Embedded Systems</span></li>
+                    
+                    <li><span class="tag">Multi-Robot System</span></li>
+                    
+                    <li><span class="tag">Autonomous Flight</span></li>
+                    
+                </ul>
+                
 
-<iframe width="90%" height="441" src="https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <time class="article__date" datetime="2024-03-20T00:00:00-07:00">
+                    Mar 2024
+                </time>
+            </div>
+        </header>
+
+        <div class="article__body">
+            
+
+            <iframe src="https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 
 <h2 id="overview">Overview</h2>
 
@@ -167,7 +120,7 @@
 
 <p><strong>GitHub Source Code</strong>: <a href="https://github.com/henryburon/terra-flight">https://github.com/henryburon/terra-flight</a></p>
 
-<div style="background-color: white; height: 1px;"></div>
+<hr />
 
 <h2 id="contents">Contents</h2>
 
@@ -188,7 +141,7 @@
   </li>
 </ol>
 
-<div style="background-color: white; height: 1px;"></div>
+<hr />
 
 <h2 id="structure">Structure</h2>
 
@@ -201,7 +154,7 @@
 
 <p>View the <a href="https://github.com/henryburon/terra-flight">source code</a> for more information on the ROS2 packages that make up this project.</p>
 
-<div style="background-color: white; height: 1px;"></div>
+<hr />
 
 <h2 id="features">Features</h2>
 
@@ -214,16 +167,16 @@
   <img src="/assets/images/not_located2.png" width="255" />
 </p> -->
 
-<p align="center">
-   <img src="/assets/images/three_images.png" width="1000" />
-</p>
+<figure>
+  <img src="/assets/images/three_images.png" />
+</figure>
 <p><small>  Figure 2. Drone camera feed as it locates the rover.</small></p>
 
 <p>The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.</p>
 
-<p align="center">
-  <img src="/assets/images/located2.png" width="475" />
-</p>
+<figure>
+  <img src="/assets/images/located2.png" />
+</figure>
 
 <p><small>  Figure 3. Drone locating the rover via the right tag.</small></p>
 
@@ -233,9 +186,9 @@
 
 <p>The robot uses a LiDAR module mounted on the top of the rover to perform 2D SLAM and estimate its pose as it creates a map of the environment.</p>
 
-<p align="center">
-<img src="/assets/images/slam_hallway2.png" width="675" />
-</p>
+<figure>
+  <img src="/assets/images/slam_hallway2.png" />
+</figure>
 <p><small> Figure 4. Map created in a hallway at Northwestern’s Tech Institute.</small></p>
 
 <p>The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel velocities.</p>
@@ -244,19 +197,19 @@
 
 <p>The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data. It provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously showing the map being built as the robot navigates and explores its environment.</p>
 
-<p align="center">
-   <img src="/assets/images/base_station1.jpg" width="645" />
-</p>
+<figure>
+  <img src="/assets/images/base_station1.jpg" />
+</figure>
 <p><small> Figure 5. The base station during operation. Hardware includes a laptop, USB WiFi adapter, and joystick controller.</small></p>
 
 <p>As long as the base station is connected to both the Tello drone’s WiFi network and a network configured to facilitate ROS2 discovery, the robot can be operated anywhere.</p>
 
-<p align="center">
-   <img src="/assets/images/base_station2.png" width="945" />
-</p>
+<figure>
+  <img src="/assets/images/base_station2.png" />
+</figure>
 <p><small> Figure 6. Screenshot from the base station’s interface. Top left: Drone camera. Bottom left: Rover camera. Right: SLAM.</small></p>
 
-<div style="background-color: white; height: 1px;"></div>
+<hr />
 
 <h2 id="design">Design</h2>
 
@@ -264,205 +217,63 @@
 
 <h4 id="electrical">Electrical</h4>
 
-<p align="center">
-   <img src="/assets/images/electrical_diagram1.png" width="545" />
-</p>
+<figure>
+  <img src="/assets/images/electrical_diagram1.png" />
+</figure>
 <p><small> Figure 7. Electrical block diagram.</small></p>
 
 <p>14.8V main bus. The power system allows the user to power the Raspberry Pi 4 individually when providing software updates.</p>
 
 <h4 id="mechanical">Mechanical</h4>
 
-<p align="center">
-   <img src="/assets/images/mechanical_terraflight.png" width="750" />
-</p>
+<figure>
+  <img src="/assets/images/mechanical_terraflight.png" />
+</figure>
 <p><small> Figure 8. Labeled image of <em>Terraflight</em>. </small></p>
 
 <p>The rover’s drive train was inspired by <a href="https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical">NASA’s Open Source JPL Rover</a>.</p>
 
-            </div>
-
-            <!-- Rating -->
-            
-
-            <!-- Post Date -->
-            <p>
-            <small>
-                <span class="post-date"><time class="post-date" datetime="2024-03-20">20 Mar 2024</time></span>           
-                
-                </small>
-            </p>
-
-            <!-- Post Categories -->
-            <div class="after-post-cats">
-                <ul class="tags mb-4">
-                    
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#Autonomous-Flight">Autonomous Flight</a>
-                    </li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#Embedded-Systems">Embedded Systems</a>
-                    </li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#Multi-Robot-System">Multi-Robot System</a>
-                    </li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#Python">Python</a>
-                    </li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/categories#ROS2">ROS2</a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <!-- End Categories -->
-
-            <!-- Post Tags -->
-            <div class="after-post-tags">
-                <ul class="tags">
-                    
-                    
-                </ul>
-            </div>
-            <!-- End Tags -->
-
-            <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            
-            <a class="prev d-block col-md-6" href="/turtlebot_slam/"> &laquo; Extended Kalman Filter SLAM from Scratch</a>
-            
-            
-            <a class="next d-block col-md-6 text-lg-right" href="/virtual_bball_trainer/">Computer Vision-Based Basketball Coach &raquo; </a>
-            
-            <div class="clearfix"></div>
-            </div>
-            <!-- End Categories -->
-
         </div>
-        <!-- End Post -->
+
+        <footer class="article__footer">
+            
+            <nav class="pagenav" aria-label="More projects">
+                
+                <a class="pagenav__item pagenav__item--prev" href="/turtlebot_slam/">
+                    <span class="pagenav__label">Previous</span>
+                    <span class="pagenav__title">Extended Kalman Filter SLAM from Scratch</span>
+                </a>
+                
+
+                
+                <a class="pagenav__item pagenav__item--next" href="/virtual_bball_trainer/">
+                    <span class="pagenav__label">Next</span>
+                    <span class="pagenav__title">Computer Vision-Based Basketball Coach</span>
+                </a>
+                
+            </nav>
+            
+        </footer>
 
     </div>
-</div>
-<!-- End Article
-================================================== -->
+</article>
 
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
-https://search.google.com/structured-data/testing-tool/u/0/
-================================================== -->
+</main>
 
-</div>
-
-<!-- Categories Jumbotron
-================================================== -->
-<div class="jumbotron fortags">
-	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
-            <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
-            </div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-            
-            
-                
-                    <a class="mt-1 mb-1" href="/categories#Path-Planning">Path Planning (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Python">Python (7)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#RRT">RRT (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Machine-Learning">Machine Learning (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Image-Processing">Image Processing (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#OpenCV">OpenCV (3)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Transforms">Transforms (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#ArduPilot">ArduPilot (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Electronics">Electronics (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Autonomous-Systems">Autonomous Systems (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Robotic-Manipulation">Robotic Manipulation (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#CoppeliaSim">CoppeliaSim (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#ROS2">ROS2 (4)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#MoveIt2">MoveIt2 (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Motion-Planning">Motion Planning (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#C++">C++ (2)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Unit-Testing">Unit Testing (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#CMake">CMake (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Embedded-Systems">Embedded Systems (2)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Multi-Robot-System">Multi-Robot System (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Autonomous-Flight">Autonomous Flight (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Computer-Vision">Computer Vision (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Object-Tracking">Object Tracking (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#ROS-Noetic">ROS Noetic (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#Eigen">Eigen (1)</a>
-                
-                    <a class="mt-1 mb-1" href="/categories#LoRa">LoRa (1)</a>
-                
-            
-            
-		</div>
-	</div>
-</div>
-
-<!-- Begin Footer
+<!-- Footer
 ================================================== -->
 <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © 2026 Henry Buron 
-            </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                
-            </div>
+    <div class="wrap">
+        <div class="footer__inner">
+            <span>© 2026 Henry Buron</span>
+            <ul class="footer__links">
+                <li><a href="https://github.com/henryburon" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/henryburon/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="mailto:henryburon2024@u.northwestern.edu">Email</a></li>
+            </ul>
         </div>
     </div>
 </footer>
-<!-- End Footer
-================================================== -->
-
-</div> <!-- /.site-content -->
-
-<!-- Scripts
-================================================== -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-<script src="/assets/js/mediumish.js"></script>
-
-
-
-<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
-
-
-<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
-
 
 </body>
 </html>

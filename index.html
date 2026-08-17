@@ -3,65 +3,67 @@ layout: default
 title: Home
 ---
 
-{% if page.url == "/" %}
-
-<!-- Featured
+<!-- Hero
 ================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-    <div class="row listrecent">
-    <!-- <div class="row"> -->
+<section class="hero">
+    <div class="wrap">
+        <p class="hero__eyebrow">Robotics Software Engineer &middot; Phoenix, AZ</p>
 
-    {% for post in site.posts %}
+        <h1 class="hero__title">Henry Buron</h1>
 
-        <!-- {% if post.featured == true %} -->
+        <p class="hero__lead">
+            I build software for robots that have to work in the real world &mdash;
+            <strong>autonomy</strong>, <strong>SLAM</strong>, <strong>computer vision</strong>,
+            and <strong>manipulation</strong>. Currently at Swarmbotics AI;
+            previously NASA JPL. M.S. in Robotics from Northwestern.
+        </p>
 
-        {% include postbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
+        <div class="hero__actions">
+            <a class="btn btn--primary" href="#work">View work</a>
+            <a class="btn" href="https://github.com/henryburon" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="{{ site.authors.Henry.LinkedIn }}" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="{{ site.baseurl }}/HenryBuron_About">About</a>
+        </div>
     </div>
 </section>
 
+{% assign featured_posts = site.posts | where: "featured", true %}
+{% assign other_posts = site.posts | where: "featured", false %}
+
+<!-- Selected work
+================================================== -->
+{% if featured_posts.size > 0 %}
+<section class="section" id="work">
+    <div class="wrap">
+        <div class="section__head">
+            <h2 class="section__label">Selected work</h2>
+            <span class="section__count">{{ featured_posts.size }} projects</span>
+        </div>
+
+        <div class="grid grid--featured">
+            {% for post in featured_posts %}
+                {% include postbox.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
 {% endif %}
 
-<!-- Posts Index
+<!-- Everything else
 ================================================== -->
+{% if other_posts.size > 0 %}
+<section class="section">
+    <div class="wrap">
+        <div class="section__head">
+            <h2 class="section__label">More projects</h2>
+            <span class="section__count">{{ other_posts.size }} projects</span>
+        </div>
 
-<!-- to change back to all posts on one page (and all under same section...)
-comment out the below code and change to featured=true, hidden=true for all posts -->
-
-
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Projects</span></h2>
-
+        <div class="grid">
+            {% for post in other_posts %}
+                {% include postbox.html %}
+            {% endfor %}
+        </div>
     </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-            {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
 </section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+{% endif %}

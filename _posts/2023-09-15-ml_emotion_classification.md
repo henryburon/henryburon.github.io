@@ -3,14 +3,12 @@ layout: post
 title:  "Machine Learning Emotion Classification"
 categories: [Machine Learning, Python, Image Processing]
 image: assets/images/ml_emotion_classification.png
+description: "An image-processing and machine learning pipeline that classifies facial images into seven emotion categories."
 featured: false
-hidden: true
 ---
 
-**<span style="color:rgb(0, 30, 80)">Machine Learning, Python, Image Processing</span>**
 
-
-<iframe width="100%" height="441" src="https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 

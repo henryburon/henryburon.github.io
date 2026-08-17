@@ -1,7 +1,7 @@
 # Site
 name: "Henry Buron"
 title: "Henry's Portfolio"
-description: "M.S. in Robotics @ Northwestern University"
+description: "Robotics Software Engineer — autonomy, SLAM, and computer vision"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 url: henryburon.github.io
@@ -22,7 +22,6 @@ authors:
 
 # Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
@@ -35,10 +34,6 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
-# Pagination 
-paginate: 6
-paginate_path: /page:num/
     
 # Other
 markdown: kramdown
@@ -54,8 +49,5 @@ kramdown:
 adsense: "disabled"
 adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
-
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
 
 exclude: [post_template.md, changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile., vendor/bundle]

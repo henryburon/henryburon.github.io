@@ -3,13 +3,12 @@ layout: post
 title:  "Rapidly-Exploring Random Tree (RRT)"
 categories: [Path Planning, Python, RRT]
 image: assets/gifs/RRT.GIF
+description: "An implementation of the Rapidly-Exploring Random Tree algorithm, a foundational sampling-based path planner."
 featured: false
-hidden: false
 ---
-**<span style="color:rgb(0, 30, 80)">Path Planning, Python, RRT</span>**
 
 
-<iframe width="100%" height="441" src="https://www.youtube.com/embed/x5AmgLBkSXQ?si=LW6sG8rTdrXVrDQt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/x5AmgLBkSXQ?si=LW6sG8rTdrXVrDQt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 
@@ -85,7 +84,6 @@ Every iteration, the algorithm:
 
 The RRT is then animated with matplotlib.
 
-<img src="/assets/images/rrt1.png" style="width: 750px; height: auto; margin: 0 auto; display: block;">
-
+<img src="/assets/images/rrt1.png">
 
 

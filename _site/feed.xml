@@ -2,29 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Henry&apos;s Portfolio</title>
-    <description>M.S. in Robotics @ Northwestern University</description>
+    <description>Robotics Software Engineer — autonomy, SLAM, and computer vision</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Aug 2026 21:38:21 -0700</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2026 21:38:21 -0700</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2026 21:52:24 -0700</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2026 21:52:24 -0700</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Drone-Based Delivery System</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, LoRa, Embedded Systems&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/1bbPotnd48Q?si=MclOsE42RdgTv6PT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.youtube.com/embed/1bbPotnd48Q?si=MclOsE42RdgTv6PT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
 &lt;p&gt;I built a drone-based delivery system that delivers a package via tether. The package–in the form of a small mobile robot–stabilizes itself during descent, and has the ability to release itself from the tether and drive along the ground towards its destination.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/situational_diagram.png&quot; width=&quot;550&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/situational_diagram.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;GitHub Source Code:&lt;/strong&gt; &lt;a href=&quot;https://github.com/henryburon/drone-delivery&quot;&gt;https://github.com/henryburon/drone-delivery&lt;/a&gt;&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
@@ -60,52 +58,48 @@
 
 &lt;p&gt;The winch, fixed to the underbelly of the drone, allows the robot to be deployed–lowered with a tether–from approximately 10m in the air. The winch system is controlled and powered by the drone’s existing components, however it communicates with the base station via an added LoRa module.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/winch_cad.png&quot; width=&quot;500&quot; /&gt;
-   &lt;br /&gt;
-   &lt;em&gt;Custom winch design in CAD&lt;/em&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/winch_cad.png&quot; /&gt;
+  &lt;figcaption&gt;Custom winch design in CAD&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h4 id=&quot;mobile-package-robot&quot;&gt;Mobile Package Robot&lt;/h4&gt;
 
 &lt;p&gt;The mobile robot carries a small quantity of medical or emergency supplies. It is lowered from the drone by tether, and can detach itself from this tether without human assistance. Once on the ground, it can drive closer to the target, taking advantage of its small form factor to enter constrained and crowded environments. The side-mounted propellers can be used to stabilize itself during descent, allowing the robot to safely deliver the medical supplies in a range of environments.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/droid_closed.jpg&quot; width=&quot;45%&quot; /&gt;
-   &lt;img src=&quot;/assets/images/droid_open.jpg&quot; width=&quot;45%&quot; /&gt;
+   &lt;img src=&quot;/assets/images/droid_closed.jpg&quot; /&gt;
+   &lt;img src=&quot;/assets/images/droid_open.jpg&quot; /&gt;
    &lt;br /&gt;
    &lt;em&gt;Mobile package robot&lt;/em&gt;
 &lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/gifs/tether_mechanism.gif&quot; width=&quot;500&quot; /&gt;
-   &lt;br /&gt;
-   &lt;em&gt;Tether mechanism in action&lt;/em&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/gifs/tether_mechanism.gif&quot; /&gt;
+  &lt;figcaption&gt;Tether mechanism in action&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/gifs/robot_stabilization.gif&quot; width=&quot;700&quot; /&gt;
-   &lt;br /&gt;
-   &lt;em&gt;Active stabilization demo&lt;/em&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/gifs/robot_stabilization.gif&quot; /&gt;
+  &lt;figcaption&gt;Active stabilization demo&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h4 id=&quot;base-station&quot;&gt;Base Station&lt;/h4&gt;
 
 &lt;p&gt;The base station simply consisted of a LoRa module connected to a computer. It allows the operator to receive status updates in real-time and send commands.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/dd_base_station.jpg&quot; width=&quot;500&quot; /&gt;
-   &lt;br /&gt;
-   &lt;em&gt;Base Station (R)&lt;/em&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/dd_base_station.jpg&quot; /&gt;
+  &lt;figcaption&gt;Base Station (R)&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;communication-architecture&quot;&gt;Communication Architecture&lt;/h2&gt;
 
 &lt;p&gt;Reliable communication over distance is critical for a drone-based robotic delivery system.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/comm_diag_1.png&quot; width=&quot;600&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/comm_diag_1.png&quot; /&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;LoRa, short for Long Range, is a low-power, wide-area network communication protocol designed for wireless communication over long distances.&lt;/p&gt;
 
@@ -115,9 +109,9 @@
 
 &lt;p&gt;I built the mobile package robot, the winch system, and the base station from scratch.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/elec_diag_1.png&quot; width=&quot;600&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/elec_diag_1.png&quot; /&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;The winch system electronics consist of a high-torque servo motor and LoRa module. It is connected to the drone’s power supply.&lt;/p&gt;
 
@@ -140,19 +134,16 @@
     
       <item>
         <title>Internship at NASA Jet Propulsion Laboratory (JPL)</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;C++, ROS Noetic, OpenCV, Eigen&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/gifs/niosh.gif&quot; alt=&quot;NIOSH Robot&quot; width=&quot;90%&quot; /&gt;
-   &lt;br /&gt;
-   &lt;em&gt;Testing the robot in the Mars Yard.&lt;/em&gt;
-&lt;/p&gt;
+        <description>&lt;figure&gt;
+  &lt;img src=&quot;/assets/gifs/niosh.gif&quot; alt=&quot;NIOSH Robot&quot; /&gt;
+  &lt;figcaption&gt;Testing the robot in the Mars Yard.&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;&lt;em&gt;Note: JPL cleared this content for public release.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;See story on the MSR website: &lt;a href=&quot;https://www.mccormick.northwestern.edu/robotics/inside-our-program/stories/2024/navigating-hazardous-terrain-at-nasas-jet-propulsion-laboratory.html&quot; target=&quot;_blank&quot;&gt;Navigating Hazardous Terrain at NASA’s Jet Propulsion Laboratory&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
 &lt;p&gt;I worked as a Robotics Software Intern at NASA’s Jet Propulsion Laboratory in the Robotic Mobility group (347F) during Summer 2024.&lt;/p&gt;
 
@@ -160,15 +151,15 @@
 
 &lt;p&gt;The robot itself is rather unique–it’s made up of two rigid bodies that are joined by a single linkage. The connection points are actuated, meaning the robot can change its kinematic configuration in response to its environment or a specific task. This enables the robot to operate in configurations like side-by-side or leader-follower, each of which has different advantages such as increased stability or a slimmer profile.&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
-&lt;h1 id=&quot;projects&quot;&gt;Projects&lt;/h1&gt;
+&lt;h2 id=&quot;projects&quot;&gt;Projects&lt;/h2&gt;
 
 &lt;h4 id=&quot;imu-based-rollover-risk-detection&quot;&gt;IMU-Based Rollover-Risk Detection&lt;/h4&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/gifs/rollover_risk.gif&quot; alt=&quot;Rollover Risk Detection&quot; width=&quot;40%&quot; /&gt;
-   &lt;img src=&quot;/assets/images/rollover_risk.png&quot; alt=&quot;Rollover Risk Detection&quot; width=&quot;40%&quot; /&gt;
+   &lt;img src=&quot;/assets/gifs/rollover_risk.gif&quot; alt=&quot;Rollover Risk Detection&quot; /&gt;
+   &lt;img src=&quot;/assets/images/rollover_risk.png&quot; alt=&quot;Rollover Risk Detection&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I developed a simulation-based empirical method to asses the robot’s risk of tipping in any given state, where the state is defined by its kinematic configuration and the tilt of each body.&lt;/p&gt;
@@ -178,8 +169,8 @@
 &lt;h4 id=&quot;robot-path-projection-lines&quot;&gt;Robot Path Projection Lines&lt;/h4&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/gifs/proj_lines.gif&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;49%&quot; /&gt;
-   &lt;img src=&quot;/assets/images/proj_lines.png&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;45%&quot; /&gt;
+   &lt;img src=&quot;/assets/gifs/proj_lines.gif&quot; alt=&quot;Robot Path Projection Lines&quot; /&gt;
+   &lt;img src=&quot;/assets/images/proj_lines.png&quot; alt=&quot;Robot Path Projection Lines&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I developed an algorithm that generates path projection lines based on the camera’s intrinsic parameters and the robot’s configuration, with the lines representing the robot’s width on the ground plane. The system used a two-camera setup with a stitched video feed, and factors such as each camera’s yaw, pitch, field of view (FOV), and height are parameterized in the calculation.&lt;/p&gt;
@@ -187,7 +178,7 @@
 &lt;h4 id=&quot;configuration-manager&quot;&gt;Configuration Manager&lt;/h4&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/gifs/config_manager.gif&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;60%&quot; /&gt;
+   &lt;img src=&quot;/assets/gifs/config_manager.gif&quot; alt=&quot;Robot Path Projection Lines&quot; /&gt;
    &lt;img src=&quot;/assets/images/niosh_kinematics.png&quot; alt=&quot;Robot Path Projection Lines&quot; width=&quot;29.2%&quot; /&gt;
 &lt;/p&gt;
 
@@ -195,9 +186,9 @@
 
 &lt;p&gt;The algorithm abstracts the robot’s non-intuitive kinematics from the operator and prioritizes a small operational footprint during the transition.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/niosh_terrain.png&quot; alt=&quot;SLAM&quot; width=&quot;80%&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/niosh_terrain.png&quot; alt=&quot;SLAM&quot; /&gt;
+&lt;/figure&gt;
 </description>
         <pubDate>Sun, 01 Sep 2024 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/jpl_internship/</link>
@@ -216,9 +207,7 @@
     
       <item>
         <title>Computer Vision-Based Basketball Coach</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;OpenCV, Python, Computer Vision, Object Tracking&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/MW7uQ3kL7gM?si=L13EQ9G4aMUwJl2X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.youtube.com/embed/MW7uQ3kL7gM?si=L13EQ9G4aMUwJl2X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -230,7 +219,7 @@
 
 &lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/cv_basketball_trainer&quot;&gt;https://github.com/henryburon/cv_basketball_trainer&lt;/a&gt;&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
@@ -245,7 +234,7 @@
   &lt;li&gt;&lt;a href=&quot;#results&quot;&gt;Results&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;motion-tracking&quot;&gt;Motion Tracking&lt;/h2&gt;
 
@@ -268,7 +257,7 @@
 
 &lt;p&gt;Each contour in the frame is graded on the above three characteristics, and each of those grades are weighted and summed up to create a single score for the contour. The contour with the highest score is assumed to be the basketball, and its coordinates are saved into the trajectory array.&lt;/p&gt;
 
-&lt;div style=&quot;display: flex; justify-content: space-around;&quot;&gt;
+&lt;div class=&quot;figure-row&quot;&gt;
     &lt;div&gt;
         &lt;img src=&quot;/assets/images/cv_bball_contours.png&quot; width=&quot;500&quot; /&gt;
         &lt;small&gt;Figure 1. Scored contour rectangles. Green outline indicates basketball. Red circle is location in previous frame.&lt;/small&gt;
@@ -287,12 +276,12 @@
 
 &lt;p&gt;We combined this data with the basketball’s motion and were then able to identify the moment the ball was released from the player’s hands.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/cv_every_traj.png&quot; width=&quot;600&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/cv_every_traj.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;center&gt;&lt;small&gt;Figure 3. All trajectories plotted.&lt;/small&gt;&lt;/center&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;data-analysis-and-scoring&quot;&gt;Data Analysis and Scoring&lt;/h2&gt;
 
@@ -306,15 +295,15 @@
 
 &lt;p&gt;The result is that these methods allow us to compare the general shape of the trajectory and not worry about differences in timing or video quality.&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
 
 &lt;p&gt;The result of the program is an automatically generated PDF report with personalized feedback.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/cv_bball_report.png&quot; width=&quot;600&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/cv_bball_report.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;center&gt;&lt;small&gt;Figure 4. Sample PDF report.&lt;/small&gt;&lt;/center&gt;
 </description>
         <pubDate>Wed, 10 Apr 2024 00:00:00 -0700</pubDate>
@@ -334,9 +323,7 @@
     
       <item>
         <title>Mobile Exploration Robot with Auxiliary Drone</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -348,7 +335,7 @@
 
 &lt;p&gt;&lt;strong&gt;GitHub Source Code&lt;/strong&gt;: &lt;a href=&quot;https://github.com/henryburon/terra-flight&quot;&gt;https://github.com/henryburon/terra-flight&lt;/a&gt;&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
@@ -369,7 +356,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;structure&quot;&gt;Structure&lt;/h2&gt;
 
@@ -382,7 +369,7 @@
 
 &lt;p&gt;View the &lt;a href=&quot;https://github.com/henryburon/terra-flight&quot;&gt;source code&lt;/a&gt; for more information on the ROS2 packages that make up this project.&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -395,16 +382,16 @@
   &lt;img src=&quot;/assets/images/not_located2.png&quot; width=&quot;255&quot; /&gt;
 &lt;/p&gt; --&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/three_images.png&quot; width=&quot;1000&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/three_images.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;p&gt;&lt;small&gt;  Figure 2. Drone camera feed as it locates the rover.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/located2.png&quot; width=&quot;475&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/located2.png&quot; /&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;&lt;small&gt;  Figure 3. Drone locating the rover via the right tag.&lt;/small&gt;&lt;/p&gt;
 
@@ -414,9 +401,9 @@
 
 &lt;p&gt;The robot uses a LiDAR module mounted on the top of the rover to perform 2D SLAM and estimate its pose as it creates a map of the environment.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/slam_hallway2.png&quot; width=&quot;675&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/slam_hallway2.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;p&gt;&lt;small&gt; Figure 4. Map created in a hallway at Northwestern’s Tech Institute.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel velocities.&lt;/p&gt;
@@ -425,19 +412,19 @@
 
 &lt;p&gt;The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data. It provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously showing the map being built as the robot navigates and explores its environment.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/base_station1.jpg&quot; width=&quot;645&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/base_station1.jpg&quot; /&gt;
+&lt;/figure&gt;
 &lt;p&gt;&lt;small&gt; Figure 5. The base station during operation. Hardware includes a laptop, USB WiFi adapter, and joystick controller.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;As long as the base station is connected to both the Tello drone’s WiFi network and a network configured to facilitate ROS2 discovery, the robot can be operated anywhere.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/base_station2.png&quot; width=&quot;945&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/base_station2.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;p&gt;&lt;small&gt; Figure 6. Screenshot from the base station’s interface. Top left: Drone camera. Bottom left: Rover camera. Right: SLAM.&lt;/small&gt;&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
 
@@ -445,18 +432,18 @@
 
 &lt;h4 id=&quot;electrical&quot;&gt;Electrical&lt;/h4&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/electrical_diagram1.png&quot; width=&quot;545&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/electrical_diagram1.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;p&gt;&lt;small&gt; Figure 7. Electrical block diagram.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;14.8V main bus. The power system allows the user to power the Raspberry Pi 4 individually when providing software updates.&lt;/p&gt;
 
 &lt;h4 id=&quot;mechanical&quot;&gt;Mechanical&lt;/h4&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;/assets/images/mechanical_terraflight.png&quot; width=&quot;750&quot; /&gt;
-&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/mechanical_terraflight.png&quot; /&gt;
+&lt;/figure&gt;
 &lt;p&gt;&lt;small&gt; Figure 8. Labeled image of &lt;em&gt;Terraflight&lt;/em&gt;. &lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;The rover’s drive train was inspired by &lt;a href=&quot;https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical&quot;&gt;NASA’s Open Source JPL Rover&lt;/a&gt;.&lt;/p&gt;
@@ -480,11 +467,9 @@
     
       <item>
         <title>Extended Kalman Filter SLAM from Scratch</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;C++, ROS2, Unit Testing, CMake&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/slam_img.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/slam_img.png&quot; alt=&quot;SLAM&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
 &lt;p&gt;I implemented an Extended Kalman filter (EKF) SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.&lt;/p&gt;
 
@@ -506,7 +491,7 @@ The algorithm works by --&gt;
 
 &lt;h2 id=&quot;implementation-details&quot;&gt;Implementation Details&lt;/h2&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlelib&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -519,25 +504,25 @@ The algorithm works by --&gt;
 
 &lt;p&gt;All functions are tested using the Catch2 unit test framework.&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nusim&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;ROS2 C++ node that provides a simulated environment for the robot. Launches RViz and displays walls, obstacles, and a single red robot. User can configure launch parameters in basic_world.yaml.&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_description&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Builds turtlebot models with imported meshes in URDF; displays in RViz. Option to display all four models, or just one.&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuturtle_control&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Computes and publishes the odometry the turtlebot based on the joint states of its wheels. Controls movement of the turtlebot robot based on velocity commands and sensor data from the robot’s wheel encoders.&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuslam&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -562,9 +547,7 @@ The algorithm works by --&gt;
     
       <item>
         <title>Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ROS2, Python, Motion Planning&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;90%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.youtube.com/embed/f93vAm1NstA?si=q7lfAgRUdSKHukga&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -580,7 +563,7 @@ The algorithm works by --&gt;
   &lt;li&gt;Working with the MoveIt2 package to help convert waypoints to movement&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apriltags&lt;/code&gt; package&lt;/p&gt;
 
@@ -591,7 +574,7 @@ The algorithm works by --&gt;
 &lt;p&gt;In the image below, the AprilTags have been localized and transformed into the robot’s frame.
 &lt;img src=&quot;/assets/images/localize_tags.png&quot; alt=&quot;Localize Tags&quot; /&gt;&lt;/p&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;speech&lt;/code&gt; package&lt;/p&gt;
 
@@ -617,7 +600,7 @@ The algorithm works by --&gt;
             &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RECOGNIZING&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;Waypoints to Movement&lt;/strong&gt;&lt;/p&gt;
 
@@ -645,7 +628,7 @@ The algorithm works by --&gt;
                     &lt;span class=&quot;n&quot;&gt;quat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ori_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;comm_count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],)&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div style=&quot;background-color: white; height: 1px;&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;How it Works&lt;/strong&gt;:&lt;/p&gt;
 
@@ -705,9 +688,7 @@ The algorithm works by --&gt;
     
       <item>
         <title>KUKA youBot Mobile Manipulation</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Python, Robotic Manipulation, CoppeliaSim&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.youtube.com/embed/ZHFO4J9itbI?si=82YA8ILq-O1_tx1X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -791,9 +772,7 @@ The algorithm works by --&gt;
     
       <item>
         <title>Unmanned Electric Race Boat</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;ArduPilot, Electronics, Autonomous Systems&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?height=314&amp;amp;href=https%3A%2F%2Fwww.facebook.com%2Fnavalengineers%2Fvideos%2F256584973783468%2F&amp;amp;show_text=false&amp;amp;width=560&amp;amp;t=0&quot; width=&quot;100%&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?height=314&amp;amp;href=https%3A%2F%2Fwww.facebook.com%2Fnavalengineers%2Fvideos%2F256584973783468%2F&amp;amp;show_text=false&amp;amp;width=560&amp;amp;t=0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;Video provided by the American Society of Naval Engineers.&lt;/p&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
@@ -831,9 +810,7 @@ Testing on the lake.&lt;/p&gt;
     
       <item>
         <title>Computer Vision-Controlled Robot Arm</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Python, OpenCV, Transforms&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/pturk2xscaA?si=CLWhMrOFVhrZ33sk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.youtube.com/embed/pturk2xscaA?si=CLWhMrOFVhrZ33sk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -886,9 +863,7 @@ Testing on the lake.&lt;/p&gt;
     
       <item>
         <title>Machine Learning Emotion Classification</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:rgb(0, 30, 80)&quot;&gt;Machine Learning, Python, Image Processing&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;441&quot; src=&quot;https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe src=&quot;https://www.youtube.com/embed/CJrl6uvsziY?si=CeYyhI1T_yrKK-e9&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 

@@ -3,14 +3,12 @@ layout: post
 title:  "Computer Vision-Based Basketball Coach"
 categories: [OpenCV, Python, Computer Vision, Object Tracking]
 image: assets/gifs/basketball_shot.gif
-featured: true
-hidden: true
+description: "Computer vision that tracks your basketball shot, scores it against a reference trajectory, and generates a PDF coaching report."
+featured: false
 ---
 
-**<span style="color:rgb(0, 30, 80)">OpenCV, Python, Computer Vision, Object Tracking</span>**
 
-
-<iframe width="90%" height="441" src="https://www.youtube.com/embed/MW7uQ3kL7gM?si=L13EQ9G4aMUwJl2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/MW7uQ3kL7gM?si=L13EQ9G4aMUwJl2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Overview
 
@@ -22,7 +20,7 @@ The program tracks the ball's trajectory and your body's movement, comparing the
 
 **GitHub**: [https://github.com/henryburon/cv_basketball_trainer](https://github.com/henryburon/cv_basketball_trainer)
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Contents
 
@@ -32,7 +30,7 @@ The program tracks the ball's trajectory and your body's movement, comparing the
 2. [Data Analysis and Scoring](#data-analysis-and-scoring)
 3. [Results](#results)
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Motion Tracking
 
@@ -53,7 +51,7 @@ The contours are scored on:
 
 Each contour in the frame is graded on the above three characteristics, and each of those grades are weighted and summed up to create a single score for the contour. The contour with the highest score is assumed to be the basketball, and its coordinates are saved into the trajectory array.
 
-<div style="display: flex; justify-content: space-around;">
+<div class="figure-row">
     <div>
         <img src="/assets/images/cv_bball_contours.png" width="500" />
         <small>Figure 1. Scored contour rectangles. Green outline indicates basketball. Red circle is location in previous frame.</small>
@@ -73,12 +71,12 @@ Specifically, we tracked the motion of the wrist and elbow, as their movement gr
 
 We combined this data with the basketball's motion and were then able to identify the moment the ball was released from the player's hands.
 
-<p align="center">
-   <img src="/assets/images/cv_every_traj.png" width="600" />
-</p>
+<figure>
+  <img src="/assets/images/cv_every_traj.png" />
+</figure>
 <center><small>Figure 3. All trajectories plotted.</small></center>
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Data Analysis and Scoring
 
@@ -92,13 +90,13 @@ Procrustes analysis focuses on comparing the shape of the trajectories themselve
 
 The result is that these methods allow us to compare the general shape of the trajectory and not worry about differences in timing or video quality.
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Results
 
 The result of the program is an automatically generated PDF report with personalized feedback.
 
-<p align="center">
-   <img src="/assets/images/cv_bball_report.png" width="600" />
-</p>
+<figure>
+  <img src="/assets/images/cv_bball_report.png" />
+</figure>
 <center><small>Figure 4. Sample PDF report.</small></center>

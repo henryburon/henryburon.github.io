@@ -3,14 +3,12 @@ layout: post
 title:  "Mobile Exploration Robot with Auxiliary Drone"
 categories: [Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight]
 image: assets/gifs/rover_roaming.gif
+description: "A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags."
 featured: true
-hidden: true
 ---
 
-**<span style="color:rgb(0, 30, 80)">ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight</span>**
 
-
-<iframe width="90%" height="441" src="https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/72QHhtjNWzE?si=BSeyyCFr5hVDhiTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 
@@ -22,7 +20,7 @@ The drone is primarily teleoperated, but is able to autonomously re-land on the 
 
 **GitHub Source Code**: [https://github.com/henryburon/terra-flight](https://github.com/henryburon/terra-flight)
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Contents
 
@@ -35,7 +33,7 @@ The drone is primarily teleoperated, but is able to autonomously re-land on the 
    - [Electrical](#electrical)
    - [Mechanical](#mechanical)
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Structure
 
@@ -48,7 +46,7 @@ Due to the computational limitations of the onboard Raspberry Pi 4, which functi
 
 View the [source code](https://github.com/henryburon/terra-flight) for more information on the ROS2 packages that make up this project.
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Features
 
@@ -61,16 +59,16 @@ The rover carries a [DJI Tello drone](https://store.dji.com/product/tello?vid=38
   <img src="/assets/images/not_located2.png" width="255" />
 </p> -->
 
-<p align="center">
-   <img src="/assets/images/three_images.png" width="1000" />
-</p>
+<figure>
+  <img src="/assets/images/three_images.png" />
+</figure>
 <small>  Figure 2. Drone camera feed as it locates the rover.</small>
 
 The drone uses AprilTags on the right, left, and back of the chassis to localize the rover. Once spotted, the user is able to call the autonomous landing service which directs the drone to follow the most recent transform between itself and the rover, adjusting for the location of the specific tag it saw. The drone also displays the time since the last reading, and the update status bar trends towards red as the drone goes longer without an update.
 
-<p align="center">
-  <img src="/assets/images/located2.png" width="475" />
-</p>
+<figure>
+  <img src="/assets/images/located2.png" />
+</figure>
 
 <small>  Figure 3. Drone locating the rover via the right tag.</small>
 
@@ -80,9 +78,9 @@ The rover can be located from any of its three AprilTags, and the drone adjusts 
 
 The robot uses a LiDAR module mounted on the top of the rover to perform 2D SLAM and estimate its pose as it creates a map of the environment.
 
-<p align="center">
-<img src="/assets/images/slam_hallway2.png" width="675" />
-</p>
+<figure>
+  <img src="/assets/images/slam_hallway2.png" />
+</figure>
 <small> Figure 4. Map created in a hallway at Northwestern's Tech Institute.</small>
 
 The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel velocities.
@@ -91,20 +89,20 @@ The robot uses SLAM Toolbox. The odometry tf frame is calculated based on wheel 
 
 The base station, operated via joystick inputs, is the primary control hub issuing movement commands and processing incoming data. It provides a dynamic interface that offers real-time video stream from the rover and drone, while simultaneously showing the map being built as the robot navigates and explores its environment.
 
-<p align="center">
-   <img src="/assets/images/base_station1.jpg" width="645" />
-</p>
+<figure>
+  <img src="/assets/images/base_station1.jpg" />
+</figure>
 <small> Figure 5. The base station during operation. Hardware includes a laptop, USB WiFi adapter, and joystick controller.</small>
 
 
 As long as the base station is connected to both the Tello drone's WiFi network and a network configured to facilitate ROS2 discovery, the robot can be operated anywhere.
 
-<p align="center">
-   <img src="/assets/images/base_station2.png" width="945" />
-</p>
+<figure>
+  <img src="/assets/images/base_station2.png" />
+</figure>
 <small> Figure 6. Screenshot from the base station's interface. Top left: Drone camera. Bottom left: Rover camera. Right: SLAM.</small>
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 ## Design
 
@@ -112,18 +110,18 @@ As long as the base station is connected to both the Tello drone's WiFi network 
 
 #### Electrical
 
-<p align="center">
-   <img src="/assets/images/electrical_diagram1.png" width="545" />
-</p>
+<figure>
+  <img src="/assets/images/electrical_diagram1.png" />
+</figure>
 <small> Figure 7. Electrical block diagram.</small>
 
 14.8V main bus. The power system allows the user to power the Raspberry Pi 4 individually when providing software updates.
 
 #### Mechanical
 
-<p align="center">
-   <img src="/assets/images/mechanical_terraflight.png" width="750" />
-</p>
+<figure>
+  <img src="/assets/images/mechanical_terraflight.png" />
+</figure>
 <small> Figure 8. Labeled image of *Terraflight*. </small>
 
 The rover's drive train was inspired by [NASA's Open Source JPL Rover](https://github.com/nasa-jpl/open-source-rover/tree/master/mechanical).

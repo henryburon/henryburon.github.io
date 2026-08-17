@@ -3,16 +3,14 @@ layout: post
 title:  "Extended Kalman Filter SLAM from Scratch"
 categories: [C++, ROS2, Unit Testing, CMake]
 image: assets/gifs/red_slam.gif
+description: "Extended Kalman Filter SLAM built from scratch in C++ and ROS2, including a custom SE(2) math library and unit tests."
 featured: false
-hidden: false
 ---
-
-**<span style="color:rgb(0, 30, 80)">C++, ROS2, Unit Testing, CMake</span>**
 
 
 ![SLAM](/assets/images/slam_img.png)
 
-# Overview
+## Overview
 
 
 I implemented an Extended Kalman filter (EKF) SLAM algorithm from scratch through several ROS2 packages and a custom C++ library.
@@ -34,11 +32,9 @@ EKF SLAM estimates the robot's pose (position and orientation) as it constructs 
 The algorithm works by -->
 
 
-
-
 ## Implementation Details
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 **`turtlelib`**
 
@@ -49,25 +45,25 @@ Designed to facilitate geometric computations and two-dimensional rigid body tra
 
 All functions are tested using the Catch2 unit test framework.
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 **`nusim`**  
 
 ROS2 C++ node that provides a simulated environment for the robot. Launches RViz and displays walls, obstacles, and a single red robot. User can configure launch parameters in basic_world.yaml.
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 **`nuturtle_description`**    
 
 Builds turtlebot models with imported meshes in URDF; displays in RViz. Option to display all four models, or just one.
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 **`nuturtle_control`**
 
 Computes and publishes the odometry the turtlebot based on the joint states of its wheels. Controls movement of the turtlebot robot based on velocity commands and sensor data from the robot's wheel encoders. 
 
-<div style="background-color: white; height: 1px;"></div>
+---
 
 **`nuslam`**
 
