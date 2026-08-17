@@ -5,6 +5,7 @@ categories: [Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flig
 image: assets/gifs/rover_roaming.gif
 description: "A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags."
 featured: true
+featured_order: 1
 ---
 
 

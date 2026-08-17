@@ -5,6 +5,7 @@ categories: [ROS2, MoveIt2, Python, Motion Planning]
 image: assets/gifs/polyglotbot.GIF
 description: "A 7 DoF Franka Emika Panda arm that listens to speech, translates it, and writes the result on a whiteboard."
 featured: true
+featured_order: 2
 ---
 
 

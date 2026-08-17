@@ -65,7 +65,6 @@ description: "Robotics Software Engineer at Swarmbotics AI. Previously NASA JPL.
 <h2 class="section__label">Contact</h2>
 
 <ul class="contact-list">
-  <li><span class="contact-list__key">Email</span> <a href="mailto:{{ site.authors.Henry.email }}">{{ site.authors.Henry.email }}</a></li>
   <li><span class="contact-list__key">GitHub</span> <a href="https://github.com/henryburon" target="_blank" rel="noopener">github.com/henryburon</a></li>
   <li><span class="contact-list__key">LinkedIn</span> <a href="{{ site.authors.Henry.LinkedIn }}" target="_blank" rel="noopener">linkedin.com/in/henryburon</a></li>
 </ul>

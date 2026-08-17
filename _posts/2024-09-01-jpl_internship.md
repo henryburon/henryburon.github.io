@@ -5,6 +5,7 @@ categories: [C++, ROS Noetic, OpenCV, Eigen]
 image: assets/gifs/niosh_robot.gif
 description: "Robotics software for hazardous-terrain navigation in JPL's Robotic Mobility group, cleared for public release."
 featured: true
+featured_order: 4
 ---
 
 
