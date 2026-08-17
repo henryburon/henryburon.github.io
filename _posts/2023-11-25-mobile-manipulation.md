@@ -2,7 +2,7 @@
 layout: post
 title:  "KUKA youBot Mobile Manipulation"
 categories: [Python, Robotic Manipulation, CoppeliaSim]
-image: assets/gifs/kuka.mp4
+thumbnail: assets/gifs/kuka.mp4
 description: "Trajectory generation and feedback control for a KUKA youBot mobile manipulator grasping and placing a block in simulation."
 featured: false
 ---

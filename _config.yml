@@ -36,4 +36,13 @@ kramdown:
     block:
       line_numbers: true
 
-exclude: [post_template.md, changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, docker-compose.yml, vendor/bundle]
+# Social preview card. jekyll-seo-tag reads `image` per page (there is no
+# site-level fallback), so set it as a default. Posts override it with their
+# own poster frame. Card source lives in tools/og-image.html
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-image.png
+
+exclude: [post_template.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, docker-compose.yml, tools, vendor/bundle]

@@ -2,7 +2,7 @@
 layout: post
 title:  "Polyglotbot: A 7 DoF Robot Arm that Writes Translated Text and Speech"
 categories: [ROS2, MoveIt2, Python, Motion Planning]
-image: assets/gifs/polyglotbot.mp4
+thumbnail: assets/gifs/polyglotbot.mp4
 description: "A 7 DoF Franka Emika Panda arm that listens to speech, translates it, and writes the result on a whiteboard."
 featured: true
 featured_order: 2

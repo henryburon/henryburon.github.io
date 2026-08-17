@@ -2,7 +2,7 @@
 layout: post
 title:  "Mobile Exploration Robot with Auxiliary Drone"
 categories: [Python, ROS2, Embedded Systems, Multi-Robot System, Autonomous Flight]
-image: assets/gifs/rover_roaming.mp4
+thumbnail: assets/gifs/rover_roaming.mp4
 description: "A ROS2 exploration rover carrying a deployable drone that performs SLAM, streams live video, and autonomously re-lands using AprilTags."
 featured: true
 featured_order: 1

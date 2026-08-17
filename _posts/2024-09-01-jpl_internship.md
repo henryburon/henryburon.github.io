@@ -2,7 +2,7 @@
 layout: post
 title:  "Internship at NASA Jet Propulsion Laboratory (JPL)"
 categories: [C++, ROS Noetic, OpenCV, Eigen]
-image: assets/gifs/niosh_robot.mp4
+thumbnail: assets/gifs/niosh_robot.mp4
 description: "Robotics software for hazardous-terrain navigation in JPL's Robotic Mobility group, cleared for public release."
 featured: true
 featured_order: 4

@@ -1,12 +1,12 @@
 <!-- Project card -->
 <article class="card">
 
-    {% if post.image %}
-    {% assign media_ext = post.image | split: '.' | last | downcase %}
-    {% if post.image contains '://' %}
-        {% assign media_src = post.image %}
+    {% if post.thumbnail %}
+    {% assign media_ext = post.thumbnail | split: '.' | last | downcase %}
+    {% if post.thumbnail contains '://' %}
+        {% assign media_src = post.thumbnail %}
     {% else %}
-        {% assign media_src = post.image | prepend: '/' | prepend: site.baseurl %}
+        {% assign media_src = post.thumbnail | prepend: '/' | prepend: site.baseurl %}
     {% endif %}
 
     <div class="card__media">

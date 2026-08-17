@@ -2,7 +2,7 @@
 layout: post
 title:  "Drone-Based Delivery System"
 categories: [ROS2, LoRa, Embedded Systems]
-image: assets/gifs/drone_delivery.mp4
+thumbnail: assets/gifs/drone_delivery.mp4
 description: "A drone that delivers a self-stabilizing mobile robot via tether, which releases itself mid-descent and drives to its destination."
 featured: true
 featured_order: 3

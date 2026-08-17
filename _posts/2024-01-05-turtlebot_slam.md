@@ -2,7 +2,7 @@
 layout: post
 title:  "Extended Kalman Filter SLAM from Scratch"
 categories: [C++, ROS2, Unit Testing, CMake]
-image: assets/gifs/red_slam.mp4
+thumbnail: assets/gifs/red_slam.mp4
 description: "Extended Kalman Filter SLAM built from scratch in C++ and ROS2, including a custom SE(2) math library and unit tests."
 featured: false
 ---

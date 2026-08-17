@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+  Source for assets/images/og-image.png — the social preview card shown when
+  the site is shared on LinkedIn, Slack, iMessage, etc.
+
+  Edit this file, then regenerate from the repo root:
+
+    google-chrome --headless --disable-gpu --hide-scrollbars \
+      --allow-file-access-from-files --virtual-time-budget=4000 \
+      --window-size=1200,630 \
+      --screenshot=assets/images/og-image.png \
+      "file://$PWD/tools/og-image.html"
+
+  Keep it 1200x630 — that is the ratio every platform expects.
+  This directory is excluded from the Jekyll build (see _config.yml).
+-->
+<html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1200px; height:630px; overflow:hidden;
+    background:#0b0d10; color:#e8eaed;
+    font-family: ui-sans-serif, system-ui, "DejaVu Sans", sans-serif;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:0 88px; position:relative;
+  }
+  /* Subtle accent glow, echoing the site's blue. */
+  .glow {
+    position:absolute; right:-180px; top:-180px;
+    width:640px; height:640px; border-radius:50%;
+    background:radial-gradient(circle, rgba(91,157,255,.18), transparent 65%);
+  }
+  .eyebrow {
+    display:flex; align-items:center; gap:14px;
+    font-family: ui-monospace, "DejaVu Sans Mono", monospace;
+    font-size:23px; letter-spacing:.06em; color:#9aa3ae; margin-bottom:34px;
+  }
+  .dot { width:13px; height:13px; border-radius:50%; background:#3ecf8e;
+         box-shadow:0 0 0 6px rgba(62,207,142,.15); }
+  h1 { font-size:104px; letter-spacing:-.035em; line-height:1; margin-bottom:30px; font-weight:700; }
+  p  { font-size:33px; line-height:1.45; color:#9aa3ae; max-width:20ch; }
+  .rule { width:88px; height:5px; background:#5b9dff; border-radius:3px; margin:38px 0 0; }
+  .url { position:absolute; left:88px; bottom:58px;
+         font-family: ui-monospace,"DejaVu Sans Mono",monospace;
+         font-size:23px; color:#6b747f; }
+  .shot { position:absolute; right:88px; bottom:96px; width:392px;
+          border-radius:14px; border:1px solid #23272f; box-shadow:0 24px 60px rgba(0,0,0,.6); }
+</style></head><body>
+  <div class="glow"></div>
+  <div class="eyebrow"><span class="dot"></span>ROBOTICS SOFTWARE ENGINEER</div>
+  <h1>Henry Buron</h1>
+  <p>Autonomy, SLAM, and computer&nbsp;vision for robots in the real&nbsp;world.</p>
+  <div class="rule"></div>
+  <img class="shot" src="../assets/gifs/rover_roaming.jpg">
+  <div class="url">henryburon.github.io</div>
+</body></html>

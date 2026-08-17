@@ -2,7 +2,7 @@
 layout: post
 title:  "Rapidly-Exploring Random Tree (RRT)"
 categories: [Path Planning, Python, RRT]
-image: assets/gifs/RRT.mp4
+thumbnail: assets/gifs/RRT.mp4
 description: "An implementation of the Rapidly-Exploring Random Tree algorithm, a foundational sampling-based path planner."
 featured: false
 ---
