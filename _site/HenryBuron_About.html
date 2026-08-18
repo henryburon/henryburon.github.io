@@ -175,8 +175,9 @@
                + (end.getMonth() - start.getMonth());
     if (months < 0) { months = 0; }
 
-    // Count the month in progress so a role started this month reads "1 mo".
-    if (!until) { months += 1; }
+    // Count both the first and last month, the way LinkedIn does: Jun-Sep
+    // reads "4 mos", and a role started this month reads "1 mo".
+    months += 1;
 
     el.textContent = '(' + label(months) + ')';
   });
