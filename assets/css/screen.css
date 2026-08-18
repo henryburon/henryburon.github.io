@@ -20,6 +20,9 @@
   --accent:        #5b9dff;
   --accent-hover:  #8ab8ff;
   --accent-dim:    rgba(91, 157, 255, 0.12);
+  --accent-dot:    rgba(91, 157, 255, 0.22);  /* hero dot grid */
+  --accent-glow:   rgba(91, 157, 255, 0.11);  /* hero ambient glow */
+  --accent-edge:   rgba(91, 157, 255, 0.42);  /* card border on hover */
 
   /* Type */
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter,
@@ -232,8 +235,39 @@ code, pre, kbd, samp { font-family: var(--font-mono); font-size: 0.9em; }
    -------------------------------------------------------------------------- */
 
 .hero {
+  position: relative;
+  overflow: hidden;
   padding-block: var(--space-9) var(--space-8);
   border-bottom: 1px solid var(--border);
+}
+
+/* Content sits above both background layers. */
+.hero > .wrap { position: relative; z-index: 2; }
+
+/* Blue dot matrix, masked so it dissolves before it reaches the edges. */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(var(--accent-dot) 1px, transparent 1px);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(ellipse 65% 75% at 28% 45%, #000 15%, transparent 72%);
+          mask-image: radial-gradient(ellipse 65% 75% at 28% 45%, #000 15%, transparent 72%);
+}
+
+/* Soft glow off to the right, so the grid sits in some depth. */
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  top: -45%;
+  right: -18%;
+  width: 66%;
+  height: 190%;
+  background: radial-gradient(ellipse at center, var(--accent-glow), transparent 62%);
 }
 
 .hero__eyebrow {
@@ -373,9 +407,9 @@ code, pre, kbd, samp { font-family: var(--font-mono); font-size: 0.9em; }
               box-shadow 0.2s var(--ease);
 }
 .card:hover {
-  border-color: var(--border-strong);
+  border-color: var(--accent-edge);
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--accent-dim);
 }
 
 .card__media {

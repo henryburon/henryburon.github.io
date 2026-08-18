@@ -14,9 +14,7 @@ description: "Robotics Software Engineer at Swarmbotics AI. Previously NASA JPL.
 
     <p>I'm a Robotics Software Engineer at <a href="https://www.swarmbotics.ai/" target="_blank" rel="noopener">Swarmbotics AI</a> in Phoenix, AZ. Before that I interned with the Robotic Mobility group at NASA's Jet Propulsion Laboratory.</p>
 
-    <p>My work centers on robotic manipulation and navigation &mdash; writing production C++ and Python against libraries like OpenCV and Eigen, in Linux environments.</p>
-
-    <p>I'm interested in autonomous systems, SLAM, path planning, and mobile robots.</p>
+    <p>I'm interested in autonomous systems, state estimation, and mobile robots.</p>
   </div>
 </div>
 
